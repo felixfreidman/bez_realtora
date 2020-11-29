@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app/css/common/header.css" />
+    <link rel="stylesheet" href="./app/css/common/footer.css" />
+    <title>Index Page</title>
+  </head>
+  <body>
+    <div class="layer hide"></div>
+    <div class="header-tarifs">
+      <div class="header_header-top">
+        <div class="header-top_navigation">
+          <div class="navigation_logo-section section">
+            <div class="logo-section_image">
+              <img src="./app/img/tarif/header-logo_house.svg" alt=":(" />
+            </div>
+            <div class="logo-section_choseCity-section">
+              <img
+                src="./app/img/tarif/header-logo_label.svg"
+                alt=":("
+                class="logo-section_logo-label"
+              />
+              <div class="choseCity-select">
+                <select name="chosenCity" id="chosenCity">
+                  <option value="10" selected>Иркутск</option>
+                  <option value="1">Москва</option>
+                  <option value="2">Санкт-Петербург</option>
+                  <option value="3">Казань</option>
+                  <option value="4">Екатеринбург</option>
+                  <option value="5">Новосибирск</option>
+                  <option value="6">Самара</option>
+                  <option value="7">Нижний Новгород</option>
+                  <option value="8">Челябинск</option>
+                  <option value="9">Омск</option>
+                  <option value="11">Сочи</option>
+                  <option value="12">Улан-Удэ</option>
+                  <option value="13">Ростов-на-Дону</option>
+                  <option value="14">Воронеж</option>
+                  <option value="15">Волгоград</option>
+                  <option value="16">Томск</option>
+                  <option value="17">Пермь</option>
+                  <option value="18">Саратов</option>
+                </select>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="navigation_rent-section section">АРЕНДА НЕДВИЖИМОСТИ</div>
+          <div class="navigation_sell-section section">
+            ПРОДАЖА НЕДВИЖИМОСТИ
+          </div>
+        </div>
+        <div class="header-top_data-section">
+          <form action="POST">
+            <button class="data-section_apply-button">
+              <img
+                src="./app/img/tarif/header_add-advertisment.svg"
+                alt=":("
+                class="apply-button_plus"
+              />
+              <span>Добавить объявление</span>
+            </button>
+          </form>
+          <div class="data-section_credentials-section">
+            <img
+              src="./app/img/tarif/header_login-image.svg"
+              class="credentials-section_image"
+            />
+            <div class="credentials-section_login-window">Вход/Регистрация</div>
+          </div>
+        </div>
+        <div class="header-top_burger-menu-mobile">
+          <img
+            src="./app/img/tarif/header_burger.svg"
+            alt=":("
+            id="burgerMenu"
+          />
+        </div>
+        <div class="header-top_menu-mobile hide">
+          <div class="menu-mobile_main-section">
+            <form action="POST">
+              <button class="menu-mobile_apply-button">
+                <img
+                  src="./app/img/tarif/header_add-advertisment.svg"
+                  alt=":("
+                  class="apply-button_plus"
+                />
+                <span>Добавить объявление</span>
+              </button>
+            </form>
+            <form action="POST">
+              <button class="menu-mobile_login-button">
+                <img
+                  src="./app/img/tarif/login_image-red.svg"
+                  alt=":("
+                  class="apply-button_plus"
+                />
+                <span>Вход/Регистрация</span>
+              </button>
+            </form>
+            <a href="#" class="navigation_link">Аренда недвижимости</a>
+            <a href="#" class="navigation_link">Продажа недвижимости</a>
+          </div>
+          <div class="menu-mobile_sub-section">
+            <a href="" class="navigation_link">Новости</a>
+            <a href="" class="navigation_link">О нас</a>
+            <a href="" class="navigation_link">Тарифы</a>
+          </div>
+        </div>
+      </div>
+      <div class="header_header-bottom">
+        <span class="header-bottom_text-top"
+          >Найди квартиру мечты и другую недвижимость без комиссии</span
+        >
+        <span class="header-bottom_text-bottom">
+          Все предложения по аренде и продаже от собственников на одном сайте
+        </span>
+      </div>
+    </div>
+    <script src = "./app/js/tarif.js"></script>
+  </body>
 </html>
