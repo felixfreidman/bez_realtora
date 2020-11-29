@@ -1,0 +1,1378 @@
+/* Шрифты жирный и обычный */
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../../fonts/Roboto-Bold.ttf");
+}
+body {
+  font-family: "Roboto";
+}
+/* Версия по умолчанию, на экраны 1376х1176 */
+/* Стили самой страницы */
+/* Начало стилей для заголовка страницы ----------------------------------> */
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0%;
+}
+.header-tarifs {
+  margin-bottom: 51px;
+}
+.header_header-top {
+  height: fit-content;
+  max-height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0px;
+  background-color: #fff;
+}
+.header-top_navigation {
+  display: flex;
+  width: 60%;
+  align-items: center;
+}
+
+.section {
+  margin-right: 50px;
+}
+
+.choseCity-select {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+select#chosenCity {
+  flex: none;
+  background-color: transparent;
+  width: 100%;
+  z-index: 3;
+  margin-right: 0;
+  padding: 0;
+  border-radius: 0%;
+  font-size: 14px;
+}
+.navigation_logo-section {
+  display: flex;
+}
+
+.logo-section_choseCity-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+}
+
+.header-top_data-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data-section_apply-button {
+  outline: none;
+  background-color: #e82431;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  line-height: 0px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.apply-button_plus {
+  margin-right: 15px;
+}
+
+.data-section_credentials-section {
+  display: flex;
+  align-items: center;
+}
+
+.credentials-section_image {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.header_header-bottom {
+  background-image: url("../../img/tarif/header-image.png");
+  padding: 190px 220px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+}
+
+.header-bottom_text-top {
+  font-weight: bold;
+  color: white;
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.header-bottom_text-bottom {
+  color: white;
+  font-size: 24px;
+}
+.header-top_burger-menu-mobile {
+  display: none;
+}
+.header-top_menu-mobile {
+  display: block;
+  padding: 20px;
+  background-color: #fff;
+  position: absolute;
+  width: 70%;
+  top:0px;
+  right:0px;
+  height: 100%;
+  z-index: 50;
+  position: fixed;
+}
+
+.menu-mobile_main-section, .menu-mobile_sub-section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.menu-mobile_apply-button {
+  width: 100%;
+  outline: none;
+  background-color: #e82431;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  line-height: 0px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.menu-mobile_login-button {
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #e82431;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e82431;
+  line-height: 0px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.menu-mobile_main-section {
+  border-bottom: 1px solid #000;
+}
+.menu-mobile_main-section > a,.menu-mobile_main-section {
+  margin-bottom: 20px ;
+}
+
+.menu-mobile_sub-section > a {
+  margin-bottom: 20px;
+}
+/* <---------------------------------- Конец стилей для заголовка  страницы  */
+/* Начало стилей для главной части страницы ----------------------------------> */
+.main_tarifs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 51px 150px 114px 150px;
+}
+
+
+/* Стили секции с тарифами */
+.main_rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+/* Стили оглавления */
+.main_header {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 180px;
+}
+.main_rate.hiddenBlockSubscribe,
+.main_coupon.hiddenBlockSubscribe {
+  display: none !important;
+}
+/* Стили секции с карточками */
+.main_rate-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+form.subscribe_form {
+  width: 100%;
+  text-align: center;
+}
+form.selecter_form {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+/* Стили для каждой карты */
+.main_rate-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: fit-content;
+  padding: 0px 2% 50px 2%;
+  background: #ffffff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+p.main_coupon_info.coupon_error {
+  font-size: 0.7em;
+  margin-top: 0.3em;
+  color: #e82431;
+  width: 48%;
+  text-align: center;
+  font-weight: bold;
+}
+p.main_coupon_info.coupon_success {
+  font-size: 0.7em;
+  margin-top: 0.3em;
+  color: #5dc087;
+  width: 48%;
+  text-align: center;
+  font-weight: bold;
+}
+/* Картинка в оглавлении */
+.main_rate-image {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  bottom: 130px;
+  z-index: 10;
+  margin-bottom: -20%;
+}
+/* Отступ первой карточки от второй */
+.first-card {
+  margin-right: 60px;
+}
+/* Оглавление в самом описание */
+.rate_header {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* Описание тарифа */
+.rate-description {
+  font-size: 16px;
+  color: #808080;
+  margin-bottom: 50px;
+}
+/* Стили для неупорядоченного списка */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.unordered-list_list-item {
+  margin: 0;
+  padding: 0;
+  background: url("../../img/tarif/list_item.svg") no-repeat 0 -3px;
+  padding-left: 30px;
+  min-height: 30px;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Начало стилей для таблицы и радио кнопок */
+.first-rate_table-header {
+  font-size: 18px;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+.first-rate_table-body {
+  width: 100%;
+}
+.period-checkbox {
+  display: none;
+}
+.table-body_table-row {
+  display: flex;
+}
+.table-body_table-row label {
+  background-color: #f2f2f2;
+  width: 50%;
+  height: 50px;
+  font-size: 18px;
+  margin: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 3px 3px 3px 10px;
+  cursor: pointer;
+  color: #808080;
+}
+
+.table-row_table-data {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-body-selling-badge {
+  background: url("../../img/tarif/badgeBackground.png") no-repeat;
+  font-size: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.selling-badge_span {
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+label:hover {
+  color: black;
+}
+
+input:checked + label {
+  background-color: #d9d9d9;
+  color: black;
+}
+/* Конец стилей для таблицы и радио кнопок */
+
+/* Цена тарифа */
+.rate_price {
+  margin-top: 50px;
+  font-size: 40px;
+  display: block;
+}
+/* Стили для формы в которой содержится кнопка */
+.rate_form {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Стили для кнопки оформления тарифа */
+.rate_button {
+  width: 70%;
+  background-color: #5dc087;
+  color: white;
+  height: 58px;
+  font-size: 16px;
+  box-shadow: none;
+  font-family: "Roboto";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.rate_button:active {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #f2f2f2;
+  background-image: none;
+  border-radius: 12px;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.rate_select {
+  z-index: 4;
+  position: relative;
+  display: flex;
+  width: 60%;
+  height: 50px;
+  line-height: 3;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 12px;
+}
+select {
+  flex: 1;
+  padding: 0px 0px 0px 15px;
+  color: #808080;
+  cursor: pointer;
+}
+/* Arrow */
+.rate_select::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 15px;
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background: #f2f2f2;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+/* Transition */
+.rate_select:active::after {
+  top: 50%;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 0px solid black;
+  border-right: 0px solid black;
+  transform: rotate(45deg);
+}
+
+/* Стили для кнопок переключения тарифов */
+.main_rate-toggle {
+  margin-top: 30px;
+  display: flex;
+}
+
+.rate-toggle_first-toggle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.rate-toggle_second-toggle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.rate-toogle_toggle-checked {
+  background-color: #ccc;
+}
+/*Стили для купона */
+
+.main_coupon {
+  position: relative;
+  margin-top: 105px;
+  display: flex;
+  background-color: #f2f2f2;
+  width: fit-content;
+  height: 250px;
+  padding: 30px;
+  border-radius: 8px;
+  box-sizing: content-box;
+}
+
+.main_coupon-image {
+  width: 50%;
+}
+
+.main_coupon-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.main_coupon-header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main_coupon-subheader {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.coupon-activation_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.coupon-activation_input {
+  outline: none;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px 10px;
+  color: grey;
+  border: none;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.coupon-activation_button {
+  outline: none;
+  border: none;
+  background-color: #e82431;
+  color: #fff;
+  border-radius: 8px;
+  padding: 15px 10px;
+  width: 50%;
+  font-size: 14px;
+  height: 100%;
+  -webkit-appearance: none;
+}
+
+/* Стили для уголка купона */
+.main_coupon-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: #1c2443 50px solid;
+  border-bottom: #1c2443 50px solid;
+  border-top: #fff 50px solid;
+  border-left: #fff 50px solid;
+  z-index: 10;
+}
+
+/* Стили для секции Преимущества */
+.main_benefits {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.main_header-block {
+  display: flex;
+  align-items: center;
+}
+
+.red-line {
+  width: 50px;
+  height: 5px;
+  background-color: #e82431;
+  margin-right: 10px;
+}
+
+.main_section-header {
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+}
+
+.benefits_description-blocks {
+  display: flex;
+  margin-top: 40px;
+}
+
+.benefits_description-block {
+  width: 25%;
+  background-color: #429eeb;
+  margin-right: 20px;
+  border-radius: 8px;
+  height: 150px;
+  color: #fff;
+  padding: 10px;
+}
+.second {
+  background-color: #efbd5a;
+}
+.third {
+  background-color: #5dc087;
+}
+.fourth {
+  background-color: #c6505e;
+  margin-right: 0px;
+}
+
+.description-block_header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.header-section_header {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.description-block_main-section {
+  font-size: 12px;
+}
+.main_faq {
+  align-self: flex-start;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.faq_main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.faq_question-block {
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 97%;
+  min-height: 50px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faq_question-block:hover {
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.question-block_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq_question-header {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.faq_question-block:hover .faq_question-header {
+  color: #e82431;
+}
+
+.faq_question-block:hover .faq_question-arrow {
+  border-right: 2px solid #e82431;
+  border-bottom: 2px solid #e82431;
+}
+
+.main_faq-checkbox:checked + .faq_question-block .faq_question-arrow {
+  border-right: none;
+  border-bottom: none;
+  border-top: 2px solid #e82431;
+  border-left: 2px solid #e82431;
+  transform: rotate(45deg);
+}
+
+.main_faq-checkbox:checked + .faq_question-block {
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main_faq-checkbox:checked + .faq_question-block > .faq_answer-main {
+  display: block;
+  line-height: 21px;
+}
+
+.faq_question-arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(45deg);
+}
+.main_faq-checkbox {
+  display: none;
+}
+
+.faq_answer-main {
+  margin-top: 10px;
+  display: none;
+}
+
+.main_qaa {
+  align-self: flex-start;
+  margin-top: 100px;
+}
+
+.faq_link,
+.faq_link:hover,
+.faq_link:visited,
+.faq_link:active {
+  text-decoration: none;
+  color: #3369e8;
+}
+
+.main_prefooter {
+  margin-top: 100px;
+}
+
+.prefooter_span {
+  font-size: 18px;
+  line-height: 27px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .section {
+    text-align: center;
+    font-size: 14px;
+  }
+  .apply-button_plus {
+    margin-right: 0px;
+  }
+  .data-section_apply-button > span {
+    display: none;
+  }
+  .header-bottom_text-top {
+    font-size: 18px;
+  }
+  .header-bottom_text-bottom {
+    font-size: 15px;
+  }
+  .main_tarifs {
+    padding: 51px 80px 114px 80px;
+  }
+  .main_rate-image {
+    margin-bottom: -30%;
+  }
+  .rate-description {
+    font-size: 14px;
+  }
+  .unordered-list_list-item {
+    font-size: 16px;
+  }
+
+  .first-rate_table-header {
+    font-size: 14px;
+  }
+  .table-body_table-row label {
+    font-size: 14px;
+  }
+  .table-body-selling-badge {
+    width: 50%;
+  }
+  .selling-badge_span {
+    font-size: 10px;
+  }
+  .main_coupon-header {
+    font-size: 25px;
+  }
+
+  .main_coupon-subheader {
+    font-size: 14px;
+  }
+  .coupon-activation_form {
+    margin-top: 40px;
+  }
+  .main_section-header {
+    font-size: 25px;
+  }
+  .header-section_header {
+    font-size: 13px;
+  }
+  .description-block_main-section {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .header-top_burger-menu-mobile {
+    display: block;
+    align-self: center;
+  }
+
+  .header-top_menu-mobile {
+    display: block;
+  }
+
+  .menu-mobile_main-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .header_header-top {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .navigation_rent-section, .navigation_sell-section {
+    display: none;
+  }
+  .header-top_data-section {
+    display: none;
+  }
+  .header_header-bottom {
+    padding: 50px 100px;
+  }
+  .header-bottom_text-top {
+    font-size: 16px;
+  }
+  .header-bottom_text-bottom {
+    font-size: 13px;
+  }
+  .main_tarifs {
+   
+    padding: 51px 0px 114px 0px;
+  }
+  .main_rate-image {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 100px;
+    z-index: 10;
+    margin-bottom: -20%;
+  }
+
+  .rate-description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .unordered-list_list-item {
+    font-size: 16px;
+  }
+  .table-body_table-row label {
+    font-size: 14px;
+    padding: 0px 3px 0px 10px;
+    height: 50px;
+  }
+  .table-body-selling-badge {
+    width: 50%;
+    height: 40px;
+  }
+  .selling-badge_span {
+    font-size: 8px;
+  }
+  .main_coupon {
+    max-height: 250px;
+    height: fit-content;
+    padding: 20px;
+  }
+  .main_coupon-header {
+    font-size: 24px;
+  }
+  .main_coupon-subheader {
+    font-size: 12px;
+  }
+  .coupon-activation_input {
+    width: 45%;
+    font-size: 12px;
+  }
+  .coupon-activation_button {
+    width: 45%;
+    font-size: 12px;
+  }
+  .main_coupon-corner {
+    border-right: #1c2443 30px solid;
+    border-bottom: #1c2443 30px solid;
+    border-top: #fff 30px solid;
+    border-left: #fff 30px solid;
+  }
+  .main_section-header {
+    font-size: 24px;
+  }
+  .benefits_description-block {
+    margin-right: 10px;
+    border-radius: 8px;
+    height: 130px;
+    color: #fff;
+    padding: 10px;
+  }
+  .fourth {
+    margin-right: 0px;
+  }
+
+  .description-block_header-section {
+    margin-bottom: 5px;
+  }
+  .header-section_header {
+    font-size: 12px;
+  }
+  .description-block_main-section {
+    font-size: 11px;
+  }
+
+  .faq_question-block {
+    width: 93%;
+    min-height: 30px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .prefooter_span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 719px) {
+  .header-top_burger-menu-mobile {
+    display: block;
+    align-self: center;
+  }
+  .header_header-top {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .navigation_rent-section, .navigation_sell-section {
+    display: none;
+  }
+  .header-top_data-section {
+    display: none;
+  }
+  .header_header-bottom {
+    padding: 50px 10px;
+  }
+  .header-bottom_text-top {
+    text-align: center;
+    font-size: 16px;
+  }
+  .header-bottom_text-bottom {
+    text-align: center;
+    font-size: 13px;
+  }
+  .main_rate-section {
+    flex-flow: column;
+  }
+  .main_tarifs {
+    padding: 51px 0px 114px 0px;
+  }
+  .main_header {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .first-card {
+    margin-right: 0px;
+  }
+  .unordered-list_list-item {
+    font-size: 16px;
+  }
+  .main_rate-image {
+    width: 200px;
+    height: 200px;
+    bottom: 100px;
+  }
+  .main_rate-card {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: fit-content;
+    padding: 0px 2% 50px 2%;
+    background: #ffffff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  .table-body-selling-badge {
+    width: 50%;
+    height: 100%;
+  }
+  .selling-badge_span {
+    font-size: 12px;
+  }
+  .main_coupon-image {
+    display: none;
+  }
+  .main_coupon-corner {
+    display: none;
+  }
+  .main_coupon {
+    height: auto;
+    padding: 20px;
+  }
+  p.main_coupon_info.coupon_error,
+  p.main_coupon_info.coupon_success {
+    width: 100%;
+  }
+  .main_coupon-info {
+    margin-left: 0px;
+  }
+  .main_coupon-header {
+    font-size: 20px;
+  }
+  .benefits_description-blocks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .benefits_description-block {
+    width: 95%;
+    margin-bottom: 20px;
+    height: fit-content;
+    color: #fff;
+    padding: 10px;
+  }
+  .header-section_header {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .description-block_main-section {
+    font-size: 16px;
+  }
+  .faq_question-block {
+    width: 90%;
+    }
+    .faq_question-header {
+      font-size: 14px;
+      width: 90%;
+    }
+  .main_prefooter {
+    margin-top: 50px;
+  }
+  .prefooter_span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 413px) {
+
+.menu-mobile_apply-button {
+  font-size: 14px;
+}
+
+.menu-mobile_login-button {
+  font-size: 14px;
+}
+  .header-top_burger-menu-mobile {
+    display: block;
+    align-self: center;
+  }
+  .logo-section_image {
+    transform: scale(0.9);
+  }
+  .logo-section_logo-label {
+    transform: scale(0.9);
+    margin-left: -5px;
+  }
+
+  .navigation_logo-section {
+    transform: scale(0.8);
+    padding: 0;
+  }
+  .header_header-top {
+    justify-content: space-between;
+    padding: 0px;
+  }
+  .navigation_rent-section, .navigation_sell-section {
+    display: none;
+  }
+  .header-top_data-section {
+    display: none;
+  }
+  .header_header-bottom {
+    padding: 50px 10px;
+  }
+  .header-bottom_text-top {
+    text-align: center;
+    font-size: 16px;
+  }
+  .header-bottom_text-bottom {
+    text-align: center;
+    font-size: 13px;
+  }
+  .main_rate-section {
+    flex-flow: column;
+  }
+  .main_tarifs {
+    padding: 51px 0px 114px 0px;
+  }
+  .main_header {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .rate_header {
+    font-size: 18px;
+  }
+  .rate-description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .main_rate-image {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .first-card {
+    margin-right: 0px;
+  }
+  .unordered-list_list-item {
+    font-size: 14px;
+  }
+  .main_rate-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: fit-content;
+    padding: 0px 2% 50px 2%;
+    background: #ffffff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  .rate_price {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .rate_button {
+    width: 90%;
+    background-color: #5dc087;
+    color: white;
+    height: 58px;
+    font-size: 16px;
+    box-shadow: none;
+    font-family: "Roboto";
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  .table-body_table-row label {
+    font-size: 14px;
+  }
+  .table-body-selling-badge {
+    font-size: 10px;
+    width: 50%;
+    height: 100%;
+  }
+  .selling-badge_span {
+    font-size: 8px;
+  }
+  .main_coupon-image {
+    display: none;
+  }
+  .main_coupon-corner {
+    display: none;
+  }
+  .main_coupon {
+    height: auto;
+    padding: 10px;
+    width: 93%;
+  }
+  p.main_coupon_info.coupon_error,
+  p.main_coupon_info.coupon_success {
+    width: 100%;
+  }
+  .main_coupon-info {
+    margin-left: 0px;
+  }
+  .main_coupon-header {
+    font-size: 20px;
+  }
+  .coupon-activation_input {
+    width: 45%;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .coupon-activation_button {
+    width: 45%;
+    font-size: 12px;
+  }
+  .main_section-header {
+    font-size: 22px;
+  }
+  .benefits_description-blocks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .benefits_description-block {
+    width: 93%;
+    margin-bottom: 20px;
+    height: auto;
+    color: #fff;
+    padding: 10px;
+  }
+  .header-section_header {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .description-block_main-section {
+    font-size: 16px;
+  }
+  .faq_question-block {
+    width: 87%;
+  }
+  .main_prefooter {
+    display: none;
+  }
+  .faq_answer-main {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .faq_question-header {
+    width: 80%;
+    font-size: 14px;
+  }
+  .main_tarifs {
+    padding-bottom: 10px;
+  }
+}
+
+/* @media screen and (min-width: 375px) and (max-width: 413px) {
+  .main_rate-section {
+    flex-flow: column;
+  }
+  .main_tarifs {
+    padding: 51px 0px 114px 0px;
+  }
+  .main_header {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  .main_rate-image {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .first-card {
+    margin-right: 0px;
+  }
+  .unordered-list_list-item {
+    font-size: 16px;
+  }
+  .main_rate-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 0px 2% 50px 2%;
+    background: #ffffff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  .main_coupon-image {
+    display: none;
+  }
+  .main_coupon-corner {
+    display: none;
+  }
+  .main_coupon {
+    height: auto;
+    padding: 20px;
+  }
+  p.main_coupon_info.coupon_error,
+  p.main_coupon_info.coupon_success {
+    width: 100%;
+  }
+  .main_coupon-info {
+    margin-left: 0px;
+  }
+  .main_coupon-header {
+    font-size: 20px;
+  }
+  .coupon-activation_input {
+    width: 40%;
+    font-size: 14px;
+  }
+
+  .coupon-activation_button {
+    width: 50%;
+    font-size: 14px;
+  }
+  .main_section-header {
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+  }
+  .benefits_description-blocks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .benefits_description-block {
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+    color: #fff;
+    padding: 10px;
+  }
+  .header-section_header {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .description-block_main-section {
+    font-size: 16px;
+  }
+  .faq_question-block {
+    width: 100%;
+  }
+  .main_prefooter {
+    margin-top: 50px;
+  }
+  .prefooter_span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+} */
+
+/* <---------------------------------- Конец стилей для главной части страницы  */
+
+
+/* JS стили */
+
+.hide {
+  display: none;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  position: fixed;
+}
