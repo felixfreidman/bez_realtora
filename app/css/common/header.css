@@ -1,0 +1,377 @@
+/* Шрифты жирный и обычный */
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../../fonts/Roboto-Bold.ttf");
+}
+body {
+  font-family: "Roboto";
+}
+/* Версия по умолчанию, на экраны 1376х1176 */
+/* Стили самой страницы */
+/* Начало стилей для заголовка страницы ----------------------------------> */
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0%;
+}
+.header-tarifs {
+  margin-bottom: 51px;
+}
+.header_header-top {
+  height: fit-content;
+  max-height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0px;
+  background-color: #fff;
+}
+.header-top_navigation {
+  display: flex;
+  width: 60%;
+  align-items: center;
+}
+
+.section {
+  margin-right: 50px;
+}
+
+.choseCity-select {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+select#chosenCity {
+  flex: none;
+  background-color: transparent;
+  width: 100%;
+  z-index: 3;
+  margin-right: 0;
+  padding: 0;
+  border-radius: 0%;
+  font-size: 14px;
+}
+.navigation_logo-section {
+  display: flex;
+}
+
+.logo-section_choseCity-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+}
+
+.header-top_data-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data-section_apply-button {
+  outline: none;
+  background-color: #e82431;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  line-height: 0px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.apply-button_plus {
+  margin-right: 15px;
+}
+
+.data-section_credentials-section {
+  display: flex;
+  align-items: center;
+}
+
+.credentials-section_image {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.header_header-bottom {
+  background-image: url("../../img/tarif/header-image.png");
+  padding: 190px 220px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+}
+
+.header-bottom_text-top {
+  font-weight: bold;
+  color: white;
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.header-bottom_text-bottom {
+  color: white;
+  font-size: 24px;
+}
+.header-top_burger-menu-mobile {
+  display: none;
+}
+.header-top_menu-mobile {
+  display: block;
+  padding: 20px;
+  background-color: #fff;
+  position: absolute;
+  width: 70%;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  z-index: 50;
+  position: fixed;
+}
+
+.menu-mobile_main-section,
+.menu-mobile_sub-section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.menu-mobile_apply-button {
+  width: 100%;
+  outline: none;
+  background-color: #e82431;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  line-height: 0px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.menu-mobile_login-button {
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #e82431;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e82431;
+  line-height: 0px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.menu-mobile_main-section {
+  border-bottom: 1px solid #000;
+}
+.menu-mobile_main-section > a,
+.menu-mobile_main-section {
+  margin-bottom: 20px;
+}
+
+.menu-mobile_sub-section > a {
+  margin-bottom: 20px;
+}
+/* <---------------------------------- Конец стилей для заголовка  страницы  */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #f2f2f2;
+  background-image: none;
+  border-radius: 12px;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.rate_select {
+  z-index: 4;
+  position: relative;
+  display: flex;
+  width: 60%;
+  height: 50px;
+  line-height: 3;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 12px;
+}
+select {
+  flex: 1;
+  padding: 0px 0px 0px 15px;
+  color: #808080;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .section {
+    text-align: center;
+    font-size: 14px;
+  }
+  .apply-button_plus {
+    margin-right: 0px;
+  }
+  .data-section_apply-button > span {
+    display: none;
+  }
+  .header-bottom_text-top {
+    font-size: 18px;
+  }
+  .header-bottom_text-bottom {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .header-top_burger-menu-mobile {
+    display: block;
+    align-self: center;
+  }
+
+  .header-top_menu-mobile {
+    display: block;
+  }
+
+  .menu-mobile_main-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .header_header-top {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .navigation_rent-section,
+  .navigation_sell-section {
+    display: none;
+  }
+  .header-top_data-section {
+    display: none;
+  }
+  .header_header-bottom {
+    padding: 50px 100px;
+  }
+  .header-bottom_text-top {
+    font-size: 16px;
+  }
+  .header-bottom_text-bottom {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 719px) {
+  .header-top_burger-menu-mobile {
+    display: block;
+    align-self: center;
+  }
+  .header_header-top {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .navigation_rent-section,
+  .navigation_sell-section {
+    display: none;
+  }
+  .header-top_data-section {
+    display: none;
+  }
+  .header_header-bottom {
+    padding: 50px 10px;
+  }
+  .header-bottom_text-top {
+    text-align: center;
+    font-size: 16px;
+  }
+  .header-bottom_text-bottom {
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 413px) {
+  .menu-mobile_apply-button {
+    font-size: 14px;
+  }
+
+  .menu-mobile_login-button {
+    font-size: 14px;
+  }
+  .header-top_burger-menu-mobile {
+    display: block;
+    align-self: center;
+  }
+  .logo-section_image {
+    transform: scale(0.9);
+  }
+  .logo-section_logo-label {
+    transform: scale(0.9);
+    margin-left: -5px;
+  }
+
+  .navigation_logo-section {
+    transform: scale(0.8);
+    padding: 0;
+  }
+  .header_header-top {
+    justify-content: space-between;
+    padding: 0px;
+  }
+  .navigation_rent-section,
+  .navigation_sell-section {
+    display: none;
+  }
+  .header-top_data-section {
+    display: none;
+  }
+  .header_header-bottom {
+    padding: 50px 10px;
+  }
+  .header-bottom_text-top {
+    text-align: center;
+    font-size: 16px;
+  }
+  .header-bottom_text-bottom {
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+
+.hide {
+    display: none;
+  }
+  
+  .layer {
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    position: fixed;
+  }
