@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="./app/css/page-styles/index.css" />
     <link rel="stylesheet" href="./app/css/common/header.css" />
     <link rel="stylesheet" href="./app/css/common/footer.css" />
@@ -180,7 +184,7 @@
             ></label>
             <input
               type="checkbox"
-              class="search-bar_inputs"
+              class="search-bar_inputs search-bar_room-checkbox"
               id="roomAmountLabel"
             />
             <div class="filter-section_filter-content" id="roomAmountDropdown">
@@ -188,7 +192,7 @@
                 type="checkbox"
                 name="roomAmount"
                 id="studio"
-                class="search-bar_inputs"
+                class="search-bar_inputs search-bar_room-checkbox"
                 value="Студии"
                 checked
               />
@@ -197,7 +201,7 @@
                 type="checkbox"
                 name="roomAmount"
                 id="1room"
-                class="search-bar_inputs"
+                class="search-bar_inputs search-bar_room-checkbox"
                 value="1-комнатные"
               />
               <label for="1room">1-комнатные</label>
@@ -205,7 +209,7 @@
                 type="checkbox"
                 name="roomAmount"
                 id="2room"
-                class="search-bar_inputs"
+                class="search-bar_inputs search-bar_room-checkbox"
                 value="2-комнатные"
               />
               <label for="2room">2-комнатные</label>
@@ -213,7 +217,7 @@
                 type="checkbox"
                 name="roomAmount"
                 id="3room"
-                class="search-bar_inputs"
+                class="search-bar_inputs search-bar_room-checkbox"
                 value="3-комнатные"
               />
               <label for="3room">3-комнатные</label>
@@ -221,7 +225,7 @@
                 type="checkbox"
                 name="roomAmount"
                 id="4room"
-                class="search-bar_inputs"
+                class="search-bar_inputs search-bar_room-checkbox"
                 value="4-комнатные"
               />
               <label for="4room">4-комнатные</label>
@@ -229,7 +233,7 @@
                 type="checkbox"
                 name="roomAmount"
                 id="5moreRoom"
-                class="search-bar_inputs"
+                class="search-bar_inputs search-bar_room-checkbox"
                 value="5-комнатные и более"
               />
               <label for="5moreRoom">5-комнатные и более</label>
@@ -392,6 +396,30 @@
               />
               <label for="saratov">Саратов</label>
             </div>
+            <!-- Ценовой диапозон -->
+            <label
+              class="filter-section_filter-button"
+              for="priceRangeLabel"
+              id="priceRangeField"
+            >
+              <input type="text" id="amount" readonly
+            /></label>
+            <input
+              type="checkbox"
+              class="search-bar_inputs"
+              id="priceRangeLabel"
+            />
+            <div class="filter-section_filter-content" id="priceRangeDropdown">
+              <div class="filter-content_values-section">
+                <input type="text" id="min-value" class="text-inputs" pattern = "[0-9]+" /><span>—</span>
+                <input type="text" id="max-value" class="text-inputs" pattern = "[0-9]+"/>
+              </div>
+              <div class="filter-content_range-section">
+                <div id="slider-range"></div>
+              </div>
+            </div>
+            <!-- Кнопка начать поиск -->
+            <input type="submit" id="searchButton" class="filter-section_search-button" value="НАЧАТЬ ПОИСК" />
           </form>
         </div>
         <div class="search-section_perks">
@@ -428,57 +456,10 @@
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./app/js/common.js"></script>
     <script src="./app/js/index.js "></script>
   </body>
 </html>
-
-<!-- <input
-                type="radio"
-                name="chosenCity"
-                id="moscow"
-                class="search-bar_inputs"
-                value="Москва"
-                checked
-              />
-              <label for="moscow">Москва</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="saintPetersburg"
-                class="search-bar_inputs"
-                value="Санкт-Петербург"
-              />
-              <label for="saintPetersburg">Санкт-Петербург</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="kazan"
-                class="search-bar_inputs"
-                value="Казань"
-              />
-              <label for="kazan">Казань</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="ekaterinburg"
-                class="search-bar_inputs"
-                value="Екатеринбург"
-              />
-              <label for="ekaterinburg">Екатеринбург</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="novosibirsk"
-                class="search-bar_inputs"
-                value="Новосибирск"
-              />
-              <label for="novosibirsk">Новосибирск</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="samara"
-                class="search-bar_inputs"
-                value="Самара"
-              />
-              <label for="samara">Самара</label> -->
