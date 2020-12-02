@@ -142,7 +142,7 @@ input[type="checkbox"]:checked + .filter-section_filter-content {
 }
 
 .perk-description {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
 }
 
@@ -154,7 +154,7 @@ input[type="checkbox"]:checked + .filter-section_filter-content {
   outline: none;
   border: none;
   border-radius: 0px 8px 8px 0px;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   font-weight: bold;
 }
@@ -220,7 +220,7 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
 /* ----------------------------------------------- Конец верстки секции быстрого поиска */
 
 .main_stories-section {
-  padding: 65px 100px 105px 100px;
+  padding: 0 100px 105px 100px;
 }
 .main_header-block {
   display: flex;
@@ -245,4 +245,73 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
 .main_section-block {
   display: flex;
   flex-direction: column;
+}
+.stories-section_stories-block {
+  width: 100%;
+  margin-top: 35px;
+  height: 330px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  
+}
+
+.stories-block_story-block {
+  width: 20%;
+  height: 90%;
+  padding: 5px;
+  border: 3px solid #ccc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  min-width: 15%;
+  min-height: 90%;
+}
+.stories-block_add-story {
+  width: 100%;
+  height: 85%;
+  border: 2px dashed #1C2443;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  border-radius: 8px;
+}
+.add-story_plus-button {
+  position: absolute;
+  top: 45%;
+  width: 34px;
+  height: 34px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/main/main_add-story.svg");
+} 
+.stories-block_added-story {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/main/main_story-image.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.add-story_added-text {
+  font-family: "Comic Sans MS";
+  color: #ff0000;
+  text-align: center;
+}
+
+
+.add-story_add-text {
+  text-align: center;
+  font-size: 12px;
 }
