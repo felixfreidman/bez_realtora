@@ -1,3 +1,6 @@
+body {
+  background-color: #f2f2f2;
+}
 /* Начало верстки секции быстрого поиска -----------------------------------------------  */
 .search-section_header {
   font-size: 40px;
@@ -27,7 +30,6 @@
   max-height: 500px;
   padding: 100px 50px;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
-  margin-bottom: 50px;
 }
 .search-section_search-bar {
   height: fit-content;
@@ -220,7 +222,8 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
 /* ----------------------------------------------- Конец верстки секции быстрого поиска */
 
 .main_stories-section {
-  padding: 0 100px 105px 100px;
+  padding: 50px 100px 105px 100px;
+  background-color: #fff;
 }
 .main_header-block {
   display: flex;
@@ -314,4 +317,35 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
 .add-story_add-text {
   text-align: center;
   font-size: 12px;
+}
+
+.main_rentFlats-section {
+  padding: 50px 100px 50px 100px;
+}
+
+.rentFlats-section_rent-navigation {
+  margin-top: 3px;
+}
+.rent-navigation_text {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.rent-navigation {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #808080;
+  border-radius: 8px;
+  cursor: pointer;
+}
+input[type="radio"]:checked + .rent-navigation {
+  background-color: #1C2443;
+  color: white;
+}
+input[type="radio"]:checked + .rent-navigation:hover {
+  background-color: #1C2443;
+  color: #e82431;
+}
+.rent-navigation:hover {
+  color: #e82431;
 }
