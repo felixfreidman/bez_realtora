@@ -9,6 +9,12 @@
   font-weight: 700;
   src: url("../../fonts/Roboto-Bold.ttf");
 }
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("../../fonts/Roboto-Light.ttf");
+}
 body {
   font-family: "Roboto";
 }
