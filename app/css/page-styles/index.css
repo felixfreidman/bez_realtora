@@ -465,7 +465,7 @@ input[type="radio"]:checked + .rent-navigation:hover {
   justify-content: space-between;
 }
 .fastLinks-section_fast-card {
-  max-height: 386px;
+  height: 326px;
   width: 24%;
   border-radius: 8px;
   cursor: pointer;
@@ -474,4 +474,26 @@ input[type="radio"]:checked + .rent-navigation:hover {
 
 .fastLinks-section_fast-card:hover, .fastLinks-section_fast-card :active {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fast-card_image-cover {
+  width: 100%;
+  height: 40%;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.rentFlat {
+  background-image: url("../../img/main/main_rentFlat-fast.png");
+}
+
+.fast-card_image-cover > span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0px 20px 10px 20px
 }
