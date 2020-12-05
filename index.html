@@ -7,9 +7,10 @@
       rel="stylesheet"
       href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
     />
-    <link rel="stylesheet" href="./app/css/page-styles/index.css" />
     <link rel="stylesheet" href="./app/css/common/header.css" />
     <link rel="stylesheet" href="./app/css/common/footer.css" />
+    <link rel="stylesheet" href="./app/css/common/applicationForm.css">
+    <link rel="stylesheet" href="./app/css/page-styles/index.css" />
 
     <title>Index Page</title>
   </head>
@@ -778,18 +779,70 @@
               <span>Снять квартиру</span>
             </div>
             <div class="fast-card_navigation-container">
-              <a href="#" class = "navigation-container_link"></a>
-              <a href="#" class = "navigation-container_link"></a>
-              <a href="#" class = "navigation-container_link"></a>
-              <a href="#" class = "navigation-container_link"></a>
-              <a href="#" class = "navigation-container_link"></a>
-              <a href="#" class = "navigation-container_link"></a>
+              <a href="#" class = "navigation-container_link">На длительный срок</a>
+              <a href="#" class = "navigation-container_link">Студии</a>
+              <a href="#" class = "navigation-container_link">1-комнатные</a>
+              <a href="#" class = "navigation-container_link">2-комнатные</a>
+              <a href="#" class = "navigation-container_link">3-комнатные</a>
+              <a href="#" class = "navigation-container_link">Комнаты на длительный срок</a>
             </div>
           </div>
-          <div class="fastLinks-section_fast-card rentDay">E</div>
-          <div class="fastLinks-section_fast-card rentCountry">L</div>
-          <div class="fastLinks-section_fast-card rentCommercial">L</div>
+          <div class="fastLinks-section_fast-card ">
+            <div class="fast-card_image-cover rentDay">
+              <span>Посуточная аренда</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class = "navigation-container_link">Квартиры посуточно</a>
+              <a href="#" class = "navigation-container_link">Комнаты посуточно</a>
+              <a href="#" class = "navigation-container_link">Коттеджи посуточно</a>
+              <a href="#" class = "navigation-container_link">Дома посуточно</a>
+              <a href="#" class = "navigation-container_link">Хостелы и гостиницы</a>
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card ">
+            <div class="fast-card_image-cover rentCountry">
+              <span>Аренда загородной недвижимости</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class = "navigation-container_link">Снять дом на длительный срок</a>
+              <a href="#" class = "navigation-container_link">Снять дачу на длительный срок</a>
+              <a href="#" class = "navigation-container_link">Снять коттедж на длительный срок</a>
+              <a href="#" class = "navigation-container_link">Аренда земельных участков</a>
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card ">
+            <div class="fast-card_image-cover rentCommercial">
+              <span>Аренда коммерческой недвижимости</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class = "navigation-container_link">Снять офис</a>
+              <a href="#" class = "navigation-container_link">Снять помещение</a>
+              <a href="#" class = "navigation-container_link">Снять склад</a>
+              <a href="#" class = "navigation-container_link">Снять гараж</a>
+            </div>
+          </div>
         </div>
+        </div>
+        <div class="main_applicationForm-section">
+          <div class="applicationForm">
+            <div class="applicationForm_boorkmark"></div>
+          <div class="applicationForm_advertismentInfo-section">
+            <span class="advertismentInfo-section_header">Не нашли, что искали?</span>
+            <span class="advertismentInfo-section_subheader">Поможем найти квартиру от собственника по лучшей цене</span>
+          </div>
+          <form action="#" method="post" class="applicationForm_applyInfo-section">
+            <div class="applyInfo-section_requiredActions-section">
+              <div class="requiredActions-section_telephone-input">
+                <div class="telephone-input_preNumber">+7</div>
+                <input type="text" class = "telephone-input_number">
+              </div>
+              <button class="requredActions-section_apply-button">Оставить заявку</button>
+            </div>
+            <input type="checkbox" name="agreeCheckbox" id="agreeCheckbox" class="applyInfo-section_personalAgree-checkbox">
+            <label for="agreeCheckbox" class = "personalAgree-label">Я даю согласие на <a href="#">Обработку персональных данных</a></label>
+          </form>
+          </div>
+          
         </div>
       </div>
     </div>

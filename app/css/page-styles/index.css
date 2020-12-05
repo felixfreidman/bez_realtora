@@ -84,11 +84,11 @@ input[type="checkbox"]:checked + .filter-section_filter-content {
   background-size: 50% 50%;
 }
 
-.search-bar_room-checkbox:checked+label::before {
-    border-color: #1C2443;
-    background-color: #1C2443;
-    background-image: url("../../img/main/checkmark.svg");
-  }
+.search-bar_room-checkbox:checked + label::before {
+  border-color: #1c2443;
+  background-color: #1c2443;
+  background-image: url("../../img/main/checkmark.svg");
+}
 
 #realEstateDropdown {
   position: absolute;
@@ -216,11 +216,17 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
 }
 
 .reversed-arrow {
-    background-image: url("../../img/main/main_image-filter-reversed.svg");
+  background-image: url("../../img/main/main_image-filter-reversed.svg");
 }
 
 /* ----------------------------------------------- Конец верстки секции быстрого поиска */
 
+
+
+
+
+
+/* Начало верстки секции историй -----------------------------------------------  */
 .main_stories-section {
   padding: 50px 100px 105px 100px;
   background-color: #fff;
@@ -257,7 +263,6 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
   display: flex;
   align-items: center;
   overflow: scroll;
-  
 }
 
 .stories-block_story-block {
@@ -276,7 +281,7 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
 .stories-block_add-story {
   width: 100%;
   height: 85%;
-  border: 2px dashed #1C2443;
+  border: 2px dashed #1c2443;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,7 +298,7 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
   border: none;
   background-color: transparent;
   background-image: url("../../img/main/main_add-story.svg");
-} 
+}
 .stories-block_added-story {
   width: 100%;
   height: 100%;
@@ -313,12 +318,19 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
   text-align: center;
 }
 
-
 .add-story_add-text {
   text-align: center;
   font-size: 12px;
 }
 
+/* ----------------------------------------------- Конец верстки секции историй */
+
+
+
+
+
+
+/* Начало верстки секции аренды квартир-----------------------------------------------  */
 .main_rentFlats-section {
   padding: 50px 100px 50px 100px;
   display: flex;
@@ -342,11 +354,11 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
   cursor: pointer;
 }
 input[type="radio"]:checked + .rent-navigation {
-  background-color: #1C2443;
+  background-color: #1c2443;
   color: white;
 }
 input[type="radio"]:checked + .rent-navigation:hover {
-  background-color: #1C2443;
+  background-color: #1c2443;
   color: #e82431;
 }
 .rent-navigation:hover {
@@ -361,7 +373,7 @@ input[type="radio"]:checked + .rent-navigation:hover {
   flex-wrap: wrap;
   padding-top: 33px;
 }
-.rentFlats-section_rentAdvertisments-section>div {
+.rentFlats-section_rentAdvertisments-section > div {
   margin-bottom: 15px;
 }
 .rentAdvertisments-section_rent-card {
@@ -375,7 +387,8 @@ input[type="radio"]:checked + .rent-navigation:hover {
   border-radius: 8px;
   padding-bottom: 20px;
 }
-.rentAdvertisments-section_rent-card:hover, .rentAdvertisments-section_rent-card:active {
+.rentAdvertisments-section_rent-card:hover,
+.rentAdvertisments-section_rent-card:active {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -423,7 +436,7 @@ input[type="radio"]:checked + .rent-navigation:hover {
   width: 100%;
   padding: 0px 10px;
 }
-.card-address_map-checkmark{
+.card-address_map-checkmark {
   width: 10px;
   height: 14px;
   margin-right: 5px;
@@ -450,11 +463,11 @@ input[type="radio"]:checked + .rent-navigation:hover {
   align-self: center;
 }
 
-.rentFlats-allAdvertisments-link>a,
-.rentFlats-allAdvertisments-link>a:visited,
-.rentFlats-allAdvertisments-link>a:hover,
- .rentFlats-allAdvertisments-link>a:active {
-   text-decoration: none;
+.rentFlats-allAdvertisments-link > a,
+.rentFlats-allAdvertisments-link > a:visited,
+.rentFlats-allAdvertisments-link > a:hover,
+.rentFlats-allAdvertisments-link > a:active {
+  text-decoration: none;
   color: white;
 }
 .rentFlats_fastLinks-section {
@@ -464,7 +477,7 @@ input[type="radio"]:checked + .rent-navigation:hover {
   display: flex;
   justify-content: space-between;
 }
-.fastLinks-section_fast-card {
+.fastLinks-section_fast-card, .fastLinks-section_fast-card:visited {
   height: 326px;
   width: 24%;
   border-radius: 8px;
@@ -472,14 +485,16 @@ input[type="radio"]:checked + .rent-navigation:hover {
   background-color: #fff;
 }
 
-.fastLinks-section_fast-card:hover, .fastLinks-section_fast-card :active {
+.fastLinks-section_fast-card:hover,
+.fastLinks-section_fast-card :active {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .fast-card_image-cover {
   width: 100%;
   height: 40%;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); 
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -487,13 +502,42 @@ input[type="radio"]:checked + .rent-navigation:hover {
   justify-content: flex-start;
 }
 
+.fast-card_image-cover > span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0px 20px 10px 20px;
+}
+
+.fast-card_navigation-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0px 20px;
+}
+
+.navigation-container_link, .navigation-container_link:visited{
+  margin-bottom: 15px;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.navigation-container_link:hover, .navigation-container_link:active {
+  color: #e82431;
+}
 .rentFlat {
   background-image: url("../../img/main/main_rentFlat-fast.png");
 }
 
-.fast-card_image-cover > span {
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-  margin: 0px 20px 10px 20px
+.rentDay {
+  background-image: url("../../img/main/main_rentDay-fast.png");
 }
+
+.rentCountry {
+  background-image: url("../../img/main/main_rentCountry-fast.png");
+}
+
+.rentCommercial {
+  background-image: url("../../img/main/main_rentCommercial-fast.png");
+}
+/* ----------------------------------------------- Конец верстки секции аренды квартир */
