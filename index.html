@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
   <link rel="stylesheet" href="./app/css/common/header.css" />
   <link rel="stylesheet" href="./app/css/common/footer.css" />
@@ -931,7 +932,7 @@
 
     </div>
     <!-- Конец большой секции поиска квартир -->
-    <!-- Начало описания компании -->
+    <!-- Начало описания работы -->
     <div class="main_workDescribe-section">
       <div class="main_header-block">
         <span class="red-line"></span>
@@ -992,12 +993,128 @@
         </div>
       </div>
     </div>
-    <!-- Конец описания комании -->
+    <!-- Конец описания работы -->
+    <!-- Начало описания преимуществ -->
+    <div class="main_benefits-section">
+      <div class="main_header-block">
+        <span class="red-line"></span>
+        <div class="main_section-block">
+          <span class="main_section-header">Преимущества подбора</span>
+        </div>
+      </div>
+      <div class="benefits-section_describe-cards">
+        <div class="describe-cards_benefit-card">
+          <div class="benefit-card_text-section">
+            <span class="benefit-card_header">Экономия вашего времени</span>
+            <span class="benefit-card_text">Мы займёмся полностью поиском за Вас и будем каждый день присылать только
+              проверенные варианты строго по Вашим критериям.</span></div>
+          <div class="benefit-card_image firstBenefit"></div>
+        </div>
+        <div class="describe-cards_benefit-card">
+          <div class="benefit-card_text-section">
+            <span class="benefit-card_header">Экономия на комиссии</span>
+            <span class="benefit-card_text">Вам не нужно платить риелтору комиссию, варианты только от
+              собственников.</span>
+          </div>
+          <div class="benefit-card_image secondBenefit"></div>
+        </div>
+        <div class="describe-cards_benefit-card">
+          <div class="benefit-card_text-section">
+            <span class="benefit-card_header">Мониторим рынок полностью</span>
+            <span class="benefit-card_text">Более 30 источников: сайты, соц. сети и своя база недвижимости. Будем
+              мониторить все площадки недвижимости, прозванивать и отправлять все лучшие предложения.</span>
+          </div>
+          <div class="benefit-card_image thirdBenefit"></div>
+        </div>
+        <div class="describe-cards_benefit-card ">
+          <div class="benefit-card_text-section">
+            <span class="benefit-card_header">Юридическое сопровождение</span>
+            <span class="benefit-card_text">Проверка квартиры в Росреестре, консультации юриста и помощь в составлении
+              договора.</span>
+          </div>
+          <div class="benefit-card_image fourthBenefit"></div>
+        </div>
+      </div>
+    </div>
+    <div class="main_review-section">
+      <div class="main_header-block">
+        <span class="red-line"></span>
+        <div class="main_section-block">
+          <span class="main_section-header">Отзывы</span>
+        </div>
+      </div>
+     
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <!-- <img src="./app/img/main/iphone.svg" alt=":(" class = "iphoneReview"> -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          
+          <div class="swiper-slide">
+            <div class="iphone-story">
+              <img src="./app/img/main/iphone.png" alt=":(" class = "iphoneReview">
+              <img src="./app/img/main/story-image.png" alt="" class = "story-image">
+            </div>
+            
+            <div class="review">
+              <div class="person-section">
+                <div class="person-image"></div>
+                <div class="reviewInfo-section">
+                  <div class="person-name">yas_ka23</div>
+                  <div class="review-date">27.03.2020</div>
+                </div>
+              </div>
+              <div class="review-section">
+                
+                <span> Как вы знаете, я сейчас в поисках квартиры, и это пока что единственный сайт,
+                  с которого мне отвечают собственники, а не бесконечные посредники и агенства, которым "заплати 3к и мы
+                  найдем тебе дворец", к сожелению, квартира пока не найдена, потому что все отозвавшиеся собственники,
+                  уже сдают квартиры. Но искать жилье всегда сложно, так что, я до сих пор буду рада вашим
+                  вариантам.</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="iphone-story">
+              <img src="./app/img/main/iphone.png" alt=":(" class = "iphoneReview">
+              <img src="./app/img/main/story-image.png" alt="" class = "story-image">
+            </div>
+            
+            <div class="review">
+              <div class="person-section">
+                <div class="person-image"></div>
+                <div class="reviewInfo-section">
+                  <div class="person-name">yas_ka23</div>
+                  <div class="review-date">27.03.2020</div>
+                </div>
+              </div>
+              <div class="review-section">
+                
+                <span> Как вы знаете, я сейчас в поисках квартиры, и это пока что единственный сайт,
+                  с которого мне отвечают собственники, а не бесконечные посредники и агенства, которым "заплати 3к и мы
+                  найдем тебе дворец", к сожелению, квартира пока не найдена, потому что все отозвавшиеся собственники,
+                  уже сдают квартиры. Но искать жилье всегда сложно, так что, я до сих пор буду рада вашим
+                  вариантам.</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- Конец описания -->
   </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./app/js/common.js"></script>
   <script src="./app/js/index.js "></script>
 </body>

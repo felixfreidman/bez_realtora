@@ -221,11 +221,6 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
 
 /* ----------------------------------------------- Конец верстки секции быстрого поиска */
 
-
-
-
-
-
 /* Начало верстки секции историй -----------------------------------------------  */
 .main_stories-section {
   padding: 50px 100px 105px 100px;
@@ -324,10 +319,6 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
 }
 
 /* ----------------------------------------------- Конец верстки секции историй */
-
-
-
-
 
 /* Начало верстки секции взаимодействия с квартирами-----------------------------------------------  */
 .main_flats-section {
@@ -473,7 +464,8 @@ input[type="radio"]:checked + .navigation:hover {
   display: flex;
   justify-content: space-between;
 }
-.fastLinks-section_fast-card, .fastLinks-section_fast-card:visited {
+.fastLinks-section_fast-card,
+.fastLinks-section_fast-card:visited {
   height: 326px;
   width: 24%;
   border-radius: 8px;
@@ -511,14 +503,16 @@ input[type="radio"]:checked + .navigation:hover {
   padding: 20px 20px 0px 20px;
 }
 
-.navigation-container_link, .navigation-container_link:visited{
+.navigation-container_link,
+.navigation-container_link:visited {
   margin-bottom: 15px;
   color: #000;
   text-decoration: none;
   font-size: 12px;
 }
 
-.navigation-container_link:hover, .navigation-container_link:active {
+.navigation-container_link:hover,
+.navigation-container_link:active {
   color: #e82431;
 }
 .rentFlat {
@@ -546,6 +540,7 @@ input[type="radio"]:checked + .navigation:hover {
 }
 /* ----------------------------------------------- Конец верстки секции взаимодействия с квартирами */
 
+/* Начало верстки секции о том, как все работает----------------------------------------------  */
 .main_workDescribe-section {
   background-color: #fff;
   padding: 50px 100px 50px 100px;
@@ -565,7 +560,7 @@ input[type="radio"]:checked + .navigation:hover {
   position: relative;
 }
 .stages-section_stage-card::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 25%;
@@ -578,7 +573,7 @@ input[type="radio"]:checked + .navigation:hover {
 }
 
 .lastChild::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 25%;
@@ -598,7 +593,6 @@ input[type="radio"]:checked + .navigation:hover {
   justify-content: center;
   align-items: center;
 }
-
 
 .image-countainer_image {
   margin-left: 25%;
@@ -630,3 +624,168 @@ input[type="radio"]:checked + .navigation:hover {
 .fourthStage {
   background-image: url("../../img/main/stageFourth.svg");
 }
+
+/* ----------------------------------------------- Конец верстки о том, как это работает */
+/* Начало верстки о преимуществах подбора ----------------------------------------------- */
+.main_benefits-section {
+  padding: 50px 100px 50px 100px;
+  background-color: #fff;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.benefits-section_describe-cards {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+.describe-cards_benefit-card {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+}
+
+.benefit-card_text-section {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+}
+
+.benefit-card_header {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.benefit-card_text {
+  font-size: 12px;
+}
+.benefit-card_image {
+  width: 100%;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+.firstBenefit {
+  background-image: url("../../img/main/timeEconomy.svg");
+}
+.secondBenefit {
+  background-image: url("../../img/main/moneyEconomy.svg");
+}
+.thirdBenefit {
+  background-image: url("../../img/main/completeSearch.svg");
+}
+.fourthBenefit {
+  background-image: url("../../img/main/juristHelp.svg");
+}
+/* ----------------------------------------------- Конец верстки о преимуществах подбора */
+
+/* Начало верстки об упоминаниях компании ----------------------------------------------- */
+
+.main_review-section {
+  padding-top : 50px;
+  background-color: #fff;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.iphone-story {
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 20%;
+}
+.story-image {
+  position: absolute;
+  height: 98%;
+  left: 1%;
+  top: 2.5%
+}
+.iphoneReview {
+  z-index: 100;
+  height: 100%;
+  position: absolute;
+}
+.swiper-container {
+  margin-top: 120px;
+  width: 100%;
+  height: 70%;
+  background-image: url("../../img/main/main_reviewBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+}
+
+
+.review {
+  transform: scale(0.8);
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 1) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 50px 20px 50px;
+}
+.review-section {
+  position: relative;
+}
+.person-section {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+  top: -55px;
+}
+.person-image {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 5px solid #e82431;
+  background-image: url("../../img/main/avatar-example.png");
+  background-size: cover;
+  margin-right: 15px;
+}
+
+.review-date {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #1C2443 ;
+}
+.swiper-button-prev:hover,
+.swiper-button-prev:active,
+.swiper-button-next:hover,
+.swiper-button-bext:active {
+  color: #e82431;
+}
+
+.swiper-button-prev {
+  left: 92% ;
+  top: 95% ;
+  transform: scale(0.5);
+}
+.swiper-button-next {
+  left: 95%;
+  top: 95%;
+  transform: scale(0.5);
+}
+/* ----------------------------------------------- Конец верстки об упоминаниях компании */
