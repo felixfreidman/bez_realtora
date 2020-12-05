@@ -540,7 +540,7 @@ input[type="radio"]:checked + .navigation:hover {
 }
 /* ----------------------------------------------- Конец верстки секции взаимодействия с квартирами */
 
-/* Начало верстки секции о том, как все работает----------------------------------------------  */
+/* Начало верстки секции секции о том, как все работает----------------------------------------------  */
 .main_workDescribe-section {
   background-color: #fff;
   padding: 50px 100px 50px 100px;
@@ -625,8 +625,8 @@ input[type="radio"]:checked + .navigation:hover {
   background-image: url("../../img/main/stageFourth.svg");
 }
 
-/* ----------------------------------------------- Конец верстки о том, как это работает */
-/* Начало верстки о преимуществах подбора ----------------------------------------------- */
+/* ----------------------------------------------- Конец верстки секции о том, как это работает */
+/* Начало верстки секции о преимуществах подбора ----------------------------------------------- */
 .main_benefits-section {
   padding: 50px 100px 50px 100px;
   background-color: #fff;
@@ -688,12 +688,14 @@ input[type="radio"]:checked + .navigation:hover {
 .fourthBenefit {
   background-image: url("../../img/main/juristHelp.svg");
 }
-/* ----------------------------------------------- Конец верстки о преимуществах подбора */
+/* ----------------------------------------------- Конец верстки секции о преимуществах подбора */
 
-/* Начало верстки об упоминаниях компании ----------------------------------------------- */
-
+/* Начало верстки секции отзывы ----------------------------------------------- */
+.review_header-block {
+  margin-left: 100px;
+}
 .main_review-section {
-  padding-top : 50px;
+  padding-top: 50px;
   background-color: #fff;
   height: 800px;
   display: flex;
@@ -710,7 +712,7 @@ input[type="radio"]:checked + .navigation:hover {
   position: absolute;
   height: 98%;
   left: 1%;
-  top: 2.5%
+  top: 2.5%;
 }
 .iphoneReview {
   z-index: 100;
@@ -727,7 +729,6 @@ input[type="radio"]:checked + .navigation:hover {
   background-position: 50% 50%;
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
 }
-
 
 .review {
   transform: scale(0.8);
@@ -768,8 +769,9 @@ input[type="radio"]:checked + .navigation:hover {
   font-size: 12px;
 }
 
-.swiper-button-prev, .swiper-button-next {
-  color: #1C2443 ;
+.swiper-button-prev,
+.swiper-button-next {
+  color: #1c2443;
 }
 .swiper-button-prev:hover,
 .swiper-button-prev:active,
@@ -779,8 +781,8 @@ input[type="radio"]:checked + .navigation:hover {
 }
 
 .swiper-button-prev {
-  left: 92% ;
-  top: 95% ;
+  left: 92%;
+  top: 95%;
   transform: scale(0.5);
 }
 .swiper-button-next {
@@ -788,4 +790,66 @@ input[type="radio"]:checked + .navigation:hover {
   top: 95%;
   transform: scale(0.5);
 }
-/* ----------------------------------------------- Конец верстки об упоминаниях компании */
+/* ----------------------------------------------- Конец верстки секции отзывы */
+/* Начало верстки секции "о нас пишут"  ----------------------------------------------- */
+.main_articles-section {
+  background-color: #fff;
+  padding: 50px 100px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+.articles-section_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articles-section_navigation {
+  margin-top: 30px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-block_radio {
+  display: none;
+}
+
+
+.main-block_radio + label {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.main-block_radio:checked + label {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.main-block_radio + label:hover {
+  color: #E82431;
+}
+
+.articles-section_content {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  height: fit-content;
+}
+
+.article_text {
+  margin-top: 50px;
+  font-family: serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.article_link {
+  margin-top: 30px;
+  color: #2390F5;
+  font-size: 14px;
+}
+/* ----------------------------------------------- Конец верстки секции "о нас пишут" */

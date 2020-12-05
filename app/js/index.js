@@ -36,6 +36,7 @@ chosenCityRadioArray.forEach((radio) => {
   });
 });
 
+
 realEstateTypeField.addEventListener("click", () => {
   realEstateTypeField.classList.toggle("reversed-arrow");
 });
@@ -106,4 +107,4 @@ var mySwiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-})
+});
