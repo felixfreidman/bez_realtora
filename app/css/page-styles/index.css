@@ -329,7 +329,7 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
 
 
 
-/* Начало верстки секции аренды квартир-----------------------------------------------  */
+/* Начало верстки секции взаимодействия с квартирами-----------------------------------------------  */
 .main_flats-section {
   padding: 50px 100px 50px 100px;
   display: flex;
@@ -544,4 +544,89 @@ input[type="radio"]:checked + .navigation:hover {
 .sellGarage {
   background-image: url("../../img/main/main_sellGarage-fast.png");
 }
-/* ----------------------------------------------- Конец верстки секции аренды квартир */
+/* ----------------------------------------------- Конец верстки секции взаимодействия с квартирами */
+
+.main_workDescribe-section {
+  background-color: #fff;
+  padding: 50px 100px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+.workDescribe-section_stages-section {
+  margin-top: 30px;
+  display: flex;
+  height: 100%;
+}
+.stages-section_stage-card {
+  width: 25%;
+  height: 100%;
+  margin-right: 20px;
+  position: relative;
+}
+.stages-section_stage-card::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 25%;
+  display: block;
+  border-right: 3px solid #e82431;
+  border-bottom: 3px solid #e82431;
+  width: 25px;
+  height: 25px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.lastChild::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 25%;
+  display: block;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  width: 25px;
+  height: 25px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.stage-card_image-container {
+  width: 100%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image-countainer_image {
+  margin-left: 25%;
+}
+
+.stage-card_text-container {
+  width: 100%;
+  height: 50%;
+}
+
+.text-container_header {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-cotainer_text {
+  font-size: 14px;
+}
+.firstStage {
+  background-image: url("../../img/main/stageFirst.svg");
+}
+.secondStage {
+  background-image: url("../../img/main/stageSecond.svg");
+}
+.thirdStage {
+  background-image: url("../../img/main/stageThird.svg");
+}
+.fourthStage {
+  background-image: url("../../img/main/stageFourth.svg");
+}
