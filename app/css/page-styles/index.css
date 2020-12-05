@@ -536,4 +536,12 @@ input[type="radio"]:checked + .navigation:hover {
 .rentCommercial {
   background-image: url("../../img/main/main_rentCommercial-fast.png");
 }
+
+.sellFlat {
+  background-image: url("../../img/main/main_sellFlat-fast.png");
+}
+
+.sellGarage {
+  background-image: url("../../img/main/main_sellGarage-fast.png");
+}
 /* ----------------------------------------------- Конец верстки секции аренды квартир */
