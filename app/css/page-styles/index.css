@@ -816,7 +816,6 @@ input[type="radio"]:checked + .navigation:hover {
   display: none;
 }
 
-
 .main-block_radio + label {
   padding: 10px 20px;
   cursor: pointer;
@@ -827,7 +826,7 @@ input[type="radio"]:checked + .navigation:hover {
 }
 
 .main-block_radio + label:hover {
-  color: #E82431;
+  color: #e82431;
 }
 
 .articles-section_content {
@@ -849,7 +848,7 @@ input[type="radio"]:checked + .navigation:hover {
 
 .article_link {
   margin-top: 30px;
-  color: #2390F5;
+  color: #2390f5;
   font-size: 14px;
 }
 /* ----------------------------------------------- Конец верстки секции "о нас пишут" */
@@ -860,7 +859,7 @@ input[type="radio"]:checked + .navigation:hover {
   padding: 50px 100px 50px 100px;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: fit-content;
 }
 
 .news-section_news-cards {
@@ -909,7 +908,8 @@ input[type="radio"]:checked + .navigation:hover {
 }
 
 .text-container_header {
-  color: #2390F5;
+  margin-top: 10px;
+  color: #2390f5;
   font-weight: normal;
   font-size: 13px;
 }
@@ -918,4 +918,74 @@ input[type="radio"]:checked + .navigation:hover {
   font-size: 12px;
 }
 
+.news-section_showAll-button {
+  align-self: center;
+  padding: 15px 49px;
+  background-color: #e82431;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.news-section_showAll-button:visited {
+  color: white;
+  text-decoration: none;
+}
+
 /* ----------------------------------------------- Конец верстки секции "Новости" */
+
+.main_prefooter-section {
+  padding: 50px 100px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 865px;
+  background-color: #f2f2f2;
+}
+
+.prefooter-section_city-section,
+.prefooter-section_subway-section,
+.prefooter-section_district-section {
+  width: 100%;
+  max-height: 33%;
+}
+
+
+.city-section_table,
+.district-section_table,
+.subway-section_table{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.city-section_table > section,
+.district-section_table > section,
+.subway-section_table > section{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+} 
+
+.city-section_table > section > a,.city-section_table > section > a:visited,
+.district-section_table > section > a,.district-section_table > section > a:visited,
+.subway-section_table > section > a,.subway-section_table > section > a:visited {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  width: 25%;
+}
+
+.city-section_table > section > a:hover, 
+.district-section_table > section > a:hover,
+.subway-section_table > section > a:hover{
+  color: #e82431;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 26px 100px 17px 100px;
+}
