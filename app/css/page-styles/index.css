@@ -853,3 +853,69 @@ input[type="radio"]:checked + .navigation:hover {
   font-size: 14px;
 }
 /* ----------------------------------------------- Конец верстки секции "о нас пишут" */
+/* Начало верстки секции "Новости"  ----------------------------------------------- */
+
+.main_news-section {
+  background-color: #fff;
+  padding: 50px 100px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.news-section_news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.main-block_news-card {
+  width: 24%;
+  max-height: 312px;
+  height: 280px;
+}
+.news-card_image-container {
+  width: 100%;
+  height: 60%;
+  background-image: url("../../img/main/news-section_news-card.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+
+.image-container_header {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.image-cointainer_subheader {
+  color: white;
+  font-size: 14px;
+}
+
+.news-card_text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container_header {
+  color: #2390F5;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.text-container_preview {
+  font-size: 12px;
+}
+
+/* ----------------------------------------------- Конец верстки секции "Новости" */
