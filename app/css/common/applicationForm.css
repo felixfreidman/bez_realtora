@@ -1,287 +1,343 @@
 /* Шрифты жирный и обычный */
 @font-face {
-    font-family: "Roboto";
-    font-weight: 400;
-    src: url("../../fonts/Roboto-Regular.ttf");
-  }
-  @font-face {
-    font-family: "Roboto";
-    font-weight: 700;
-    src: url("../../fonts/Roboto-Bold.ttf");
-  }
-  
-  @font-face {
-    font-family: "Roboto";
-    font-weight: 300;
-    src: url("../../fonts/Roboto-Light.ttf");
-  }
-  body {
-    font-family: "Roboto";
-    background-color: #f2f2f2;
-  }
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../../fonts/Roboto-Bold.ttf");
+}
 
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("../../fonts/Roboto-Light.ttf");
+}
+body {
+  font-family: "Roboto";
+  background-color: #f2f2f2;
+}
 
 /* Стили для мини-формы заявки-----------------------------------------------  */
 .main_applicationForm-section {
-    height: fit-content;
-    padding: 50px 100px 0px 100px;
+  height: fit-content;
+  padding: 50px 100px 0px 100px;
 }
 
 .applicationForm {
-    position: relative;
-    display: flex;
-    padding: 40px;
-    height: fit-content;
-    background-color: #fff;
-    border-radius: 16px;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  padding: 40px;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 16px;
+  justify-content: space-between;
 }
 
 .applicationForm_boorkmark {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-top: 40px solid transparent ;
-    border-right: 40px solid #1C2443 ;
-    border-radius: 0px 0px 16px 0px;
-    background-color: #f2f2f2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top: 30px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid #1c2443;
+  border-bottom: 30px solid #1c2443;
+  border-radius: 0px 0px 16px 0px;
+  background-color: #f2f2f2;
 }
 
 .applicationForm_advertismentInfo-section {
-    display: flex;
-    flex-direction:column ;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 .advertismentInfo-section_header {
-    color: #323955;
-    font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 14px;
+  color: #323955;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 14px;
 }
 
 .advertismentInfo-section_subheader {
-    color: #323955;
-    font-weight: 400;
-    font-size: 16px;
+  color: #323955;
+  font-weight: 400;
+  font-size: 16px;
 }
 .applicationForm_applyInfo-section {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 .applyInfo-section_requiredActions-section {
-    display: flex;
-    width: 100%;
-    height: fit-content;
+  display: flex;
+  width: 100%;
+  height: fit-content;
 }
 
 .requiredActions-section_telephone-input {
-    display: flex;
-    height: 50px;
-    width: 50%
+  display: flex;
+  height: 50px;
+  width: 50%;
+  margin-right: 5%;
 }
 .telephone-input_preNumber {
-    background-color: #d9d9d9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px 0px 0px 8px;
-    font-size: 22px;
-    width: 25%;
-    height: 100%;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 22px;
+  width: 25%;
+  height: 100%;
 }
 
 .telephone-input_number {
-    outline: none;
-    border: none;
-    background-color: #f2f2f2;
-    margin-left: 0px;
-    padding: 0;
-    padding-left: 10px;
-    font-size: 20px;
-    width: 70%;
-    height: 100%;
-    border-radius: 0px 8px 8px 0px;
-    margin-right: 15%;
+  outline: none;
+  border: none;
+  background-color: #f2f2f2;
+  margin-left: 0px;
+  padding: 0;
+  padding-left: 10px;
+  font-size: 20px;
+  width: 70%;
+  height: 100%;
+  border-radius: 0px 8px 8px 0px;
 }
 
 .requredActions-section_apply-button {
-    width: 45%;
-    height: 100%;
-    background-color: #e82431;
-    color: white;
-    outline:none;
-    border: none;
-    border-radius: 8px ;
-    font-size: 22px;
-    font-weight: normal;
-    cursor: pointer;
+  width: 45%;
+  height: 100%;
+  background-color: #e82431;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 .requredActions-section_apply-button:active {
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .applyInfo-section_personalAgree-checkbox {
-    display: none;
+  display: none;
 }
 .applyInfo-section_personalAgree-checkbox + label::before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #1C2443;
-    border-radius: 5px;
-    margin-right: 10px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-  }
-  
-  .applyInfo-section_personalAgree-checkbox:checked + label::before {
-    border-color: #1c2443;
-    background-color: #1c2443;
-    background-image: url("../../img/main/checkmark.svg");
-  }
-
-  .personalAgree-label > a,   .personalAgree-label > a:visited{
-      text-decoration: none;
-      color: #429EEB;
-  }
-
-  .personalAgree-label > a:hover, .personalAgree-label > a:active {
-    color: #e82431;
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1c2443;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
 }
 
-  .personalAgree-label {
-      margin-top: 15px;
-      font-size: 14px;
-  }
+.applyInfo-section_personalAgree-checkbox:checked + label::before {
+  border-color: #1c2443;
+  background-color: #1c2443;
+  background-image: url("../../img/main/checkmark.svg");
+}
+
+.personalAgree-label > a,
+.personalAgree-label > a:visited {
+  text-decoration: none;
+  color: #429eeb;
+}
+
+.personalAgree-label > a:hover,
+.personalAgree-label > a:active {
+  color: #e82431;
+}
+
+.personalAgree-label {
+  margin-top: 15px;
+  font-size: 14px;
+}
 /* ----------------------------------------------- Конец стилей для мини-формы заявки */
 
 /* Начало стилей для большой формы заявки на подбор -----------------------------------------------  */
 
 .main_applicationFormBig-section {
-    padding: 50px 100px 0px 100px;
-    background-color: #fff;
-    height: 480px;
+  padding: 50px 100px 0px 100px;
+  background-color: #fff;
+  height: 480px;
 }
 .applicationFormBig {
-    position: relative;
-    padding: 40px;
-    height: 80%;
-    display: flex;
-    background-color: #f2f2f2;
-    border-radius: 16px;
-    justify-content: space-between;
+  position: relative;
+  padding: 40px;
+  height: 80%;
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+  justify-content: space-between;
 }
 
 .applicationFormBig_bookmark {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-top: 100px solid transparent ;
-    border-right: 100px solid #1C2443 ;
-    border-radius: 0px 0px 16px 0px;
-    background-color: #fff;
-    z-index: 100;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-right: 40px solid #1c2443;
+  border-bottom: 40px solid #1c2443;
+  border-radius: 0px 0px 16px 0px;
+  background-color: #fff;
+  z-index: 100;
 }
 
 .applicationFormBig_image {
-    background-image: url("../../img/main/main_applicationForm.png");
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    border-radius: 8px;
+  background-image: url("../../img/main/main_applicationForm.png");
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 8px;
 }
 
 .applicationFormBig_application-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .applicationFormBig_advertisment-section {
-    display: flex;
-    flex-direction: column;
-    height: 30%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  align-items: center;
 }
 
 .advertismentInfoBig-section_header {
-    color:#323955;
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  color: #323955;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .advertismentInfoBig-section_subheader {
-    color:#323955;
-    font-size: 16px;
-    font-weight: normal;
+  color: #323955;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .advertisment-section_text {
-    font-size: 18px;
-    margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .advertisment-section_form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 
 .form_requiredActions-section {
-    display: flex;
-    height: 50%;
-    max-height: 40px;
-    width: 100%;
+  display: flex;
+  height: 50%;
+  max-height: 40px;
+  width: 100%;
 }
 
 .requiredActions-section_input {
-    display: flex;
-    width: 50%;
-    
+  display: flex;
+  width: 50%;
+  margin-right: 5%;
 }
 
 .input_preInput {
-    background-color: #d9d9d9;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 100%;
-    border-radius: 8px 0 0 8px;
+  background-color: #d9d9d9;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
 }
 
 .input_number {
-    border: none;
-    outline: none;
-    font-size: 18px;
-    width:70%;
-    height: 100%;
-    margin-right: 15%;
-    padding: 0;
-    padding-left: 10px;
-    border-radius: 0 8px 8px 0;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 70%;
+  height: 100%;
+  padding: 0;
+  padding-left: 10px;
+  border-radius: 0 8px 8px 0;
 }
 
 .requiredActions-section_button-big {
-    background-color: #e82431;
-    border: none;
-    height: 100%;
-    width: 45%;
-    border-radius: 8px;
-    font-size: 18px;
-    color: white;
+  background-color: #e82431;
+  border: none;
+  height: 100%;
+  width: 45%;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .main_applicationForm-section {
+    height: fit-content;
+    padding: 50px 50px 0px 50px;
+  }
+  .applicationForm {
+    padding: 45px 20px;
+  }
+  .applicationForm_boorkmark {
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid #1c2443;
+    border-right: 20px solid #1c2443;
+  }
+  .applicationForm_advertismentInfo-section {
+    align-items: flex-start;
+  }
+  .advertismentInfo-section_header {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .advertismentInfo-section_subheader {
+    font-size: 15px;
+  }
+  .main_applicationFormBig-section {
+    padding: 50px 50px 0px 50px;
+    background-color: #fff;
+    height: 370px;
+  }
+  .applicationFormBig_image {
+    margin-right: 30px;
+  }
+  .applicationFormBig_advertisment-section {
+    height: 40%;
+  }
+  .advertismentInfoBig-section_header {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .advertismentInfoBig-section_subheader {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 414px) and (max-width: 719px) {
+}
+
+@media screen and (min-width: 320px) and (max-width: 413px) {
 }

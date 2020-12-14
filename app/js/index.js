@@ -83,7 +83,7 @@ $(function () {
 $("#min-value").on("input", function () {
   $minimalValue = $("#min-value").val();
   $maxValue = $("#max-value").val();
-  if ($minimalValue > 0 && $minimalValue < 205000) {
+  if ($minimalValue >= 0 && $minimalValue < 205000) {
     $("#amount").val($minimalValue + "₽ - " + $maxValue + "₽");
   }
 });
@@ -91,7 +91,7 @@ $("#min-value").on("input", function () {
 $("#max-value").on("input", function () {
   $minimalValue = $("#min-value").val();
   $maxValue = $("#max-value").val();
-  if ($maxValue > 0 && $maxValue < 205000) {
+  if ($maxValue >= 0 && $maxValue <= 205000) {
     $("#amount").val($minimalValue + "₽ - " + $maxValue + "₽");
   }
 });

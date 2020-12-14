@@ -1,1308 +1,2112 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./app/css/common/header.css" />
+    <link rel="stylesheet" href="./app/css/common/footer.css" />
+    <link rel="stylesheet" href="./app/css/common/applicationForm.css" />
+    <link rel="stylesheet" href="./app/css/page-styles/index.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-  <link rel="stylesheet" href="./app/css/common/header.css" />
-  <link rel="stylesheet" href="./app/css/common/footer.css" />
-  <link rel="stylesheet" href="./app/css/common/applicationForm.css">
-  <link rel="stylesheet" href="./app/css/page-styles/index.css" />
+    <title>Index Page</title>
+  </head>
 
-  <title>Index Page</title>
-</head>
-
-<body>
-  <div class="layer hide"></div>
-  <div class="header">
-    <div class="header_header-top">
-      <div class="header-top_navigation">
-        <div class="navigation_logo-section section">
-          <div class="logo-section_image">
-            <img src="./app/img/tarif/header-logo_house.svg" alt=":(" />
-          </div>
-          <div class="logo-section_choseCity-section">
-            <img src="./app/img/tarif/header-logo_label.svg" alt=":(" class="logo-section_logo-label" />
-            <div class="choseCity-select">
-              <select name="chosenCity" id="chosenCity">
-                <option value="10" selected>Иркутск</option>
-                <option value="1">Москва</option>
-                <option value="2">Санкт-Петербург</option>
-                <option value="3">Казань</option>
-                <option value="4">Екатеринбург</option>
-                <option value="5">Новосибирск</option>
-                <option value="6">Самара</option>
-                <option value="7">Нижний Новгород</option>
-                <option value="8">Челябинск</option>
-                <option value="9">Омск</option>
-                <option value="11">Сочи</option>
-                <option value="12">Улан-Удэ</option>
-                <option value="13">Ростов-на-Дону</option>
-                <option value="14">Воронеж</option>
-                <option value="15">Волгоград</option>
-                <option value="16">Томск</option>
-                <option value="17">Пермь</option>
-                <option value="18">Саратов</option>
-              </select>
-              <div class="arrow"></div>
+  <body>
+    <div class="layer hide"></div>
+    <div class="header">
+      <div class="header_header-top">
+        <div class="header-top_navigation">
+          <div class="navigation_logo-section section">
+            <div class="logo-section_image">
+              <img src="./app/img/tarif/header-logo_house.svg" alt=":(" />
+            </div>
+            <div class="logo-section_choseCity-section">
+              <img
+                src="./app/img/tarif/header-logo_label.svg"
+                alt=":("
+                class="logo-section_logo-label"
+              />
+              <div class="choseCity-select">
+                <select name="chosenCity" id="chosenCity">
+                  <option value="10" selected>Иркутск</option>
+                  <option value="1">Москва</option>
+                  <option value="2">Санкт-Петербург</option>
+                  <option value="3">Казань</option>
+                  <option value="4">Екатеринбург</option>
+                  <option value="5">Новосибирск</option>
+                  <option value="6">Самара</option>
+                  <option value="7">Нижний Новгород</option>
+                  <option value="8">Челябинск</option>
+                  <option value="9">Омск</option>
+                  <option value="11">Сочи</option>
+                  <option value="12">Улан-Удэ</option>
+                  <option value="13">Ростов-на-Дону</option>
+                  <option value="14">Воронеж</option>
+                  <option value="15">Волгоград</option>
+                  <option value="16">Томск</option>
+                  <option value="17">Пермь</option>
+                  <option value="18">Саратов</option>
+                </select>
+                <div class="arrow"></div>
+              </div>
             </div>
           </div>
+          <div class="navigation_rent-section section">АРЕНДА НЕДВИЖИМОСТИ</div>
+          <div class="navigation_sell-section section">
+            ПРОДАЖА НЕДВИЖИМОСТИ
+          </div>
         </div>
-        <div class="navigation_rent-section section">АРЕНДА НЕДВИЖИМОСТИ</div>
-        <div class="navigation_sell-section section">
-          ПРОДАЖА НЕДВИЖИМОСТИ
-        </div>
-      </div>
-      <div class="header-top_data-section">
-        <form action="POST">
-          <button class="data-section_apply-button">
-            <img src="./app/img/tarif/header_add-advertisment.svg" alt=":(" class="apply-button_plus" />
-            <span>Добавить объявление</span>
-          </button>
-        </form>
-        <div class="data-section_credentials-section">
-          <img src="./app/img/tarif/header_login-image.svg" class="credentials-section_image" />
-          <div class="credentials-section_login-window">Вход/Регистрация</div>
-        </div>
-      </div>
-      <div class="header-top_burger-menu-mobile">
-        <img src="./app/img/tarif/header_burger.svg" alt=":(" id="burgerMenu" />
-      </div>
-      <div class="header-top_menu-mobile hide">
-        <div class="menu-mobile_main-section">
+        <div class="header-top_data-section">
           <form action="POST">
-            <button class="menu-mobile_apply-button">
-              <img src="./app/img/tarif/header_add-advertisment.svg" alt=":(" class="apply-button_plus" />
+            <button class="data-section_apply-button">
+              <img
+                src="./app/img/tarif/header_add-advertisment.svg"
+                alt=":("
+                class="apply-button_plus"
+              />
               <span>Добавить объявление</span>
             </button>
           </form>
-          <form action="POST">
-            <button class="menu-mobile_login-button">
-              <img src="./app/img/tarif/login_image-red.svg" alt=":(" class="apply-button_plus" />
-              <span>Вход/Регистрация</span>
-            </button>
-          </form>
-          <a href="#" class="navigation_link">Аренда недвижимости</a>
-          <a href="#" class="navigation_link">Продажа недвижимости</a>
-        </div>
-        <div class="menu-mobile_sub-section">
-          <a href="" class="navigation_link">Новости</a>
-          <a href="" class="navigation_link">О нас</a>
-          <a href="" class="navigation_link">Тарифы</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="main">
-    <div class="main_search-section">
-      <span class="search-section_header">Найди квартиру мечты без риелтора
-      </span>
-      <span class="search-section_subheader">Все предложения от собственников на одном сайте</span>
-      <div class="search-section_search-bar">
-        <div class="search-bar_typeof-operation"></div>
-        <!--  Внизу вы увидите пример ужасной нехватки знаний
-            Я правда сделал то, что смог, пожалуйста, не бейте меня - я старался -->
-        <form action="POST" class="filter-section_form">
-          <!-- Тип недвижимости -->
-          <label class="filter-section_filter-button" for="realEstateTypeLabel" id="realEstateTypeField"></label>
-          <input type="checkbox" class="search-bar_inputs" id="realEstateTypeLabel" />
-          <div class="filter-section_filter-content" id="realEstateDropdown">
-            <input type="radio" name="realEstateType" id="flats" class="search-bar_inputs" value="Квартиры" checked />
-            <label for="flats">Квартиры</label>
-            <input type="radio" name="realEstateType" id="rooms" class="search-bar_inputs" value="Комнаты" />
-            <label for="rooms">Комнаты</label>
-            <input type="radio" name="realEstateType" id="houses" class="search-bar_inputs" value="Дома" />
-            <label for="houses">Дома</label>
-            <input type="radio" name="realEstateType" id="cottages" class="search-bar_inputs" value="Коттеджи" />
-            <label for="cottages">Коттеджи</label>
-          </div>
-          <!-- Сколько комнат -->
-          <label class="filter-section_filter-button" for="roomAmountLabel" id="roomAmountField">Количество
-            комнат</label>
-          <input type="checkbox" class="search-bar_inputs search-bar_room-checkbox" id="roomAmountLabel" />
-          <div class="filter-section_filter-content" id="roomAmountDropdown">
-            <input type="checkbox" name="roomAmount" id="studio" class="search-bar_inputs search-bar_room-checkbox"
-              value="Студии" checked />
-            <label for="studio">Студии</label>
-            <input type="checkbox" name="roomAmount" id="1room" class="search-bar_inputs search-bar_room-checkbox"
-              value="1-комнатные" />
-            <label for="1room">1-комнатные</label>
-            <input type="checkbox" name="roomAmount" id="2room" class="search-bar_inputs search-bar_room-checkbox"
-              value="2-комнатные" />
-            <label for="2room">2-комнатные</label>
-            <input type="checkbox" name="roomAmount" id="3room" class="search-bar_inputs search-bar_room-checkbox"
-              value="3-комнатные" />
-            <label for="3room">3-комнатные</label>
-            <input type="checkbox" name="roomAmount" id="4room" class="search-bar_inputs search-bar_room-checkbox"
-              value="4-комнатные" />
-            <label for="4room">4-комнатные</label>
-            <input type="checkbox" name="roomAmount" id="5moreRoom" class="search-bar_inputs search-bar_room-checkbox"
-              value="5-комнатные и более" />
-            <label for="5moreRoom">5-комнатные и более</label>
-          </div>
-          <!-- Выбранный город -->
-          <label class="filter-section_filter-button" for="chosenCityLabel" id="chosenCityField"></label>
-          <input type="checkbox" class="search-bar_inputs" id="chosenCityLabel" />
-          <div class="filter-section_filter-content" id="chosenCityDropdown">
-            <input type="radio" name="chosenCity" id="irkutsk" class="search-bar_inputs" value="Иркутск" checked />
-            <label for="irkutsk">Иркутск</label>
-            <input type="radio" name="chosenCity" id="moscow" class="search-bar_inputs" value="Москва" />
-            <label for="moscow">Москва</label>
-            <input type="radio" name="chosenCity" id="saintPetersburg" class="search-bar_inputs"
-              value="Санкт-Петербург" />
-            <label for="saintPetersburg">Санкт-Петербург</label>
-            <input type="radio" name="chosenCity" id="kazan" class="search-bar_inputs" value="Казань" />
-            <label for="kazan">Казань</label>
-            <input type="radio" name="chosenCity" id="ekaterinburg" class="search-bar_inputs" value="Екатеринбург" />
-            <label for="ekaterinburg">Екатеринбург</label>
-            <input type="radio" name="chosenCity" id="novosibirsk" class="search-bar_inputs" value="Новосибирск" />
-            <label for="novosibirsk">Новосибирск</label>
-            <input type="radio" name="chosenCity" id="samara" class="search-bar_inputs" value="Самара" />
-            <label for="samara">Самара</label>
-            <input type="radio" name="chosenCity" id="nizhniyNovgorod" class="search-bar_inputs"
-              value="Нижний Новгород" />
-            <label for="nizhniyNovgorod">Нижний Новгород</label>
-            <input type="radio" name="chosenCity" id="chelyabinsk" class="search-bar_inputs" value="Челябинск" />
-            <label for="chelyabinsk">Челябинск</label>
-            <input type="radio" name="chosenCity" id="omsk" class="search-bar_inputs" value="Омск" />
-            <label for="omsk">Омск</label>
-            <input type="radio" name="chosenCity" id="sochi" class="search-bar_inputs" value="Сочи" />
-            <label for="sochi">Сочи</label>
-            <input type="radio" name="chosenCity" id="ulan-ude" class="search-bar_inputs" value="Улан-Удэ" />
-            <label for="ulan-ude">Улан-Удэ</label>
-            <input type="radio" name="chosenCity" id="rostov-na-donu" class="search-bar_inputs"
-              value="Ростов-на-Дону" />
-            <label for="rostov-na-donu">Ростов-на-Дону</label>
-            <input type="radio" name="chosenCity" id="voronezh" class="search-bar_inputs" value="Воронеж" />
-            <label for="voronezh">Воронеж</label>
-            <input type="radio" name="chosenCity" id="volgograd" class="search-bar_inputs" value="Волгоград" />
-            <label for="volgograd">Волгоград</label>
-            <input type="radio" name="chosenCity" id="tomsk" class="search-bar_inputs" value="Томск" />
-            <label for="tomsk">Томск</label>
-            <input type="radio" name="chosenCity" id="perm" class="search-bar_inputs" value="Пермь" />
-            <label for="perm">Пермь</label>
-            <input type="radio" name="chosenCity" id="saratov" class="search-bar_inputs" value="Саратов" />
-            <label for="saratov">Саратов</label>
-          </div>
-          <!-- Ценовой диапозон -->
-          <label class="filter-section_filter-button" for="priceRangeLabel" id="priceRangeField">
-            <input type="text" id="amount" readonly /></label>
-          <input type="checkbox" class="search-bar_inputs" id="priceRangeLabel" />
-          <div class="filter-section_filter-content" id="priceRangeDropdown">
-            <div class="filter-content_values-section">
-              <input type="text" id="min-value" class="text-inputs" pattern="[0-9]+" /><span>—</span>
-              <input type="text" id="max-value" class="text-inputs" pattern="[0-9]+" />
-            </div>
-            <div class="filter-content_range-section">
-              <div id="slider-range"></div>
-            </div>
-          </div>
-          <!-- Кнопка начать поиск -->
-          <input type="submit" id="searchButton" class="filter-section_search-button" value="НАЧАТЬ ПОИСК" />
-        </form>
-      </div>
-      <div class="search-section_perks">
-        <div class="perks_description">
-          <img src="./app/img/tarif/Men.svg" alt=":(" class="perk-logo" /><span class="perk-description">Без
-            посредников</span>
-        </div>
-        <div class="perks_description">
-          <img src="./app/img/tarif/ZeroPercents.svg" alt=":(" class="perk-logo" /><span class="perk-description">Без
-            комиссии</span>
-        </div>
-        <div class="perks_description">
-          <img src="./app/img/tarif/doneButton.svg" alt=":(" class="perk-logo" /><span
-            class="perk-description">Объявления только от собственников</span>
-        </div>
-        <div class="perks_description">
-          <img src="./app/img/tarif/fullBase.svg" alt=":(" class="perk-logo" /><span class="perk-description">Более 50
-            000 объявлений</span>
-        </div>
-      </div>
-    </div>
-    <div class="main_stories-section">
-      <div class="main_header-block">
-        <span class="red-line"></span>
-        <div class="main_section-block">
-          <span class="main_section-header">Снимай дешевле</span>
-          <span class="main_section-subheader">
-            Предложения по совместному проживанию (поиск соседа на подселение)
-          </span>
-        </div>
-      </div>
-      <div class="stories-section_stories-block">
-        <div class="stories-block_story-block">
-          <div class="stories-block_add-story">
-            <button class="add-story_plus-button"></button>
-            <span class="add-story_add-text">Добавить запись
-              в актуальное</span>
+          <div class="data-section_credentials-section">
+            <img
+              src="./app/img/tarif/header_login-image.svg"
+              class="credentials-section_image"
+            />
+            <div class="credentials-section_login-window">Вход/Регистрация</div>
           </div>
         </div>
-        <!-- snippet for story -->
-        <div class="stories-block_story-block">
-          <div class="stories-block_added-story">
-            <span class="add-story_added-text">Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес., Иркутск, мкр.
-              Радужный, 109</span>
-          </div>
+        <div class="header-top_burger-menu-mobile">
+          <img
+            src="./app/img/tarif/header_burger.svg"
+            alt=":("
+            id="burgerMenu"
+          />
         </div>
-        <div class="stories-block_story-block">
-          <div class="stories-block_added-story">
-            <span class="add-story_added-text">Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес., Иркутск, мкр.
-              Радужный, 109</span>
-          </div>
-        </div>
-        <div class="stories-block_story-block">
-          <div class="stories-block_added-story">
-            <span class="add-story_added-text">Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес., Иркутск, мкр.
-              Радужный, 109</span>
-          </div>
-        </div>
-        <div class="stories-block_story-block">
-          <div class="stories-block_added-story">
-            <span class="add-story_added-text">Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес., Иркутск, мкр.
-              Радужный, 109</span>
-          </div>
-        </div>
-        <div class="stories-block_story-block">
-          <div class="stories-block_added-story">
-            <span class="add-story_added-text">Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес., Иркутск, мкр.
-              Радужный, 109</span>
-          </div>
-        </div>
-        <div class="stories-block_story-block">
-          <div class="stories-block_added-story">
-            <span class="add-story_added-text">Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес., Иркутск, мкр.
-              Радужный, 109</span>
-          </div>
-        </div>
-        <div class="stories-block_story-block">
-          <div class="stories-block_added-story">
-            <span class="add-story_added-text">Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес., Иркутск, мкр.
-              Радужный, 109</span>
-          </div>
-        </div>
-        <div class="stories-block_story-block">
-          <div class="stories-block_added-story">
-            <span class="add-story_added-text">Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес., Иркутск, мкр.
-              Радужный, 109</span>
-          </div>
-        </div>
-        <div class="stories-block_story-block">
-          <div class="stories-block_added-story">
-            <span class="add-story_added-text">Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес., Иркутск, мкр.
-              Радужный, 109</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Начало большой секции поиска квартир -->
-    <div class="main_flats-section">
-      <div class="main_header-block">
-        <span class="red-line"></span>
-        <div class="main_section-block">
-          <span class="main_section-header">Новые объявления</span>
-        </div>
-      </div>
-      <div class="flats-section_navigation">
-        <span class="navigation_text">Аренда:</span>
-        <input type="radio" id="navigationFlats" class="search-bar_inputs" name="rentNavigation" checked>
-        <label for="navigationFlats" class="navigation">Квартиры</label>
-        <input type="radio" id="navigationRoom" class="search-bar_inputs" name="rentNavigation">
-        <label for="navigationRoom" class="navigation">Комнаты</label>
-        <input type="radio" id="navigationHouse" class="search-bar_inputs" name="rentNavigation">
-        <label for="navigationHouse" class="navigation">Дома</label>
-        <input type="radio" id="navigationCottage" class="search-bar_inputs" name="rentNavigation">
-        <label for="navigationCottage" class="navigation">Коттеджи</label>
-        <input type="radio" id="navigationCountryHouses" class="search-bar_inputs" name="rentNavigation">
-        <label for="navigationCountryHouses" class="navigation">Дачи</label>
-        <input type="radio" id="navigationCommercialHouses" class="search-bar_inputs" name="rentNavigation">
-        <label for="navigationCommercialHouses" class="navigation">Коммерческая недвижимость</label>
-        <input type="radio" id="navigationLand" class="search-bar_inputs" name="rentNavigation">
-        <label for="navigationLand" class="navigation">Земельные участки</label>
-        <input type="radio" id="navigationGarages" class="search-bar_inputs" name="rentNavigation">
-        <label for="navigationGarages" class="navigation">Гаражи</label>
-      </div>
-      <div class="flats-section_advertisments-section">
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <img src="./app/img/main/main_map-checkmark.svg" class="card-address_map-checkmark" />
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <svg class="card-address_map-checkmark" width="14" height="10" viewBox="0 0 14 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
-                fill="#0066B3" />
-
-
-            </svg>
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <img src="./app/img/main/main_map-checkmark.svg" class="card-address_map-checkmark" />
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <svg class="card-address_map-checkmark" width="14" height="10" viewBox="0 0 14 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
-                fill="#0066B3" />
-
-
-            </svg>
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <img src="./app/img/main/main_map-checkmark.svg" class="card-address_map-checkmark" />
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <svg class="card-address_map-checkmark" width="14" height="10" viewBox="0 0 14 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
-                fill="#0066B3" />
-
-
-            </svg>
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <img src="./app/img/main/main_map-checkmark.svg" class="card-address_map-checkmark" />
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <svg class="card-address_map-checkmark" width="14" height="10" viewBox="0 0 14 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
-                fill="#0066B3" />
-
-
-            </svg>
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-      </div>
-      <div class="flats-section_allAdvertisments-link">
-        <a href="#">Смотреть все объявления</a>
-      </div>
-      <div class="flats-section_fastLinks-section">
-        <div class="fastLinks-section_fast-card ">
-          <div class="fast-card_image-cover rentFlat">
-            <span>Снять квартиру</span>
-          </div>
-          <div class="fast-card_navigation-container">
-            <a href="#" class="navigation-container_link">На длительный срок</a>
-            <a href="#" class="navigation-container_link">Студии</a>
-            <a href="#" class="navigation-container_link">1-комнатные</a>
-            <a href="#" class="navigation-container_link">2-комнатные</a>
-            <a href="#" class="navigation-container_link">3-комнатные</a>
-            <a href="#" class="navigation-container_link">Комнаты на длительный срок</a>
-          </div>
-        </div>
-        <div class="fastLinks-section_fast-card ">
-          <div class="fast-card_image-cover rentDay">
-            <span>Посуточная аренда</span>
-          </div>
-          <div class="fast-card_navigation-container">
-            <a href="#" class="navigation-container_link">Квартиры посуточно</a>
-            <a href="#" class="navigation-container_link">Комнаты посуточно</a>
-            <a href="#" class="navigation-container_link">Коттеджи посуточно</a>
-            <a href="#" class="navigation-container_link">Дома посуточно</a>
-            <a href="#" class="navigation-container_link">Хостелы и гостиницы</a>
-          </div>
-        </div>
-        <div class="fastLinks-section_fast-card ">
-          <div class="fast-card_image-cover rentCountry">
-            <span>Аренда загородной недвижимости</span>
-          </div>
-          <div class="fast-card_navigation-container">
-            <a href="#" class="navigation-container_link">Снять дом на длительный срок</a>
-            <a href="#" class="navigation-container_link">Снять дачу на длительный срок</a>
-            <a href="#" class="navigation-container_link">Снять коттедж на длительный срок</a>
-            <a href="#" class="navigation-container_link">Аренда земельных участков</a>
-          </div>
-        </div>
-        <div class="fastLinks-section_fast-card ">
-          <div class="fast-card_image-cover rentCommercial">
-            <span>Аренда коммерческой недвижимости</span>
-          </div>
-          <div class="fast-card_navigation-container">
-            <a href="#" class="navigation-container_link">Снять офис</a>
-            <a href="#" class="navigation-container_link">Снять помещение</a>
-            <a href="#" class="navigation-container_link">Снять склад</a>
-            <a href="#" class="navigation-container_link">Снять гараж</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="main_applicationForm-section">
-      <div class="applicationForm">
-        <div class="applicationForm_boorkmark"></div>
-        <div class="applicationForm_advertismentInfo-section">
-          <span class="advertismentInfo-section_header">Не нашли, что искали?</span>
-          <span class="advertismentInfo-section_subheader">Поможем найти квартиру от собственника по лучшей цене</span>
-        </div>
-        <form action="#" method="post" class="applicationForm_applyInfo-section">
-          <div class="applyInfo-section_requiredActions-section">
-            <div class="requiredActions-section_telephone-input">
-              <div class="telephone-input_preNumber">+7</div>
-              <input type="text" class="telephone-input_number">
-            </div>
-            <button class="requredActions-section_apply-button">Оставить заявку</button>
-          </div>
-          <input type="checkbox" name="agreeCheckbox" id="agreeCheckbox"
-            class="applyInfo-section_personalAgree-checkbox">
-          <label for="agreeCheckbox" class="personalAgree-label">Я даю согласие на <a href="#">Обработку персональных
-              данных</a></label>
-        </form>
-      </div>
-
-    </div>
-    <div class="main_flats-section">
-      <div class="flats-section_navigation">
-        <span class="navigation_text">Продажа:</span>
-        <input type="radio" id="navigationSellFlats" class="search-bar_inputs" name="sellNavigation" checked>
-        <label for="navigationSellFlats" class="navigation">Квартиры</label>
-        <input type="radio" id="navigationSellRoom" class="search-bar_inputs" name="sellNavigation">
-        <label for="navigationSellRoom" class="navigation">Комнаты</label>
-        <input type="radio" id="navigationSellHouse" class="search-bar_inputs" name="sellNavigation">
-        <label for="navigationSellHouse" class="navigation">Дома</label>
-        <input type="radio" id="navigationSellCottage" class="search-bar_inputs" name="sellNavigation">
-        <label for="navigationSellCottage" class="navigation">Коттеджи</label>
-        <input type="radio" id="navigationSellCountryHouses" class="search-bar_inputs" name="sellNavigation">
-        <label for="navigationSellCountryHouses" class="navigation">Дачи</label>
-        <input type="radio" id="navigationSellCommercialHouses" class="search-bar_inputs" name="sellNavigation">
-        <label for="navigationSellCommercialHouses" class="navigation">Коммерческая недвижимость</label>
-        <input type="radio" id="navigationSellLand" class="search-bar_inputs" name="sellNavigation">
-        <label for="navigationSellLand" class="navigation">Земельные участки</label>
-        <input type="radio" id="navigationSellGarages" class="search-bar_inputs" name="sellNavigation">
-        <label for="navigationSellGarages" class="navigation">Гаражи</label>
-      </div>
-      <div class="flats-section_advertisments-section">
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <img src="./app/img/main/main_map-checkmark.svg" class="card-address_map-checkmark" />
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <svg class="card-address_map-checkmark" width="14" height="10" viewBox="0 0 14 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
-                fill="#0066B3" />
-
-
-            </svg>
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <img src="./app/img/main/main_map-checkmark.svg" class="card-address_map-checkmark" />
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <svg class="card-address_map-checkmark" width="14" height="10" viewBox="0 0 14 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
-                fill="#0066B3" />
-
-
-            </svg>
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <img src="./app/img/main/main_map-checkmark.svg" class="card-address_map-checkmark" />
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <svg class="card-address_map-checkmark" width="14" height="10" viewBox="0 0 14 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
-                fill="#0066B3" />
-
-
-            </svg>
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <img src="./app/img/main/main_map-checkmark.svg" class="card-address_map-checkmark" />
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-        <div class="advertisments-section_avdert-card">
-          <div class="avdert-card_card-image"></div>
-          <div class="avdert-card_card-info">
-            <div class="card-info_price-tag">
-              <span class="price-tag_price">155 000 ₽</span>
-              <span class="price-tag_per-month">/в месяц</span>
-            </div>
-            <div class="card-info_flat-parameters">
-              <span class="flat-parameters_roomAmount-span">4-комн.</span>
-              -
-              <span class="flat-parameters_flatArea-span">170 м²</span>
-              -
-              <span class="flat-parameters_flatAddress-span">Франк-Каменецкого, 28/4</span>
-            </div>
-            <div class="card-info_flat-description">
-              Роскошная 4х комнатная квартира
-            </div>
-          </div>
-          <div class="avdert-card_card-address">
-            <svg class="card-address_map-checkmark" width="14" height="10" viewBox="0 0 14 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
-                fill="#0066B3" />
-
-
-            </svg>
-            <span class="card-address-address-span">Правобережный</span>
-          </div>
-        </div>
-      </div>
-      <div class="flats-section_allAdvertisments-link">
-        <a href="#">Смотреть все объявления</a>
-      </div>
-      <div class="flats-section_fastLinks-section">
-        <div class="fastLinks-section_fast-card ">
-          <div class="fast-card_image-cover sellFlat">
-            <span>Купить квартиру</span>
-          </div>
-          <div class="fast-card_navigation-container">
-            <a href="#" class="navigation-container_link">Новостройки</a>
-            <a href="#" class="navigation-container_link">Вторичка</a>
-            <a href="#" class="navigation-container_link">Студии</a>
-            <a href="#" class="navigation-container_link">1-комнатные</a>
-            <a href="#" class="navigation-container_link">2-комнатные</a>
-            <a href="#" class="navigation-container_link">3-комнатные</a>
-          </div>
-        </div>
-        <div class="fastLinks-section_fast-card ">
-          <div class="fast-card_image-cover rentCountry">
-            <span>Загородная недвижимость</span>
-          </div>
-          <div class="fast-card_navigation-container">
-            <a href="#" class="navigation-container_link">Купить дом</a>
-            <a href="#" class="navigation-container_link">Купить дачу</a>
-            <a href="#" class="navigation-container_link">Купить коттедж</a>
-            <a href="#" class="navigation-container_link">Купить земельный участок</a>
-          </div>
-        </div>
-        <div class="fastLinks-section_fast-card ">
-          <div class="fast-card_image-cover rentCommercial">
-            <span>Коммерческая недвижимость</span>
-          </div>
-          <div class="fast-card_navigation-container">
-            <a href="#" class="navigation-container_link">Купить офис</a>
-            <a href="#" class="navigation-container_link">Купить помещение</a>
-            <a href="#" class="navigation-container_link">Купить склад</a>
-          </div>
-        </div>
-        <div class="fastLinks-section_fast-card ">
-          <div class="fast-card_image-cover sellGarage">
-            <span>Гаражи и машиноместа</span>
-          </div>
-          <div class="fast-card_navigation-container">
-            <a href="#" class="navigation-container_link">Купить гараж</a>
-            <a href="#" class="navigation-container_link">Купить машиноместо</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="main_applicationFormBig-section">
-      <div class="applicationFormBig">
-        <div class="applicationFormBig_bookmark"></div>
-        <div class="applicationFormBig_image"></div>
-        <div class="applicationFormBig_application-section">
-          <div class="applicationFormBig_advertisment-section">
-
-            <span class="advertismentInfoBig-section_header">Не нашли, что искали?</span>
-            <span class="advertismentInfoBig-section_subheader">Поможем найти квартиру от собственника по лучшей
-              цене</span>
-          </div>
-          <div class="applicationFormBig_advertisment-section">
-            <span class="advertisment-section_text">Мы сразу перезвоним и приступим к поиску</span>
-            <form action="#" method="POST" class="advertisment-section_form">
-              <div class="form_requiredActions-section">
-                <div class="requiredActions-section_input">
-                  <div class="input_preInput">+7</div>
-                  <input type="text" class="input_number">
-                </div>
-                <button class="requiredActions-section_button-big">Оставить заявку</button>
-              </div>
-              <div class="form_licenceAgreement-section">
-                <input type="checkbox" name="agreeCheckbox" id="agreeCheckboxBig"
-                  class="applyInfo-section_personalAgree-checkbox">
-                <label for="agreeCheckboxBig" class="personalAgree-label">Я даю согласие на <a href="#">Обработку
-                    персональных
-                    данных</a></label>
-              </div>
+        <div class="header-top_menu-mobile hide">
+          <div class="menu-mobile_main-section">
+            <form action="POST">
+              <button class="menu-mobile_apply-button">
+                <img
+                  src="./app/img/tarif/header_add-advertisment.svg"
+                  alt=":("
+                  class="apply-button_plus"
+                />
+                <span>Добавить объявление</span>
+              </button>
             </form>
+            <form action="POST">
+              <button class="menu-mobile_login-button">
+                <img
+                  src="./app/img/tarif/login_image-red.svg"
+                  alt=":("
+                  class="apply-button_plus"
+                />
+                <span>Вход/Регистрация</span>
+              </button>
+            </form>
+            <a href="#" class="navigation_link">Аренда недвижимости</a>
+            <a href="#" class="navigation_link">Продажа недвижимости</a>
           </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- Конец большой секции поиска квартир -->
-    <!-- Начало описания работы -->
-    <div class="main_workDescribe-section">
-      <div class="main_header-block">
-        <span class="red-line"></span>
-        <div class="main_section-block">
-          <span class="main_section-header">Как это работает</span>
-        </div>
-      </div>
-      <div class="workDescribe-section_stages-section">
-        <div class="stages-section_stage-card">
-          <div class="stage-card_image-container firstStage">
-            <img src="./app/img/main/stage_first.svg" alt=":(" class="image-countainer_image">
-          </div>
-          <div class="stage-card_text-container">
-            <div class="text-container_header">Вы подаёте заявку на поиск жилья</div>
-            <div class="text-cotainer_text">
-              Для этого Вы можете оставить номер на сайте, написать нам в Instagram Direct
-              или оставить сообщение в ВКонтакте. Мы с Вами связываемся и уточняем все критерии поиска и детали.
-            </div>
-          </div>
-        </div>
-        <div class="stages-section_stage-card">
-          <div class="stage-card_image-container secondStage">
-            <img src="./app/img/main/stage_second.svg" alt=":(" class="image-countainer_image">
-          </div>
-          <div class="stage-card_text-container">
-            <div class="text-container_header">Мы подбираем квартиру</div>
-            <div class="text-cotainer_text">
-              Или комнату от собственника и отправляем Вам проверенные нами варианты несколько раз в день на почту,
-              WhatsApp, Viber или Telegram. Варианты мы подбираем на основании более 20 источников - база нашего сервиса
-              и сообщества, используем другие сайты Avito, ЦИАН, Domofond, группы недвижимости в соц. сетях. Каждый
-              вариант мы прозваниваем и проверяем.
-            </div>
-          </div>
-        </div>
-        <div class="stages-section_stage-card">
-          <div class="stage-card_image-container thirdStage">
-            <img src="./app/img/main/stage_third.svg" alt=":(" class="image-countainer_image">
-          </div>
-          <div class="stage-card_text-container">
-            <div class="text-container_header">Мы проверяем недвижимость</div>
-            <div class="text-cotainer_text">
-              После заселения мы можем заказать выписку из ЕГРН, проверить жильё в Росреестре и подготовить договор
-              аренды, чтобы обезопасить Вас от возможных неблагоприятных ситуаций.
-            </div>
-          </div>
-        </div>
-        <div class="stages-section_stage-card lastChild">
-          <div class="stage-card_image-container fourthStage">
-            <img src="./app/img/main/stage_fourth.svg" alt=":(" class="image-countainer_image">
-          </div>
-          <div class="stage-card_text-container">
-            <div class="text-container_header">Вы заселяетесь</div>
-            <div class="text-cotainer_text">
-              Обычно это занимает от суток до недели в зависимости от сложности запроса. Если ничего не находим - то мы
-              возвращаем деньги. После заселения мы можем заказать выписку из ЕГРН и подготовить договор аренды.
-            </div>
+          <div class="menu-mobile_sub-section">
+            <a href="" class="navigation_link">Новости</a>
+            <a href="" class="navigation_link">О нас</a>
+            <a href="" class="navigation_link">Тарифы</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Конец описания работы -->
-    <!-- Начало описания преимуществ -->
-    <div class="main_benefits-section">
-      <div class="main_header-block">
-        <span class="red-line"></span>
-        <div class="main_section-block">
-          <span class="main_section-header">Преимущества подбора</span>
-        </div>
-      </div>
-      <div class="benefits-section_describe-cards">
-        <div class="describe-cards_benefit-card">
-          <div class="benefit-card_text-section">
-            <span class="benefit-card_header">Экономия вашего времени</span>
-            <span class="benefit-card_text">Мы займёмся полностью поиском за Вас и будем каждый день присылать только
-              проверенные варианты строго по Вашим критериям.</span></div>
-          <div class="benefit-card_image firstBenefit"></div>
-        </div>
-        <div class="describe-cards_benefit-card">
-          <div class="benefit-card_text-section">
-            <span class="benefit-card_header">Экономия на комиссии</span>
-            <span class="benefit-card_text">Вам не нужно платить риелтору комиссию, варианты только от
-              собственников.</span>
-          </div>
-          <div class="benefit-card_image secondBenefit"></div>
-        </div>
-        <div class="describe-cards_benefit-card">
-          <div class="benefit-card_text-section">
-            <span class="benefit-card_header">Мониторим рынок полностью</span>
-            <span class="benefit-card_text">Более 30 источников: сайты, соц. сети и своя база недвижимости. Будем
-              мониторить все площадки недвижимости, прозванивать и отправлять все лучшие предложения.</span>
-          </div>
-          <div class="benefit-card_image thirdBenefit"></div>
-        </div>
-        <div class="describe-cards_benefit-card ">
-          <div class="benefit-card_text-section">
-            <span class="benefit-card_header">Юридическое сопровождение</span>
-            <span class="benefit-card_text">Проверка квартиры в Росреестре, консультации юриста и помощь в составлении
-              договора.</span>
-          </div>
-          <div class="benefit-card_image fourthBenefit"></div>
-        </div>
-      </div>
-    </div>
-    <!-- Конец описания -->
-    <!-- Начало секции Отзывы -->
-    <div class="main_review-section">
-      <div class="main_header-block review_header-block">
-        <span class="red-line"></span>
-        <div class="main_section-block">
-          <span class="main_section-header">Отзывы</span>
-        </div>
-      </div>
-
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <!-- <img src="./app/img/main/iphone.svg" alt=":(" class = "iphoneReview"> -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-
-          <div class="swiper-slide">
-            <div class="iphone-story">
-              <img src="./app/img/main/iphone.png" alt=":(" class="iphoneReview">
-              <img src="./app/img/main/story-image.png" alt="" class="story-image">
+    <div class="main">
+      <div class="main_search-section">
+        <span class="search-section_header"
+          >Найди квартиру мечты без риелтора
+        </span>
+        <span class="search-section_subheader"
+          >Все предложения от собственников на одном сайте</span
+        >
+        <div class="search-section_search-bar">
+          <div class="search-bar_typeof-operation"></div>
+          <!--  Внизу вы увидите пример ужасной нехватки знаний
+            Я правда сделал то, что смог, пожалуйста, не бейте меня - я старался -->
+          <form action="POST" class="filter-section_form">
+            <!-- Тип недвижимости -->
+            <label
+              class="filter-section_filter-button"
+              for="realEstateTypeLabel"
+              id="realEstateTypeField"
+            ></label>
+            <input
+              type="checkbox"
+              class="search-bar_inputs"
+              id="realEstateTypeLabel"
+            />
+            <div class="filter-section_filter-content" id="realEstateDropdown">
+              <input
+                type="radio"
+                name="realEstateType"
+                id="flats"
+                class="search-bar_inputs"
+                value="Квартиры"
+                checked
+              />
+              <label for="flats">Квартиры</label>
+              <input
+                type="radio"
+                name="realEstateType"
+                id="rooms"
+                class="search-bar_inputs"
+                value="Комнаты"
+              />
+              <label for="rooms">Комнаты</label>
+              <input
+                type="radio"
+                name="realEstateType"
+                id="houses"
+                class="search-bar_inputs"
+                value="Дома"
+              />
+              <label for="houses">Дома</label>
+              <input
+                type="radio"
+                name="realEstateType"
+                id="cottages"
+                class="search-bar_inputs"
+                value="Коттеджи"
+              />
+              <label for="cottages">Коттеджи</label>
             </div>
-
-            <div class="review">
-              <div class="person-section">
-                <div class="person-image"></div>
-                <div class="reviewInfo-section">
-                  <div class="person-name">yas_ka23</div>
-                  <div class="review-date">27.03.2020</div>
-                </div>
+            <!-- Сколько комнат -->
+            <label
+              class="filter-section_filter-button"
+              for="roomAmountLabel"
+              id="roomAmountField"
+              >Количество комнат</label
+            >
+            <input
+              type="checkbox"
+              class="search-bar_inputs search-bar_room-checkbox"
+              id="roomAmountLabel"
+            />
+            <div class="filter-section_filter-content" id="roomAmountDropdown">
+              <input
+                type="checkbox"
+                name="roomAmount"
+                id="studio"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Студии"
+                checked
+              />
+              <label for="studio">Студии</label>
+              <input
+                type="checkbox"
+                name="roomAmount"
+                id="1room"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="1-комнатные"
+              />
+              <label for="1room">1-комнатные</label>
+              <input
+                type="checkbox"
+                name="roomAmount"
+                id="2room"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="2-комнатные"
+              />
+              <label for="2room">2-комнатные</label>
+              <input
+                type="checkbox"
+                name="roomAmount"
+                id="3room"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="3-комнатные"
+              />
+              <label for="3room">3-комнатные</label>
+              <input
+                type="checkbox"
+                name="roomAmount"
+                id="4room"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="4-комнатные"
+              />
+              <label for="4room">4-комнатные</label>
+              <input
+                type="checkbox"
+                name="roomAmount"
+                id="5moreRoom"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="5-комнатные и более"
+              />
+              <label for="5moreRoom">5-комнатные и более</label>
+            </div>
+            <!-- Выбранный город -->
+            <label
+              class="filter-section_filter-button"
+              for="chosenCityLabel"
+              id="chosenCityField"
+            ></label>
+            <input
+              type="checkbox"
+              class="search-bar_inputs"
+              id="chosenCityLabel"
+            />
+            <div class="filter-section_filter-content" id="chosenCityDropdown">
+              <input
+                type="radio"
+                name="chosenCity"
+                id="irkutsk"
+                class="search-bar_inputs"
+                value="Иркутск"
+                checked
+              />
+              <label for="irkutsk">Иркутск</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="moscow"
+                class="search-bar_inputs"
+                value="Москва"
+              />
+              <label for="moscow">Москва</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="saintPetersburg"
+                class="search-bar_inputs"
+                value="Санкт-Петербург"
+              />
+              <label for="saintPetersburg">Санкт-Петербург</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="kazan"
+                class="search-bar_inputs"
+                value="Казань"
+              />
+              <label for="kazan">Казань</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="ekaterinburg"
+                class="search-bar_inputs"
+                value="Екатеринбург"
+              />
+              <label for="ekaterinburg">Екатеринбург</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="novosibirsk"
+                class="search-bar_inputs"
+                value="Новосибирск"
+              />
+              <label for="novosibirsk">Новосибирск</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="samara"
+                class="search-bar_inputs"
+                value="Самара"
+              />
+              <label for="samara">Самара</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="nizhniyNovgorod"
+                class="search-bar_inputs"
+                value="Нижний Новгород"
+              />
+              <label for="nizhniyNovgorod">Нижний Новгород</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="chelyabinsk"
+                class="search-bar_inputs"
+                value="Челябинск"
+              />
+              <label for="chelyabinsk">Челябинск</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="omsk"
+                class="search-bar_inputs"
+                value="Омск"
+              />
+              <label for="omsk">Омск</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="sochi"
+                class="search-bar_inputs"
+                value="Сочи"
+              />
+              <label for="sochi">Сочи</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="ulan-ude"
+                class="search-bar_inputs"
+                value="Улан-Удэ"
+              />
+              <label for="ulan-ude">Улан-Удэ</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="rostov-na-donu"
+                class="search-bar_inputs"
+                value="Ростов-на-Дону"
+              />
+              <label for="rostov-na-donu">Ростов-на-Дону</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="voronezh"
+                class="search-bar_inputs"
+                value="Воронеж"
+              />
+              <label for="voronezh">Воронеж</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="volgograd"
+                class="search-bar_inputs"
+                value="Волгоград"
+              />
+              <label for="volgograd">Волгоград</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="tomsk"
+                class="search-bar_inputs"
+                value="Томск"
+              />
+              <label for="tomsk">Томск</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="perm"
+                class="search-bar_inputs"
+                value="Пермь"
+              />
+              <label for="perm">Пермь</label>
+              <input
+                type="radio"
+                name="chosenCity"
+                id="saratov"
+                class="search-bar_inputs"
+                value="Саратов"
+              />
+              <label for="saratov">Саратов</label>
+            </div>
+            <!-- Ценовой диапозон -->
+            <label
+              class="filter-section_filter-button"
+              for="priceRangeLabel"
+              id="priceRangeField"
+            >
+              <input type="text" id="amount" readonly
+            /></label>
+            <input
+              type="checkbox"
+              class="search-bar_inputs"
+              id="priceRangeLabel"
+            />
+            <div class="filter-section_filter-content" id="priceRangeDropdown">
+              <div class="filter-content_values-section">
+                <input
+                  type="text"
+                  id="min-value"
+                  class="text-inputs"
+                  pattern="[0-9]+"
+                /><span>—</span>
+                <input
+                  type="text"
+                  id="max-value"
+                  class="text-inputs"
+                  pattern="[0-9]+"
+                />
               </div>
-              <div class="review-section">
-
-                <span> Как вы знаете, я сейчас в поисках квартиры, и это пока что единственный сайт,
-                  с которого мне отвечают собственники, а не бесконечные посредники и агенства, которым "заплати 3к и мы
-                  найдем тебе дворец", к сожелению, квартира пока не найдена, потому что все отозвавшиеся собственники,
-                  уже сдают квартиры. Но искать жилье всегда сложно, так что, я до сих пор буду рада вашим
-                  вариантам.</span>
+              <div class="filter-content_range-section">
+                <div id="slider-range"></div>
               </div>
             </div>
-
+            <!-- Кнопка начать поиск -->
+            <input
+              type="submit"
+              id="searchButton"
+              class="filter-section_search-button"
+              value="НАЧАТЬ ПОИСК"
+            />
+          </form>
+        </div>
+        <form class="search-section_search-form-mobile" method="POST">
+          <div class="search-form_typeofOperation-section">
+            <input
+              type="radio"
+              name="typeofOperation"
+              id="rentOperation"
+              class="typeofOperation-search"
+              value="rentOperation"
+              checked
+            />
+            <label for="rentOperation" class="typeofOperation-label rent-label"
+              >Снять</label
+            >
+            <input
+              type="radio"
+              name="typeofOperation"
+              id="buyOperation"
+              class="typeofOperation-search"
+              value="buyOperation"
+            />
+            <label for="buyOperation" class="typeofOperation-label buy-label"
+              >Купить</label
+            >
           </div>
-          <div class="swiper-slide">
-            <div class="iphone-story">
-              <img src="./app/img/main/iphone.png" alt=":(" class="iphoneReview">
-              <img src="./app/img/main/story-image.png" alt="" class="story-image">
+          <div class="searchForm_choseApt-select">
+            <select name="chosenApt" id="searchApt">
+              <option value="1Apt" selected>Квартиры</option>
+              <option value="2Apt">Комнаты</option>
+              <option value="3Apt">Дома</option>
+              <option value="4Apt">Коттеджи</option>
+            </select>
+            <div class="arrow"></div>
+          </div>
+          <div class="searchForm_choseCity-select">
+            <select name="chosenCity" id="searchCity">
+              <option value="10City" selected>Иркутск</option>
+              <option value="1City">Москва</option>
+              <option value="2City">Санкт-Петербург</option>
+              <option value="3City">Казань</option>
+              <option value="4City">Екатеринбург</option>
+              <option value="5City">Новосибирск</option>
+              <option value="6City">Самара</option>
+              <option value="7City">Нижний Новгород</option>
+              <option value="8City">Челябинск</option>
+              <option value="9City">Омск</option>
+              <option value="11City">Сочи</option>
+              <option value="12City">Улан-Удэ</option>
+              <option value="13City">Ростов-на-Дону</option>
+              <option value="14City">Воронеж</option>
+              <option value="15City">Волгоград</option>
+              <option value="16City">Томск</option>
+              <option value="17City">Пермь</option>
+              <option value="18City">Саратов</option>
+            </select>
+            <div class="arrow"></div>
+          </div>
+          <button type="submit" class="search-form_submit-button">Найти</button>
+        </form>
+        <div class="search-section_perks">
+          <div class="perks_description">
+            <img src="./app/img/tarif/Men.svg" alt=":(" class="perk-logo" />
+            <div class="perk-description">Без посредников</div>
+          </div>
+          <div class="perks_description">
+            <img
+              src="./app/img/tarif/ZeroPercents.svg"
+              alt=":("
+              class="perk-logo"
+            />
+            <div class="perk-description">Без комиссии</div>
+          </div>
+          <div class="perks_description">
+            <img
+              src="./app/img/tarif/doneButton.svg"
+              alt=":("
+              class="perk-logo"
+            />
+            <div class="perk-description">
+              Объявления только от собственников
             </div>
-
-            <div class="review">
-              <div class="person-section">
-                <div class="person-image"></div>
-                <div class="reviewInfo-section">
-                  <div class="person-name">yas_ka23</div>
-                  <div class="review-date">27.03.2020</div>
-                </div>
-              </div>
-              <div class="review-section">
-
-                <span> Как вы знаете, я сейчас в поисках квартиры, и это пока что единственный сайт,
-                  с которого мне отвечают собственники, а не бесконечные посредники и агенства, которым "заплати 3к и мы
-                  найдем тебе дворец", к сожелению, квартира пока не найдена, потому что все отозвавшиеся собственники,
-                  уже сдают квартиры. Но искать жилье всегда сложно, так что, я до сих пор буду рада вашим
-                  вариантам.</span>
-              </div>
-            </div>
-
           </div>
-        </div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
-    <!-- Конец секции Отзывы -->
-    <!-- Начало секции О нас -->
-    <div class="main_articles-section">
-      <div class="main_header-block">
-        <span class="red-line"></span>
-        <div class="main_section-block">
-          <span class="main_section-header">О нас пишут</span>
-        </div>
-      </div>
-      <div class="articles-section_main">
-        <div class="articles-section_navigation">
-          <input type="radio" name="articles" id="articleTheVillage" class="main-block_radio" checked>
-          <label for="articleTheVillage" class="main-block_label">The Village</label>
-          <input type="radio" name="articles" id="articleForbes" class="main-block_radio">
-          <label for="articleForbes" class="main-block_label">Forbes</label>
-          <input type="radio" name="articles" id="articleMediametrics" class="main-block_radio">
-          <label for="articleMediametrics" class="main-block_label">Радио Mediametrics</label>
-          <input type="radio" name="articles" id="articleHabr" class="main-block_radio">
-          <label for="articleHabr" class="main-block_label">habr</label>
-          <input type="radio" name="articles" id="articleLightH" class="main-block_radio">
-          <label for="articleLightH" class="main-block_label">Радио “Маяк”</label>
-        </div>
-        <div class="articles-section_content">
-          <img src="./app/img/main/theVillageLogo.svg" alt=":(" />
-          <span class="article_text">Мы захотели создать такое сообщество, в котором собственники могли бы выкладывать
-            квартиры, а люди - снимать без комиссии. Считаем, что риелторы в аренде не нужны, они получают деньги за
-            “воздух”</span>
-          <a href="#" class="article_link">Читать в источнике </a>
-        </div>
-      </div>
-
-    </div>
-    <!-- Конец секции О нас -->
-    <!-- Начало секции Новости -->
-    <div class="main_news-section">
-      <div class="main_header-block">
-        <span class="red-line"></span>
-        <div class="main_section-block">
-          <span class="main_section-header">Новости</span>
-        </div>
-      </div>
-      <div class="news-section_news-cards">
-        <div class="main-block_news-card">
-          <div class="news-card_image-container">
-            <span class="image-container_header">
-              Подбор недвижимости Без риелтора
-            </span>
-            <span class="image-cointainer_subheader">www.bezrealtora.ru</span>
-          </div>
-          <div class="news-card_text-container">
-            <span class="text-container_header">Подбор недвижимости без посредников</span>
-            <span class="text-container_preview">Рассказываем в деталях как мы ищем Вам недвижимость и как работает
-              подбор от БезРиелтора </span>
-          </div>
-        </div>
-        <div class="main-block_news-card">
-          <div class="news-card_image-container">
-            <span class="image-container_header">
-              Подбор недвижимости Без риелтора
-            </span>
-            <span class="image-cointainer_subheader">www.bezrealtora.ru</span>
-          </div>
-          <div class="news-card_text-container">
-            <span class="text-container_header">Подбор недвижимости без посредников</span>
-            <span class="text-container_preview">Рассказываем в деталях как мы ищем Вам недвижимость и как работает
-              подбор от БезРиелтора </span>
-          </div>
-        </div>
-        <div class="main-block_news-card">
-          <div class="news-card_image-container">
-            <span class="image-container_header">
-              Подбор недвижимости Без риелтора
-            </span>
-            <span class="image-cointainer_subheader">www.bezrealtora.ru</span>
-          </div>
-          <div class="news-card_text-container">
-            <span class="text-container_header">Подбор недвижимости без посредников</span>
-            <span class="text-container_preview">Рассказываем в деталях как мы ищем Вам недвижимость и как работает
-              подбор от БезРиелтора </span>
-          </div>
-        </div>
-        <div class="main-block_news-card">
-          <div class="news-card_image-container">
-            <span class="image-container_header">
-              Подбор недвижимости Без риелтора
-            </span>
-            <span class="image-cointainer_subheader">www.bezrealtora.ru</span>
-          </div>
-          <div class="news-card_text-container">
-            <span class="text-container_header">Подбор недвижимости без посредников</span>
-            <span class="text-container_preview">Рассказываем в деталях как мы ищем Вам недвижимость и как работает
-              подбор от БезРиелтора </span>
-          </div>
-        </div>
-        <div class="main-block_news-card">
-          <div class="news-card_image-container">
-            <span class="image-container_header">
-              Подбор недвижимости Без риелтора
-            </span>
-            <span class="image-cointainer_subheader">www.bezrealtora.ru</span>
-          </div>
-          <div class="news-card_text-container">
-            <span class="text-container_header">Подбор недвижимости без посредников</span>
-            <span class="text-container_preview">Рассказываем в деталях как мы ищем Вам недвижимость и как работает
-              подбор от БезРиелтора </span>
-          </div>
-        </div>
-        <div class="main-block_news-card">
-          <div class="news-card_image-container">
-            <span class="image-container_header">
-              Подбор недвижимости Без риелтора
-            </span>
-            <span class="image-cointainer_subheader">www.bezrealtora.ru</span>
-          </div>
-          <div class="news-card_text-container">
-            <span class="text-container_header">Подбор недвижимости без посредников</span>
-            <span class="text-container_preview">Рассказываем в деталях как мы ищем Вам недвижимость и как работает
-              подбор от БезРиелтора </span>
-          </div>
-        </div>
-        <div class="main-block_news-card">
-          <div class="news-card_image-container">
-            <span class="image-container_header">
-              Подбор недвижимости Без риелтора
-            </span>
-            <span class="image-cointainer_subheader">www.bezrealtora.ru</span>
-          </div>
-          <div class="news-card_text-container">
-            <span class="text-container_header">Подбор недвижимости без посредников</span>
-            <span class="text-container_preview">Рассказываем в деталях как мы ищем Вам недвижимость и как работает
-              подбор от БезРиелтора </span>
-          </div>
-        </div>
-        <div class="main-block_news-card">
-          <div class="news-card_image-container">
-            <span class="image-container_header">
-              Подбор недвижимости Без риелтора
-            </span>
-            <span class="image-cointainer_subheader">www.bezrealtora.ru</span>
-          </div>
-          <div class="news-card_text-container">
-            <span class="text-container_header">Подбор недвижимости без посредников</span>
-            <span class="text-container_preview">Рассказываем в деталях как мы ищем Вам недвижимость и как работает
-              подбор от БезРиелтора </span>
+          <div class="perks_description">
+            <img
+              src="./app/img/tarif/fullBase.svg"
+              alt=":("
+              class="perk-logo"
+            />
+            <div class="perk-description">Более 50 000 объявлений</div>
           </div>
         </div>
       </div>
-      <a href="#" class="news-section_showAll-button">Читать все новости</a>
-      <!-- Конец секции Новости -->
-    </div>
-    <!-- Конец секции Новости -->
-    <!-- Начало предподвальной верстки -->
-    <div class="main_prefooter-section">
-      <div class="prefooter-section_city-section">
+      <div class="main_stories-section">
         <div class="main_header-block">
           <span class="red-line"></span>
           <div class="main_section-block">
-            <span class="main_section-header">Аренда в крупнейших городах России</span>
+            <span class="main_section-header">Снимай дешевле</span>
+            <span class="main_section-subheader">
+              Предложения по совместному проживанию (поиск соседа на подселение)
+            </span>
           </div>
         </div>
-        <div class="city-section_table">
-          <section>
-          <a href="#">Москва</a>
-          <a href="#">Екатеринбург</a>
-          <a href="#">Нижний Новгород</a>
-          <a href="#">Сочи</a>
-        </section>
-        <section>
-          <a href="#">Санкт-Петербург</a>
-          <a href="#">Новосибирск</a>
-          <a href="#">Челябинск</a>
-          <a href="#">Улан-Удэ</a>
-        </section>
-          <section>
-          <a href="#">Казань</a>
-          <a href="#">Самара</a>
-          <a href="#">Омск</a>
-          <a href="#">Томск</a>
-        </section>
-          <section>
-          <a href="#">Ростов-на-Дону</a>
-          <a href="#">Воронеж</a>
-          <a href="#">Волгоград</a>
-        </section>
-          <section>
-          <a href="#">Пермь</a>
-          <a href="#">Саратов</a>
-          <a href="#">Иркутск</a>
-        </section>
-          
-          
-          
+        <div class="stories-section_stories-block">
+          <div class="stories-block_story-block">
+            <div class="stories-block_add-story">
+              <button class="add-story_plus-button"></button>
+              <span class="add-story_add-text"
+                >Добавить запись в актуальное</span
+              >
+            </div>
+          </div>
+          <!-- snippet for story -->
+          <div class="stories-block_story-block">
+            <div class="stories-block_added-story">
+              <span class="add-story_added-text"
+                >Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес.,
+                Иркутск, мкр. Радужный, 109</span
+              >
+            </div>
+          </div>
+          <div class="stories-block_story-block">
+            <div class="stories-block_added-story">
+              <span class="add-story_added-text"
+                >Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес.,
+                Иркутск, мкр. Радужный, 109</span
+              >
+            </div>
+          </div>
+          <div class="stories-block_story-block">
+            <div class="stories-block_added-story">
+              <span class="add-story_added-text"
+                >Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес.,
+                Иркутск, мкр. Радужный, 109</span
+              >
+            </div>
+          </div>
+          <div class="stories-block_story-block">
+            <div class="stories-block_added-story">
+              <span class="add-story_added-text"
+                >Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес.,
+                Иркутск, мкр. Радужный, 109</span
+              >
+            </div>
+          </div>
+          <div class="stories-block_story-block">
+            <div class="stories-block_added-story">
+              <span class="add-story_added-text"
+                >Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес.,
+                Иркутск, мкр. Радужный, 109</span
+              >
+            </div>
+          </div>
+          <div class="stories-block_story-block">
+            <div class="stories-block_added-story">
+              <span class="add-story_added-text"
+                >Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес.,
+                Иркутск, мкр. Радужный, 109</span
+              >
+            </div>
+          </div>
+          <div class="stories-block_story-block">
+            <div class="stories-block_added-story">
+              <span class="add-story_added-text"
+                >Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес.,
+                Иркутск, мкр. Радужный, 109</span
+              >
+            </div>
+          </div>
+          <div class="stories-block_story-block">
+            <div class="stories-block_added-story">
+              <span class="add-story_added-text"
+                >Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес.,
+                Иркутск, мкр. Радужный, 109</span
+              >
+            </div>
+          </div>
+          <div class="stories-block_story-block">
+            <div class="stories-block_added-story">
+              <span class="add-story_added-text"
+                >Сдам 1кмн. квартиру, 40 м2, 16/16 этаж, 20000 р. в мес.,
+                Иркутск, мкр. Радужный, 109</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="stories-section_stories-block-mobile">
+          <label
+            class="stories-block_story-block-mobile addStory-mobile"
+            for="addStory"
+          ></label>
+          <input type="checkbox" name="watchStoryCheckbox" id="addStory" />
+          <label for="addStory" class="story-darkLayer-label">
+            <div class="showingStory-content"></div>
+          </label>
+
+          <label
+            class="stories-block_story-block-mobile example1"
+            for="example1"
+          ></label>
+          <input type="checkbox" name="watchStoryCheckbox" id="example1" />
+          <label for="example1" class="story-darkLayer-label">
+            <div class="showingStory-content example1"></div>
+          </label>
+
+          <label
+            class="stories-block_story-block-mobile example2"
+            for="example2"
+          ></label>
+          <input type="checkbox" name="watchStoryCheckbox" id="example2" />
+          <label for="example2" class="story-darkLayer-label">
+            <div class="showingStory-content example2"></div>
+          </label>
+
+          <label
+            class="stories-block_story-block-mobile example3"
+            for="example3"
+          ></label>
+
+          <label
+            class="stories-block_story-block-mobile example1"
+            for="example1"
+          ></label>
+          <input type="checkbox" name="watchStoryCheckbox" id="example1" />
+          <label for="example1" class="story-darkLayer-label">
+            <div class="showingStory-content example1"></div>
+          </label>
+
+          <label
+            class="stories-block_story-block-mobile example2"
+            for="example2"
+          ></label>
+          <input type="checkbox" name="watchStoryCheckbox" id="example2" />
+          <label for="example2" class="story-darkLayer-label">
+            <div class="showingStory-content example2"></div>
+          </label>
+
+          <label
+            class="stories-block_story-block-mobile example3"
+            for="example3"
+          ></label>
+
+          <label
+            class="stories-block_story-block-mobile example1"
+            for="example1"
+          ></label>
+          <input type="checkbox" name="watchStoryCheckbox" id="example1" />
+          <label for="example1" class="story-darkLayer-label">
+            <div class="showingStory-content example1"></div>
+          </label>
+
+          <label
+            class="stories-block_story-block-mobile example2"
+            for="example2"
+          ></label>
+          <input type="checkbox" name="watchStoryCheckbox" id="example2" />
+          <label for="example2" class="story-darkLayer-label">
+            <div class="showingStory-content example2"></div>
+          </label>
+
+          <label
+            class="stories-block_story-block-mobile example3"
+            for="example3"
+          ></label>
+          <input type="checkbox" name="watchStoryCheckbox" id="example3" />
+          <label for="example3" class="story-darkLayer-label">
+            <div class="showingStory-content example3"></div>
+          </label>
         </div>
       </div>
+      <!-- Начало большой секции поиска квартир -->
+      <div class="main_flats-section">
+        <div class="main_header-block">
+          <span class="red-line"></span>
+          <div class="main_section-block">
+            <span class="main_section-header">Новые объявления</span>
+          </div>
+        </div>
+        <div class="flats-section_navigation">
+          <span class="navigation_text">Аренда:</span>
+          <input
+            type="radio"
+            id="navigationFlats"
+            class="search-bar_inputs"
+            name="rentNavigation"
+            checked
+          />
+          <label for="navigationFlats" class="navigation">Квартиры</label>
+          <input
+            type="radio"
+            id="navigationRoom"
+            class="search-bar_inputs"
+            name="rentNavigation"
+          />
+          <label for="navigationRoom" class="navigation">Комнаты</label>
+          <input
+            type="radio"
+            id="navigationHouse"
+            class="search-bar_inputs"
+            name="rentNavigation"
+          />
+          <label for="navigationHouse" class="navigation">Дома</label>
+          <input
+            type="radio"
+            id="navigationCottage"
+            class="search-bar_inputs"
+            name="rentNavigation"
+          />
+          <label for="navigationCottage" class="navigation">Коттеджи</label>
+          <input
+            type="radio"
+            id="navigationCountryHouses"
+            class="search-bar_inputs"
+            name="rentNavigation"
+          />
+          <label for="navigationCountryHouses" class="navigation">Дачи</label>
+          <input
+            type="radio"
+            id="navigationCommercialHouses"
+            class="search-bar_inputs"
+            name="rentNavigation"
+          />
+          <label for="navigationCommercialHouses" class="navigation"
+            >Коммерческая недвижимость</label
+          >
+          <input
+            type="radio"
+            id="navigationLand"
+            class="search-bar_inputs"
+            name="rentNavigation"
+          />
+          <label for="navigationLand" class="navigation"
+            >Земельные участки</label
+          >
+          <input
+            type="radio"
+            id="navigationGarages"
+            class="search-bar_inputs"
+            name="rentNavigation"
+          />
+          <label for="navigationGarages" class="navigation">Гаражи</label>
+        </div>
+        <div class="flats-section_advertisments-section">
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <img
+                src="./app/img/main/main_map-checkmark.svg"
+                class="card-address_map-checkmark"
+              />
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <svg
+                class="card-address_map-checkmark"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
+                  fill="#0066B3"
+                />
+              </svg>
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <img
+                src="./app/img/main/main_map-checkmark.svg"
+                class="card-address_map-checkmark"
+              />
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <svg
+                class="card-address_map-checkmark"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
+                  fill="#0066B3"
+                />
+              </svg>
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <img
+                src="./app/img/main/main_map-checkmark.svg"
+                class="card-address_map-checkmark"
+              />
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <svg
+                class="card-address_map-checkmark"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
+                  fill="#0066B3"
+                />
+              </svg>
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <img
+                src="./app/img/main/main_map-checkmark.svg"
+                class="card-address_map-checkmark"
+              />
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <svg
+                class="card-address_map-checkmark"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
+                  fill="#0066B3"
+                />
+              </svg>
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+        </div>
+        <div class="flats-section_allAdvertisments-link">
+          <a href="#">Смотреть все объявления</a>
+        </div>
+        <div class="flats-section_fastLinks-section">
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover rentFlat">
+              <span>Снять квартиру</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class="navigation-container_link"
+                >На длительный срок</a
+              >
+              <a href="#" class="navigation-container_link">Студии</a>
+              <a href="#" class="navigation-container_link">1-комнатные</a>
+              <a href="#" class="navigation-container_link">2-комнатные</a>
+              <a href="#" class="navigation-container_link">3-комнатные</a>
+              <a href="#" class="navigation-container_link"
+                >Комнаты на длительный срок</a
+              >
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover rentDay">
+              <span>Посуточная аренда</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class="navigation-container_link"
+                >Квартиры посуточно</a
+              >
+              <a href="#" class="navigation-container_link"
+                >Комнаты посуточно</a
+              >
+              <a href="#" class="navigation-container_link"
+                >Коттеджи посуточно</a
+              >
+              <a href="#" class="navigation-container_link">Дома посуточно</a>
+              <a href="#" class="navigation-container_link"
+                >Хостелы и гостиницы</a
+              >
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover rentCountry">
+              <span>Аренда загородной недвижимости</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class="navigation-container_link"
+                >Снять дом на длительный срок</a
+              >
+              <a href="#" class="navigation-container_link"
+                >Снять дачу на длительный срок</a
+              >
+              <a href="#" class="navigation-container_link"
+                >Снять коттедж на длительный срок</a
+              >
+              <a href="#" class="navigation-container_link"
+                >Аренда земельных участков</a
+              >
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover rentCommercial">
+              <span>Аренда коммерческой недвижимости</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class="navigation-container_link">Снять офис</a>
+              <a href="#" class="navigation-container_link">Снять помещение</a>
+              <a href="#" class="navigation-container_link">Снять склад</a>
+              <a href="#" class="navigation-container_link">Снять гараж</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_applicationForm-section">
+        <div class="applicationForm">
+          <div class="applicationForm_boorkmark"></div>
+          <div class="applicationForm_advertismentInfo-section">
+            <span class="advertismentInfo-section_header"
+              >Не нашли, что искали?</span
+            >
+            <span class="advertismentInfo-section_subheader"
+              >Поможем найти квартиру от собственника по лучшей цене</span
+            >
+          </div>
+          <form
+            action="#"
+            method="post"
+            class="applicationForm_applyInfo-section"
+          >
+            <div class="applyInfo-section_requiredActions-section">
+              <div class="requiredActions-section_telephone-input">
+                <div class="telephone-input_preNumber">+7</div>
+                <input type="text" class="telephone-input_number" />
+              </div>
+              <button class="requredActions-section_apply-button">
+                Оставить заявку
+              </button>
+            </div>
+            <input
+              type="checkbox"
+              name="agreeCheckbox"
+              id="agreeCheckbox"
+              class="applyInfo-section_personalAgree-checkbox"
+            />
+            <label for="agreeCheckbox" class="personalAgree-label"
+              >Я даю согласие на
+              <a href="#">Обработку персональных данных</a></label
+            >
+          </form>
+        </div>
+      </div>
+      <div class="main_flats-section">
+        <div class="flats-section_navigation">
+          <span class="navigation_text">Продажа:</span>
+          <input
+            type="radio"
+            id="navigationSellFlats"
+            class="search-bar_inputs"
+            name="sellNavigation"
+            checked
+          />
+          <label for="navigationSellFlats" class="navigation">Квартиры</label>
+          <input
+            type="radio"
+            id="navigationSellRoom"
+            class="search-bar_inputs"
+            name="sellNavigation"
+          />
+          <label for="navigationSellRoom" class="navigation">Комнаты</label>
+          <input
+            type="radio"
+            id="navigationSellHouse"
+            class="search-bar_inputs"
+            name="sellNavigation"
+          />
+          <label for="navigationSellHouse" class="navigation">Дома</label>
+          <input
+            type="radio"
+            id="navigationSellCottage"
+            class="search-bar_inputs"
+            name="sellNavigation"
+          />
+          <label for="navigationSellCottage" class="navigation">Коттеджи</label>
+          <input
+            type="radio"
+            id="navigationSellCountryHouses"
+            class="search-bar_inputs"
+            name="sellNavigation"
+          />
+          <label for="navigationSellCountryHouses" class="navigation"
+            >Дачи</label
+          >
+          <input
+            type="radio"
+            id="navigationSellCommercialHouses"
+            class="search-bar_inputs"
+            name="sellNavigation"
+          />
+          <label for="navigationSellCommercialHouses" class="navigation"
+            >Коммерческая недвижимость</label
+          >
+          <input
+            type="radio"
+            id="navigationSellLand"
+            class="search-bar_inputs"
+            name="sellNavigation"
+          />
+          <label for="navigationSellLand" class="navigation"
+            >Земельные участки</label
+          >
+          <input
+            type="radio"
+            id="navigationSellGarages"
+            class="search-bar_inputs"
+            name="sellNavigation"
+          />
+          <label for="navigationSellGarages" class="navigation">Гаражи</label>
+        </div>
+        <div class="flats-section_advertisments-section">
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <img
+                src="./app/img/main/main_map-checkmark.svg"
+                class="card-address_map-checkmark"
+              />
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <svg
+                class="card-address_map-checkmark"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
+                  fill="#0066B3"
+                />
+              </svg>
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <img
+                src="./app/img/main/main_map-checkmark.svg"
+                class="card-address_map-checkmark"
+              />
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <svg
+                class="card-address_map-checkmark"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
+                  fill="#0066B3"
+                />
+              </svg>
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <img
+                src="./app/img/main/main_map-checkmark.svg"
+                class="card-address_map-checkmark"
+              />
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <svg
+                class="card-address_map-checkmark"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
+                  fill="#0066B3"
+                />
+              </svg>
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <img
+                src="./app/img/main/main_map-checkmark.svg"
+                class="card-address_map-checkmark"
+              />
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+          <div class="advertisments-section_avdert-card">
+            <div class="avdert-card_card-image"></div>
+            <div class="avdert-card_card-info">
+              <div class="card-info_price-tag">
+                <span class="price-tag_price">155 000 ₽</span>
+                <span class="price-tag_per-month">/в месяц</span>
+              </div>
+              <div class="card-info_flat-parameters">
+                <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                -
+                <span class="flat-parameters_flatArea-span">170 м²</span>
+                -
+                <span class="flat-parameters_flatAddress-span"
+                  >Франк-Каменецкого, 28/4</span
+                >
+              </div>
+              <div class="card-info_flat-description">
+                Роскошная 4х комнатная квартира
+              </div>
+            </div>
+            <div class="avdert-card_card-address">
+              <svg
+                class="card-address_map-checkmark"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.68028 0.217123L9.56252 0.216927L7.05987 5.12097L4.46717 0.175049L0.917382 9.10998H0V9.82761H5.02574V9.10998H4.02854L5.02574 6.31753L7.05987 9.82761L9.01437 6.31753L10.0114 9.10998H9.01437V9.82761H14V9.10998H13.1363L9.68028 0.217123Z"
+                  fill="#0066B3"
+                />
+              </svg>
+              <span class="card-address-address-span">Правобережный</span>
+            </div>
+          </div>
+        </div>
+        <div class="flats-section_allAdvertisments-link">
+          <a href="#">Смотреть все объявления</a>
+        </div>
+        <div class="flats-section_fastLinks-section">
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover sellFlat">
+              <span>Купить квартиру</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class="navigation-container_link">Новостройки</a>
+              <a href="#" class="navigation-container_link">Вторичка</a>
+              <a href="#" class="navigation-container_link">Студии</a>
+              <a href="#" class="navigation-container_link">1-комнатные</a>
+              <a href="#" class="navigation-container_link">2-комнатные</a>
+              <a href="#" class="navigation-container_link">3-комнатные</a>
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover rentCountry">
+              <span>Загородная недвижимость</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class="navigation-container_link">Купить дом</a>
+              <a href="#" class="navigation-container_link">Купить дачу</a>
+              <a href="#" class="navigation-container_link">Купить коттедж</a>
+              <a href="#" class="navigation-container_link"
+                >Купить земельный участок</a
+              >
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover rentCommercial">
+              <span>Коммерческая недвижимость</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class="navigation-container_link">Купить офис</a>
+              <a href="#" class="navigation-container_link">Купить помещение</a>
+              <a href="#" class="navigation-container_link">Купить склад</a>
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover sellGarage">
+              <span>Гаражи и машиноместа</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class="navigation-container_link">Купить гараж</a>
+              <a href="#" class="navigation-container_link"
+                >Купить машиноместо</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_applicationFormBig-section">
+        <div class="applicationFormBig">
+          <div class="applicationFormBig_bookmark"></div>
+          <div class="applicationFormBig_image"></div>
+          <div class="applicationFormBig_application-section">
+            <div class="applicationFormBig_advertisment-section">
+              <span class="advertismentInfoBig-section_header"
+                >Не нашли, что искали?</span
+              >
+              <span class="advertismentInfoBig-section_subheader"
+                >Поможем найти квартиру от собственника по лучшей цене</span
+              >
+            </div>
+            <div class="applicationFormBig_advertisment-section">
+              <span class="advertisment-section_text"
+                >Мы сразу перезвоним и приступим к поиску</span
+              >
+              <form action="#" method="POST" class="advertisment-section_form">
+                <div class="form_requiredActions-section">
+                  <div class="requiredActions-section_input">
+                    <div class="input_preInput">+7</div>
+                    <input type="text" class="input_number" />
+                  </div>
+                  <button class="requiredActions-section_button-big">
+                    Оставить заявку
+                  </button>
+                </div>
+                <div class="form_licenceAgreement-section">
+                  <input
+                    type="checkbox"
+                    name="agreeCheckbox"
+                    id="agreeCheckboxBig"
+                    class="applyInfo-section_personalAgree-checkbox"
+                  />
+                  <label for="agreeCheckboxBig" class="personalAgree-label"
+                    >Я даю согласие на
+                    <a href="#">Обработку персональных данных</a></label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Конец большой секции поиска квартир -->
+      <!-- Начало описания работы -->
+      <div class="main_workDescribe-section">
+        <div class="main_header-block">
+          <span class="red-line"></span>
+          <div class="main_section-block">
+            <span class="main_section-header">Как это работает</span>
+          </div>
+        </div>
+        <div class="workDescribe-section_stages-section">
+          <div class="stages-section_stage-card">
+            <div class="stage-card_image-container firstStage">
+              <img
+                src="./app/img/main/stage_first.svg"
+                alt=":("
+                class="image-countainer_image"
+              />
+            </div>
+            <div class="stage-card_text-container">
+              <div class="text-container_header">
+                Вы подаёте заявку на поиск жилья
+              </div>
+              <div class="text-cotainer_text">
+                Для этого Вы можете оставить номер на сайте, написать нам в
+                Instagram Direct или оставить сообщение в ВКонтакте. Мы с Вами
+                связываемся и уточняем все критерии поиска и детали.
+              </div>
+            </div>
+          </div>
+          <div class="stages-section_stage-card">
+            <div class="stage-card_image-container secondStage">
+              <img
+                src="./app/img/main/stage_second.svg"
+                alt=":("
+                class="image-countainer_image"
+              />
+            </div>
+            <div class="stage-card_text-container">
+              <div class="text-container_header">Мы подбираем квартиру</div>
+              <div class="text-cotainer_text">
+                Или комнату от собственника и отправляем Вам проверенные нами
+                варианты несколько раз в день на почту, WhatsApp, Viber или
+                Telegram. Варианты мы подбираем на основании более 20 источников
+                - база нашего сервиса и сообщества, используем другие сайты
+                Avito, ЦИАН, Domofond, группы недвижимости в соц. сетях. Каждый
+                вариант мы прозваниваем и проверяем.
+              </div>
+            </div>
+          </div>
+          <div class="stages-section_stage-card">
+            <div class="stage-card_image-container thirdStage">
+              <img
+                src="./app/img/main/stage_third.svg"
+                alt=":("
+                class="image-countainer_image"
+              />
+            </div>
+            <div class="stage-card_text-container">
+              <div class="text-container_header">Мы проверяем недвижимость</div>
+              <div class="text-cotainer_text">
+                После заселения мы можем заказать выписку из ЕГРН, проверить
+                жильё в Росреестре и подготовить договор аренды, чтобы
+                обезопасить Вас от возможных неблагоприятных ситуаций.
+              </div>
+            </div>
+          </div>
+          <div class="stages-section_stage-card lastChild">
+            <div class="stage-card_image-container fourthStage">
+              <img
+                src="./app/img/main/stage_fourth.svg"
+                alt=":("
+                class="image-countainer_image"
+              />
+            </div>
+            <div class="stage-card_text-container">
+              <div class="text-container_header">Вы заселяетесь</div>
+              <div class="text-cotainer_text">
+                Обычно это занимает от суток до недели в зависимости от
+                сложности запроса. Если ничего не находим - то мы возвращаем
+                деньги. После заселения мы можем заказать выписку из ЕГРН и
+                подготовить договор аренды.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Конец описания работы -->
+      <!-- Начало описания преимуществ -->
+      <div class="main_benefits-section">
+        <div class="main_header-block">
+          <span class="red-line"></span>
+          <div class="main_section-block">
+            <span class="main_section-header">Преимущества подбора</span>
+          </div>
+        </div>
+        <div class="benefits-section_describe-cards">
+          <div class="describe-cards_benefit-card">
+            <div class="benefit-card_text-section">
+              <span class="benefit-card_header">Экономия вашего времени</span>
+              <span class="benefit-card_text"
+                >Мы займёмся полностью поиском за Вас и будем каждый день
+                присылать только проверенные варианты строго по Вашим
+                критериям.</span
+              >
+            </div>
+            <div class="benefit-card_image firstBenefit"></div>
+          </div>
+          <div class="describe-cards_benefit-card">
+            <div class="benefit-card_text-section">
+              <span class="benefit-card_header">Экономия на комиссии</span>
+              <span class="benefit-card_text"
+                >Вам не нужно платить риелтору комиссию, варианты только от
+                собственников.</span
+              >
+            </div>
+            <div class="benefit-card_image secondBenefit"></div>
+          </div>
+          <div class="describe-cards_benefit-card">
+            <div class="benefit-card_text-section">
+              <span class="benefit-card_header">Мониторим рынок полностью</span>
+              <span class="benefit-card_text"
+                >Более 30 источников: сайты, соц. сети и своя база недвижимости.
+                Будем мониторить все площадки недвижимости, прозванивать и
+                отправлять все лучшие предложения.</span
+              >
+            </div>
+            <div class="benefit-card_image thirdBenefit"></div>
+          </div>
+          <div class="describe-cards_benefit-card">
+            <div class="benefit-card_text-section">
+              <span class="benefit-card_header">Юридическое сопровождение</span>
+              <span class="benefit-card_text"
+                >Проверка квартиры в Росреестре, консультации юриста и помощь в
+                составлении договора.</span
+              >
+            </div>
+            <div class="benefit-card_image fourthBenefit"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Конец описания -->
+      <!-- Начало секции Отзывы -->
+      <div class="main_review-section">
+        <div class="main_header-block review_header-block">
+          <span class="red-line"></span>
+          <div class="main_section-block">
+            <span class="main_section-header">Отзывы</span>
+          </div>
+        </div>
+
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <!-- <img src="./app/img/main/iphone.svg" alt=":(" class = "iphoneReview"> -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide">
+              <div class="iphone-story">
+                <img
+                  src="./app/img/main/iphone.png"
+                  alt=":("
+                  class="iphoneReview"
+                />
+                <img
+                  src="./app/img/main/story-image.png"
+                  alt=""
+                  class="story-image"
+                />
+              </div>
+
+              <div class="review">
+                <div class="person-section">
+                  <div class="person-image"></div>
+                  <div class="reviewInfo-section">
+                    <div class="person-name">yas_ka23</div>
+                    <div class="review-date">27.03.2020</div>
+                  </div>
+                </div>
+                <div class="review-section">
+                  <span>
+                    Как вы знаете, я сейчас в поисках квартиры, и это пока что
+                    единственный сайт, с которого мне отвечают собственники, а
+                    не бесконечные посредники и агенства, которым "заплати 3к и
+                    мы найдем тебе дворец", к сожелению, квартира пока не
+                    найдена, потому что все отозвавшиеся собственники, уже сдают
+                    квартиры. Но искать жилье всегда сложно, так что, я до сих
+                    пор буду рада вашим вариантам.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="iphone-story">
+                <img
+                  src="./app/img/main/iphone.png"
+                  alt=":("
+                  class="iphoneReview"
+                />
+                <img
+                  src="./app/img/main/story-image.png"
+                  alt=""
+                  class="story-image"
+                />
+              </div>
+
+              <div class="review">
+                <div class="person-section">
+                  <div class="person-image"></div>
+                  <div class="reviewInfo-section">
+                    <div class="person-name">yas_ka23</div>
+                    <div class="review-date">27.03.2020</div>
+                  </div>
+                </div>
+                <div class="review-section">
+                  <span>
+                    Как вы знаете, я сейчас в поисках квартиры, и это пока что
+                    единственный сайт, с которого мне отвечают собственники, а
+                    не бесконечные посредники и агенства, которым "заплати 3к и
+                    мы найдем тебе дворец", к сожелению, квартира пока не
+                    найдена, потому что все отозвавшиеся собственники, уже сдают
+                    квартиры. Но искать жилье всегда сложно, так что, я до сих
+                    пор буду рада вашим вариантам.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <!-- Конец секции Отзывы -->
+      <!-- Начало секции О нас -->
+      <div class="main_articles-section">
+        <div class="main_header-block">
+          <span class="red-line"></span>
+          <div class="main_section-block">
+            <span class="main_section-header">О нас пишут</span>
+          </div>
+        </div>
+        <div class="articles-section_main">
+          <div class="articles-section_navigation">
+            <input
+              type="radio"
+              name="articles"
+              id="articleTheVillage"
+              class="main-block_radio"
+              checked
+            />
+            <label for="articleTheVillage" class="main-block_label"
+              >The Village</label
+            >
+            <input
+              type="radio"
+              name="articles"
+              id="articleForbes"
+              class="main-block_radio"
+            />
+            <label for="articleForbes" class="main-block_label">Forbes</label>
+            <input
+              type="radio"
+              name="articles"
+              id="articleMediametrics"
+              class="main-block_radio"
+            />
+            <label for="articleMediametrics" class="main-block_label"
+              >Радио Mediametrics</label
+            >
+            <input
+              type="radio"
+              name="articles"
+              id="articleHabr"
+              class="main-block_radio"
+            />
+            <label for="articleHabr" class="main-block_label">habr</label>
+            <input
+              type="radio"
+              name="articles"
+              id="articleLightH"
+              class="main-block_radio"
+            />
+            <label for="articleLightH" class="main-block_label"
+              >Радио “Маяк”</label
+            >
+          </div>
+          <div class="articles-section_content">
+            <img src="./app/img/main/theVillageLogo.svg" alt=":(" />
+            <span class="article_text"
+              >Мы захотели создать такое сообщество, в котором собственники
+              могли бы выкладывать квартиры, а люди - снимать без комиссии.
+              Считаем, что риелторы в аренде не нужны, они получают деньги за
+              “воздух”</span
+            >
+            <a href="#" class="article_link">Читать в источнике </a>
+          </div>
+        </div>
+      </div>
+      <!-- Конец секции О нас -->
+      <!-- Начало секции Новости -->
+      <div class="main_news-section">
+        <div class="main_header-block">
+          <span class="red-line"></span>
+          <div class="main_section-block">
+            <span class="main_section-header">Новости</span>
+          </div>
+        </div>
+        <div class="news-section_news-cards">
+          <div class="main-block_news-card">
+            <a href="#" class="news_link">
+              <div class="news-card_image-container">
+                <span class="image-container_header">
+                  Подбор недвижимости Без риелтора
+                </span>
+                <span class="image-cointainer_subheader"
+                  >www.bezrealtora.ru</span
+                >
+              </div>
+              <div class="news-card_text-container">
+                <span class="text-container_header"
+                  >Подбор недвижимости без посредников</span
+                >
+                <span class="text-container_preview"
+                  >Рассказываем в деталях как мы ищем Вам недвижимость и как
+                  работает подбор от БезРиелтора
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="main-block_news-card">
+            <a href="#" class="news_link">
+              <div class="news-card_image-container">
+                <span class="image-container_header">
+                  Подбор недвижимости Без риелтора
+                </span>
+                <span class="image-cointainer_subheader"
+                  >www.bezrealtora.ru</span
+                >
+              </div>
+              <div class="news-card_text-container">
+                <span class="text-container_header"
+                  >Подбор недвижимости без посредников</span
+                >
+                <span class="text-container_preview"
+                  >Рассказываем в деталях как мы ищем Вам недвижимость и как
+                  работает подбор от БезРиелтора
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="main-block_news-card">
+            <a href="#" class="news_link">
+              <div class="news-card_image-container">
+                <span class="image-container_header">
+                  Подбор недвижимости Без риелтора
+                </span>
+                <span class="image-cointainer_subheader"
+                  >www.bezrealtora.ru</span
+                >
+              </div>
+              <div class="news-card_text-container">
+                <span class="text-container_header"
+                  >Подбор недвижимости без посредников</span
+                >
+                <span class="text-container_preview"
+                  >Рассказываем в деталях как мы ищем Вам недвижимость и как
+                  работает подбор от БезРиелтора
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="main-block_news-card">
+            <a href="#" class="news_link">
+              <div class="news-card_image-container">
+                <span class="image-container_header">
+                  Подбор недвижимости Без риелтора
+                </span>
+                <span class="image-cointainer_subheader"
+                  >www.bezrealtora.ru</span
+                >
+              </div>
+              <div class="news-card_text-container">
+                <span class="text-container_header"
+                  >Подбор недвижимости без посредников</span
+                >
+                <span class="text-container_preview"
+                  >Рассказываем в деталях как мы ищем Вам недвижимость и как
+                  работает подбор от БезРиелтора
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="main-block_news-card">
+            <a href="#" class="news_link">
+              <div class="news-card_image-container">
+                <span class="image-container_header">
+                  Подбор недвижимости Без риелтора
+                </span>
+                <span class="image-cointainer_subheader"
+                  >www.bezrealtora.ru</span
+                >
+              </div>
+              <div class="news-card_text-container">
+                <span class="text-container_header"
+                  >Подбор недвижимости без посредников</span
+                >
+                <span class="text-container_preview"
+                  >Рассказываем в деталях как мы ищем Вам недвижимость и как
+                  работает подбор от БезРиелтора
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="main-block_news-card">
+            <a href="#" class="news_link">
+              <div class="news-card_image-container">
+                <span class="image-container_header">
+                  Подбор недвижимости Без риелтора
+                </span>
+                <span class="image-cointainer_subheader"
+                  >www.bezrealtora.ru</span
+                >
+              </div>
+              <div class="news-card_text-container">
+                <span class="text-container_header"
+                  >Подбор недвижимости без посредников</span
+                >
+                <span class="text-container_preview"
+                  >Рассказываем в деталях как мы ищем Вам недвижимость и как
+                  работает подбор от БезРиелтора
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="main-block_news-card">
+            <a href="#" class="news_link">
+              <div class="news-card_image-container">
+                <span class="image-container_header">
+                  Подбор недвижимости Без риелтора
+                </span>
+                <span class="image-cointainer_subheader"
+                  >www.bezrealtora.ru</span
+                >
+              </div>
+              <div class="news-card_text-container">
+                <span class="text-container_header"
+                  >Подбор недвижимости без посредников</span
+                >
+                <span class="text-container_preview"
+                  >Рассказываем в деталях как мы ищем Вам недвижимость и как
+                  работает подбор от БезРиелтора
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="main-block_news-card">
+            <a href="#" class="news_link">
+              <div class="news-card_image-container">
+                <span class="image-container_header">
+                  Подбор недвижимости Без риелтора
+                </span>
+                <span class="image-cointainer_subheader"
+                  >www.bezrealtora.ru</span
+                >
+              </div>
+              <div class="news-card_text-container">
+                <span class="text-container_header"
+                  >Подбор недвижимости без посредников</span
+                >
+                <span class="text-container_preview"
+                  >Рассказываем в деталях как мы ищем Вам недвижимость и как
+                  работает подбор от БезРиелтора
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="#" class="news-section_showAll-button">Читать все новости</a>
+        <!-- Конец секции Новости -->
+      </div>
+      <!-- Конец секции Новости -->
+      <!-- Начало предподвальной верстки -->
+      <div class="main_prefooter-section">
+        <div class="prefooter-section_city-section">
+          <div class="main_header-block">
+            <span class="red-line"></span>
+            <div class="main_section-block">
+              <span class="main_section-header"
+                >Аренда в крупнейших городах России</span
+              >
+            </div>
+          </div>
+          <div class="city-section_table">
+            <section>
+              <a href="#">Москва</a>
+              <a href="#">Екатеринбург</a>
+              <a href="#">Нижний Новгород</a>
+              <a href="#">Сочи</a>
+            </section>
+            <section>
+              <a href="#">Санкт-Петербург</a>
+              <a href="#">Новосибирск</a>
+              <a href="#">Челябинск</a>
+              <a href="#">Улан-Удэ</a>
+            </section>
+            <section>
+              <a href="#">Казань</a>
+              <a href="#">Самара</a>
+              <a href="#">Омск</a>
+              <a href="#">Томск</a>
+            </section>
+            <section>
+              <a href="#">Ростов-на-Дону</a>
+              <a href="#">Воронеж</a>
+              <a href="#">Волгоград</a>
+            </section>
+            <section>
+              <a href="#">Пермь</a>
+              <a href="#">Саратов</a>
+              <a href="#">Иркутск</a>
+            </section>
+          </div>
+        </div>
         <div class="prefooter-section_district-section">
           <div class="main_header-block">
             <span class="red-line"></span>
@@ -1312,49 +2116,46 @@
           </div>
           <div class="district-section_table">
             <section>
-            <a href="#">130-й квартал</a>
-            <a href="#">5168-й километр ВСЖД</a>
-            <a href="#">Военный городок</a>
-            <a href="#">Горка</a>
-          </section>
-          <section>
-            <a href="#">Ершовский мкр</a>
-            <a href="#">Жилой комплекс German House</a>
-            <a href="#">Жилой комплекс Ангарские паруса</a>
-            <a href="#">Жилой комплекс Веста</a>
-          </section>
+              <a href="#">130-й квартал</a>
+              <a href="#">5168-й километр ВСЖД</a>
+              <a href="#">Военный городок</a>
+              <a href="#">Горка</a>
+            </section>
             <section>
-            <a href="#">Жилой комплекс Виват</a>
-            <a href="#">Жилой комплекс Дебют</a>
-            <a href="#">Жилой комплекс Депутат</a>
-            <a href="#">Жилой комплекс Иркутский дворик-2</a>
-          </section>
+              <a href="#">Ершовский мкр</a>
+              <a href="#">Жилой комплекс German House</a>
+              <a href="#">Жилой комплекс Ангарские паруса</a>
+              <a href="#">Жилой комплекс Веста</a>
+            </section>
             <section>
-            <a href="#">Жилой комплекс Каскад</a>
-            <a href="#">Жилой комплекс Лазурный</a>
-            <a href="#">Жилой комплекс Нижняя Лисиха 1</a>
-            <a href="#">Жилой комплекс Нижняя Лисиха 2</a>
-          </section>
+              <a href="#">Жилой комплекс Виват</a>
+              <a href="#">Жилой комплекс Дебют</a>
+              <a href="#">Жилой комплекс Депутат</a>
+              <a href="#">Жилой комплекс Иркутский дворик-2</a>
+            </section>
             <section>
-            <a href="#">Жилой комплекс Нижняя Лисиха 3</a>
-            <a href="#">Жилой комплекс Новый город 1</a>
-            <a href="#">Жилой комплекс Новый город 1</a>
-            <a href="#" style = "text-decoration: underline;">Показать еще</a>
-          </section>
-            
-            
-            
+              <a href="#">Жилой комплекс Каскад</a>
+              <a href="#">Жилой комплекс Лазурный</a>
+              <a href="#">Жилой комплекс Нижняя Лисиха 1</a>
+              <a href="#">Жилой комплекс Нижняя Лисиха 2</a>
+            </section>
+            <section>
+              <a href="#">Жилой комплекс Нижняя Лисиха 3</a>
+              <a href="#">Жилой комплекс Новый город 1</a>
+              <a href="#">Жилой комплекс Новый город 1</a>
+              <a href="#" style="text-decoration: underline">Показать еще</a>
+            </section>
           </div>
         </div>
-          <div class="prefooter-section_subway-section">
-            <div class="main_header-block">
-              <span class="red-line"></span>
-              <div class="main_section-block">
-                <span class="main_section-header">Квартиры у метро</span>
-              </div>
+        <div class="prefooter-section_subway-section">
+          <div class="main_header-block">
+            <span class="red-line"></span>
+            <div class="main_section-block">
+              <span class="main_section-header">Квартиры у метро</span>
             </div>
-            <div class="subway-section_table">
-              <section>
+          </div>
+          <div class="subway-section_table">
+            <section>
               <a href="#">Авиамоторная</a>
               <a href="#">Автозаводская</a>
               <a href="#">Автозаводская</a>
@@ -1366,126 +2167,114 @@
               <a href="#">Алексеевская</a>
               <a href="#">Алма-Атинская</a>
             </section>
-              <section>
+            <section>
               <a href="#">Алтуфьево</a>
               <a href="#">Андроновка</a>
               <a href="#">Аннино</a>
               <a href="#">Арбатская Новгород</a>
             </section>
-              <section>
+            <section>
               <a href="#">Аэропорт</a>
               <a href="#">Бабушкинская</a>
               <a href="#">Багратионовская</a>
               <a href="#">Балтийская</a>
             </section>
-              <section>
+            <section>
               <a href="#">Баррикадная</a>
               <a href="#">Бауманская</a>
               <a href="#">Беговая</a>
-              <a href="#" style = "text-decoration: underline;">Показать еще</a>
+              <a href="#" style="text-decoration: underline">Показать еще</a>
             </section>
-              
-              
-              
-            </div>
+          </div>
+        </div>
       </div>
+      <!-- Конец предподвальной верстки -->
     </div>
-    <!-- Конец предподвальной верстки -->
-  </div>
 
-  <div class="footer">
-    <div class="footer_support-section">
-      <div class="support-section_logo-section">
-        <img src="./app/img/tarif/header-logo_house.svg" alt=":(" />
-        <img src="./app/img/tarif/header-logo_label.svg" alt=":(" />
-      </div>
-      <div class="support-section_navigation">
-        <a href="#" class="navigation_link">Контакты и поддержка</a>
-        <a href="#" class="navigation_link">Реклама на сайте</a>
-        <a href="#" class="navigation_link">Тарифы</a>
-        <a href="#" class="navigation_link">О проекте</a>
-      </div>
-    </div>
-    <div class="footer_eastate-section">
-      <a href="" class="navigation_link">Квартиры</a>
-      <a href="" class="navigation_link">Комнаты</a>
-      <a href="" class="navigation_link">Дома, коттеджи, дачи</a>
-      <a href="" class="navigation_link"
-        >Коммерческая недвижимость</a
-      >
-      <a href="" class="navigation_link">Земельные участки</a>
-      <a href="" class="navigation_link">Гаражи</a>
-    </div>
-    <div class="footer_about-company">
-      <div class="about-company_company">
-        БезРиелтора - это сервис для поиска, аренды, покупки, сдачи,
-        продажи недвижимости без посредников в Москве,
-        Санкт-Петербурге, Иркутске и других городах России. На
-        БезРиелтора.ру Вы можете снять или купить жильё от
-        собственника не выходя из дома. Все проверенные объявления
-        от хозяев и без комиссии на одном сайте.
-      </div>
-      <div class="about-company_company-mobile">
-        БезРиелтора - это сервис для поиска, аренды, покупки, сдачи,
-        продажи недвижимости без посредников.
-      </div>
-      <div class="about-company_law-info">
-        ООО Наш Дом<br />
-        ИНН 3812525600<br />
-        ОГРН 1183850036468<br />
-      </div>
-      <div class="about-company_social-section">
-        <div class="social-section_networks">
-          <a href="#" class="navigation_link"
-            ><img
-              src="./app/img/tarif/footer_instagram.svg"
-              alt=":("
-              class="networks_network-logo"
-          /></a>
-          <a href="#" class="navigation_link"
-            ><img
-              src="./app/img/tarif/footer_vk.svg"
-              alt=":("
-              class="networks_network-logo"
-          /></a>
-          <a href="#" class="navigation_link"
-            ><img
-              src="./app/img/tarif/footer_telegram.svg"
-              alt=":("
-              class="networks_network-logo"
-          /></a>
+    <div class="footer">
+      <div class="footer_support-section">
+        <div class="support-section_logo-section">
+          <img src="./app/img/tarif/header-logo_house.svg" alt=":(" />
+          <img src="./app/img/tarif/header-logo_label.svg" alt=":(" />
         </div>
-        <div class="social-section_email">
-          E-mail:
-          <a href="mailto:hello@bezrealtora.ru" class="faq_link"
-            >hello@bezrealtora.ru</a
-          >
+        <div class="support-section_navigation">
+          <a href="#" class="navigation_link">Контакты и поддержка</a>
+          <a href="#" class="navigation_link">Реклама на сайте</a>
+          <a href="#" class="navigation_link">Тарифы</a>
+          <a href="#" class="navigation_link">О проекте</a>
         </div>
       </div>
-    </div>
-    <div class="footer_licence-section">
-      <span class="licence-section_text"
-        >© «БезРиелтора» 2020 г. Все права защищены. Сайт не
-        является публичной офертой.
-        <a href="#" class="licence_link"
-          >Пользовательское соглашение</a
+      <div class="footer_eastate-section">
+        <a href="" class="navigation_link">Квартиры</a>
+        <a href="" class="navigation_link">Комнаты</a>
+        <a href="" class="navigation_link">Дома, коттеджи, дачи</a>
+        <a href="" class="navigation_link">Коммерческая недвижимость</a>
+        <a href="" class="navigation_link">Земельные участки</a>
+        <a href="" class="navigation_link">Гаражи</a>
+      </div>
+      <div class="footer_about-company">
+        <div class="about-company_company">
+          БезРиелтора - это сервис для поиска, аренды, покупки, сдачи, продажи
+          недвижимости без посредников в Москве, Санкт-Петербурге, Иркутске и
+          других городах России. На БезРиелтора.ру Вы можете снять или купить
+          жильё от собственника не выходя из дома. Все проверенные объявления от
+          хозяев и без комиссии на одном сайте.
+        </div>
+        <div class="about-company_company-mobile">
+          БезРиелтора - это сервис для поиска, аренды, покупки, сдачи, продажи
+          недвижимости без посредников.
+        </div>
+        <div class="about-company_law-info">
+          ООО Наш Дом<br />
+          ИНН 3812525600<br />
+          ОГРН 1183850036468<br />
+        </div>
+        <div class="about-company_social-section">
+          <div class="social-section_networks">
+            <a href="#" class="navigation_link"
+              ><img
+                src="./app/img/tarif/footer_instagram.svg"
+                alt=":("
+                class="networks_network-logo"
+            /></a>
+            <a href="#" class="navigation_link"
+              ><img
+                src="./app/img/tarif/footer_vk.svg"
+                alt=":("
+                class="networks_network-logo"
+            /></a>
+            <a href="#" class="navigation_link"
+              ><img
+                src="./app/img/tarif/footer_telegram.svg"
+                alt=":("
+                class="networks_network-logo"
+            /></a>
+          </div>
+          <div class="social-section_email">
+            E-mail:
+            <a href="mailto:hello@bezrealtora.ru" class="faq_link"
+              >hello@bezrealtora.ru</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer_licence-section">
+        <span class="licence-section_text"
+          >© «БезРиелтора» 2020 г. Все права защищены. Сайт не является
+          публичной офертой.
+          <a href="#" class="licence_link">Пользовательское соглашение</a>
+          <a href="#" class="licence_link">Политика конфиденциальности</a
+          >.</span
         >
-        <a href="#" class="licence_link"
-          >Политика конфиденциальности</a
-        >.</span
-      >
-      <span class="licence-section_text"
-        >Разработка – TOPSITE.STUDIO</span
-      >
+        <span class="licence-section_text">Разработка – TOPSITE.STUDIO</span>
+      </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./app/js/common.js"></script>
-  <script src="./app/js/index.js "></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./app/js/common.js"></script>
+    <script src="./app/js/index.js "></script>
+  </body>
 </html>
