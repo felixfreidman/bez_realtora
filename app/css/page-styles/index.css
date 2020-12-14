@@ -1376,7 +1376,6 @@ input[name="watchStoryCheckbox"]:checked + label {
   .advertisments-section_avdert-card {
     background-color: #fff;
     width: 45%;
-    height: fit-content;
   }
 
   .avdert-card_card-image {
@@ -1540,7 +1539,6 @@ input[name="watchStoryCheckbox"]:checked + label {
   .advertisments-section_avdert-card {
     background-color: #fff;
     width: 100%;
-    height: fit-content;
   }
 
   .avdert-card_card-image {
@@ -1703,7 +1701,6 @@ input[name="watchStoryCheckbox"]:checked + label {
   .advertisments-section_avdert-card {
     background-color: #fff;
     width: 100%;
-    height: fit-content;
   }
 
   .avdert-card_card-image {
@@ -1867,7 +1864,6 @@ input[name="watchStoryCheckbox"]:checked + label {
   .advertisments-section_avdert-card {
     background-color: #fff;
     width: 100%;
-    height: fit-content;
   }
 
   .avdert-card_card-image {
