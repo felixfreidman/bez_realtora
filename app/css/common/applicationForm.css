@@ -341,7 +341,7 @@ body {
   height: 100%;
 }
 .requredActions-section_apply-button {
-  height: auto;
+  height: 50px;
 }
 
 .requiredActions-section_telephone-input {
@@ -404,7 +404,93 @@ body {
 }
 
 @media screen and (min-width: 414px) and (max-width: 719px) {
+  .main_applicationForm-section {
+    display: none;
+  }
+
+  .main_applicationFormBig-section {
+    display: none;
+  }
+  .main_applicationForm-section-mobile {
+    display: flex;
+  }
+}
+@media (min-width: 413px) and (max-width: 599px) {
+  .main_applicationForm-section {
+    display: none;
+  }
+
+  .main_applicationFormBig-section {
+    display: none;
+  }
+  .main_applicationForm-section-mobile {
+    display: flex;
+  }
+  .applicationForm-mobile {
+    padding: 20px;
+  }
+
+  .info-section-mobile_header {
+    font-size: 33px;
+  }
+  .info-section-mobile_subheader {
+    font-size: 12.7px;
+    text-align: center;
+  }
+  .telephone-input_preNumber {
+    font-size: 18px;
+  }
+  .telephone-input_number {
+    font-size: 18px;
+  }
+  .requredActions-section_apply-button {
+    font-size: 18px;
+  }
+  .personalAgree-label {
+    font-size: 12px;
+  }
 }
 
-@media screen and (min-width: 320px) and (max-width: 413px) {
+@media (min-width: 320px) and (max-width: 413px) {
+  .main_applicationForm-section {
+    display: none;
+  }
+
+  .main_applicationFormBig-section {
+    display: none;
+  }
+  .main_applicationForm-section-mobile {
+    display: flex;
+  }
+  .applicationForm-mobile {
+    padding: 20px;
+    height: 80%;
+  }
+
+  .info-section-mobile_header {
+    font-size: 25px;
+  }
+  .info-section-mobile_subheader {
+    font-size: 13px;
+    text-align: center;
+  }
+  .telephone-input_preNumber {
+    font-size: 13px;
+    height: 30px;
+  }
+  .telephone-input_number {
+    font-size: 13px;
+    height: 30px;
+  }
+  .requredActions-section_apply-button {
+    font-size: 13px;
+    height: 30px;
+  }
+  .requiredActions-section_telephone-input {
+    margin-bottom: 0;
+  }
+  .personalAgree-label {
+    margin-top: 0;
+    font-size: 9px;
+  }
 }
