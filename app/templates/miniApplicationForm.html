@@ -1,79 +1,144 @@
 <!DOCTYPE html>
 <html lang="rus">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Быстрая заявка на подбор</title>
+    <link rel="stylesheet" href="../css/common/applicationForm.css" />
+    <style>
+      .main {
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Быстрая заявка на подбор</title>
-  <link rel="stylesheet" href="../css/common/applicationForm.css">
-  <style>
-    .main {
-      margin-bottom: 100px;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="main">
-    <div class="main_applicationForm-section">
-      <div class="applicationForm">
-        <div class="applicationForm_boorkmark"></div>
-        <div class="applicationForm_advertismentInfo-section">
-          <span class="advertismentInfo-section_header">Не нашли, что искали?</span>
-          <span class="advertismentInfo-section_subheader">Поможем найти квартиру от собственника по лучшей цене</span>
-        </div>
-        <form action="#" method="post" class="applicationForm_applyInfo-section">
-          <div class="applyInfo-section_requiredActions-section">
-            <div class="requiredActions-section_telephone-input">
-              <div class="telephone-input_preNumber">+7</div>
-              <input type="text" class="telephone-input_number">
-            </div>
-            <button class="requredActions-section_apply-button">Оставить заявку</button>
+  <body>
+    <div class="main">
+      <div class="main_applicationForm-section">
+        <div class="applicationForm">
+          <div class="applicationForm_boorkmark"></div>
+          <div class="applicationForm_advertismentInfo-section">
+            <span class="advertismentInfo-section_header"
+              >Не нашли, что искали?</span
+            >
+            <span class="advertismentInfo-section_subheader"
+              >Поможем найти квартиру от собственника по лучшей цене</span
+            >
           </div>
-          <input type="checkbox" name="agreeCheckbox" id="agreeCheckbox"
-            class="applyInfo-section_personalAgree-checkbox">
-          <label for="agreeCheckbox" class="personalAgree-label">Я даю согласие на <a href="#">Обработку персональных
-              данных</a></label>
-        </form>
+          <form
+            action="#"
+            method="post"
+            class="applicationForm_applyInfo-section"
+          >
+            <div class="applyInfo-section_requiredActions-section">
+              <div class="requiredActions-section_telephone-input">
+                <div class="telephone-input_preNumber">+7</div>
+                <input type="text" class="telephone-input_number" />
+              </div>
+              <button class="requredActions-section_apply-button">
+                Оставить заявку
+              </button>
+            </div>
+            <input
+              type="checkbox"
+              name="agreeCheckbox"
+              id="agreeCheckbox"
+              class="applyInfo-section_personalAgree-checkbox"
+            />
+            <label for="agreeCheckbox" class="personalAgree-label"
+              >Я даю согласие на
+              <a href="#">Обработку персональных данных</a></label
+            >
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="main">
-    <div class="main_applicationFormBig-section">
-      <div class="applicationFormBig">
-        <div class="applicationFormBig_bookmark"></div>
-        <div class="applicationFormBig_image"></div>
-        <div class="applicationFormBig_application-section">
-          <div class="applicationFormBig_advertisment-section">
-  
-            <span class="advertismentInfoBig-section_header">Не нашли, что искали?</span>
-            <span class="advertismentInfoBig-section_subheader">Поможем найти квартиру от собственника по лучшей
-              цене</span>
-          </div>
-          <div class="applicationFormBig_advertisment-section">
-            <span class="advertisment-section_text">Мы сразу перезвоним и приступим к поиску</span>
-            <form action="#" method = "POST" class = "advertisment-section_form">
-              <div class="form_requiredActions-section">
-                <div class="requiredActions-section_input">
-                  <div class="input_preInput">+7</div>
-                  <input type="text" class="input_number">
+    <div class="main">
+      <div class="main_applicationFormBig-section">
+        <div class="applicationFormBig">
+          <div class="applicationFormBig_bookmark"></div>
+          <div class="applicationFormBig_image"></div>
+          <div class="applicationFormBig_application-section">
+            <div class="applicationFormBig_advertisment-section">
+              <span class="advertismentInfoBig-section_header"
+                >Не нашли, что искали?</span
+              >
+              <span class="advertismentInfoBig-section_subheader"
+                >Поможем найти квартиру от собственника по лучшей цене</span
+              >
+            </div>
+            <div class="applicationFormBig_advertisment-section">
+              <span class="advertisment-section_text"
+                >Мы сразу перезвоним и приступим к поиску</span
+              >
+              <form action="#" method="POST" class="advertisment-section_form">
+                <div class="form_requiredActions-section">
+                  <div class="requiredActions-section_input">
+                    <div class="input_preInput">+7</div>
+                    <input type="text" class="input_number" />
+                  </div>
+                  <button class="requiredActions-section_button-big">
+                    Оставить заявку
+                  </button>
                 </div>
-              <button class = "requiredActions-section_button-big">Оставить заявку</button>
+                <div class="form_licenceAgreement-section">
+                  <input
+                    type="checkbox"
+                    name="agreeCheckbox"
+                    id="agreeCheckboxBig"
+                    class="applyInfo-section_personalAgree-checkbox"
+                  />
+                  <label for="agreeCheckboxBig" class="personalAgree-label"
+                    >Я даю согласие на
+                    <a href="#">Обработку персональных данных</a></label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main_applicationForm-section-mobile">
+        <div class="applicationForm-mobile">
+          <div class="applicatonForm_info-section-mobile">
+            <span class="info-section-mobile_header"
+              >Не нашли, что искали?</span
+            >
+            <span class="info-section-mobile_subheader"
+              >Поможем найти квартиру от собственника по лучшей цене</span
+            >
+          </div>
+          <div class="applicationForm_apply-section-mobile">
+            <form
+              action="#"
+              method="post"
+              class="applicationForm_applyInfo-section-mobile"
+            >
+              <div class="applyInfo-section_requiredActions-section">
+                <div class="requiredActions-section_telephone-input">
+                  <div class="telephone-input_preNumber">+7</div>
+                  <input type="text" class="telephone-input_number" />
+                </div>
+                <button class="requredActions-section_apply-button">
+                  Оставить заявку
+                </button>
               </div>
-              <div class="form_licenceAgreement-section">
-                <input type="checkbox" name="agreeCheckbox" id="agreeCheckboxBig"
-            class="applyInfo-section_personalAgree-checkbox">
-          <label for="agreeCheckboxBig" class="personalAgree-label">Я даю согласие на <a href="#">Обработку персональных
-              данных</a></label>
-              </div>
+              <input
+                type="checkbox"
+                name="agreeCheckbox"
+                id="agreeCheckbox"
+                class="applyInfo-section_personalAgree-checkbox"
+              />
+              <label for="agreeCheckbox" class="personalAgree-label"
+                >Я даю согласие на
+                <a href="#">Обработку персональных данных</a></label
+              >
             </form>
           </div>
         </div>
       </div>
-  
     </div>
-  </div>
-  
-</body>
-
+  </body>
 </html>

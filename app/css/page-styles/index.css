@@ -605,7 +605,7 @@ input[type="radio"]:checked + .navigation:hover {
   height: 50%;
 }
 
-.text-container_header {
+.text-container_header-stage {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 10px;
@@ -1210,8 +1210,8 @@ input[name="watchStoryCheckbox"]:checked + label {
   .main_workDescribe-section {
     padding: 50px;
   }
-  .text-container_header {
-    font-size: 12px;
+  .text-container_header-stage {
+    font-size: 13px;
     font-weight: bold;
   }
   .text-cotainer_text {
@@ -1334,6 +1334,62 @@ input[name="watchStoryCheckbox"]:checked + label {
   .flats-section_fastLinks-section {
     display: none;
   }
+
+  .main_workDescribe-section {
+    padding: 50px;
+    height: 550px;
+  }
+  .workDescribe-section_stages-section {
+    overflow: scroll;
+    height: 100%;
+    margin-top: 0;
+  }
+  .stages-section_stage-card {
+    min-width: 50%;
+  }
+  .image-countainer_image {
+    margin-left: 20%;
+  }
+  .text-container_header-stage {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .text-cotainer_text {
+    font-size: 16px;
+  }
+  .main_benefits-section {
+    padding: 50px;
+    height: auto;
+  }
+
+  .benefits-section_describe-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 600px;
+  }
+
+  .describe-cards_benefit-card {
+    width: 40%;
+    height: 44%;
+    margin-bottom: 20px;
+  }
+  .benefit-card_header {
+    font-size: 17px;
+  }
+  .benefit-card_text {
+    font-size: 14px;
+  }
+  .benefit-card_image {
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 16px;
+  }
+
   .main_review-section {
     display: none;
   }

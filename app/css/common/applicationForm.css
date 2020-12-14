@@ -290,6 +290,63 @@ body {
   color: white;
 }
 
+/* Мобильная заявка на подбор */
+.main_applicationForm-section-mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  max-height: 300px;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.applicationForm-mobile {
+  width: 86%;
+  height: 100%;
+  background-color: #fff;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+.applicatonForm_info-section-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+  width: 100%;
+}
+
+.info-section-mobile_header {
+  font-size: 40px;
+  font-weight: bold;
+  color: #323955;
+  margin-bottom: 10px;
+}
+
+.info-section-mobile_subheader {
+  font-size: 20px;
+}
+
+.applicationForm_apply-section-mobile {
+  width: 100%;
+  height: fit-content;
+}
+.applicationForm_applyInfo-section-mobile {
+  width: 100%;
+  height: 100%;
+}
+.requredActions-section_apply-button {
+  height: auto;
+}
+
+.requiredActions-section_telephone-input {
+  margin-bottom: 20px;
+}
 @media (min-width: 1024px) and (max-width: 1200px) {
   .main_applicationForm-section {
     height: fit-content;
@@ -334,6 +391,16 @@ body {
   }
 }
 @media screen and (min-width: 720px) and (max-width: 1023px) {
+  .main_applicationForm-section {
+    display: none;
+  }
+
+  .main_applicationFormBig-section {
+    display: none;
+  }
+  .main_applicationForm-section-mobile {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 414px) and (max-width: 719px) {
