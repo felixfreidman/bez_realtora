@@ -1026,10 +1026,11 @@ input[type="radio"]:checked + .navigation:hover {
   width: 50%;
   background-color: #fff;
   font-size: 16px;
-  padding: 10px;
+  padding: 20px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .rent-label {
@@ -1069,7 +1070,18 @@ select#searchApt {
   background-position: 95% 50%;
 }
 
+.searchForm_filter-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
 .search-form_submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #e82431;
   color: white;
   font-size: 14px;
@@ -1077,7 +1089,7 @@ select#searchApt {
   outline: none;
   border-radius: 8px;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 15px 20px;
   margin-bottom: 20px;
   -webkit-appearance: none;
 }
@@ -1343,9 +1355,6 @@ input[name="watchStoryCheckbox"]:checked + label {
     cursor: pointer;
     -webkit-appearance: none;
   }
-  .search-section_search-form-mobile > div {
-    margin-bottom: 15px;
-  }
   .perks_description {
     width: auto;
   }
@@ -1490,9 +1499,6 @@ input[name="watchStoryCheckbox"]:checked + label {
   .search-form_submit-button {
     cursor: pointer;
     -webkit-appearance: none;
-  }
-  .search-section_search-form-mobile > div {
-    margin-bottom: 15px;
   }
   .search-section_perks {
     flex-wrap: wrap;
@@ -1661,9 +1667,6 @@ input[name="watchStoryCheckbox"]:checked + label {
     cursor: pointer;
     -webkit-appearance: none;
   }
-  .search-section_search-form-mobile > div {
-    margin-bottom: 15px;
-  }
   .search-section_perks {
     flex-wrap: wrap;
   }
@@ -1825,9 +1828,6 @@ input[name="watchStoryCheckbox"]:checked + label {
   .search-form_submit-button {
     cursor: pointer;
     -webkit-appearance: none;
-  }
-  .search-section_search-form-mobile > div {
-    margin-bottom: 15px;
   }
   .search-section_search-bar {
     display: none;
