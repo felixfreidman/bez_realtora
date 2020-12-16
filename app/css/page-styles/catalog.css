@@ -11,6 +11,145 @@
 .main_applicationFormBig-section {
   padding-bottom: 30px;
 }
+/* Начало стилей для секции фильтры ----------------------------------------------- */
+.main_filter-section {
+  height: fit-content;
+  background-color: #fff;
+  padding: 60px 100px;
+}
+.filter-section_required-section {
+  display: flex;
+}
+.filter_fieldset {
+  border: none;
+  display: inline-block;
+  width: 15%;
+  margin-right: 10px;
+}
+.filter_fieldset > legend {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.search-bar_inputs {
+  display: none;
+}
+.filter_section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.filter_section-room {
+  width: 100%;
+  display: flex;
+}
+input[name="typeOfOperation"] + label {
+  width: 50%;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+input[name="roomAmount"] + label {
+  width: 20%;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  cursor: pointer;
+  margin-right: 1px;
+  font-size: 14px;
+}
+.filter_section input:first-child {
+  margin-left: 0;
+}
+.filter_priceRange {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px 0px;
+  width: 80%;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+input[name="roomAmount"]:checked + label {
+  background-color: #1c2443;
+  color: #fff;
+}
+input[name="typeOfOperation"]:checked + label {
+  background-color: #1c2443;
+  color: #fff;
+}
+
+input[name="roomAmount"] + label:hover {
+  color: #e82431;
+}
+
+input[name="typeOfOperation"] + label:hover {
+  color: #e82431;
+}
+label[for="studioRoom"] {
+  padding: 15px 10px;
+  border-radius: 8px 0 0 8px;
+}
+label[for="fourMoreRoom"] {
+  border-radius: 0 8px 8px 0;
+}
+
+.filter_section label:nth-child(2) {
+  border-radius: 8px 0 0 8px;
+}
+.filter_section label:nth-child(4) {
+  border-radius: 0 8px 8px 0;
+}
+
+.filter-section_filter-button {
+  -webkit-appearance: none;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-image: url("../../img/main/main_filter-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.filter-section_filter-content {
+  display: none;
+}
+input[type="checkbox"]:checked + .filter-section_filter-button {
+  background-image: url("../../img/main/filter_arrow-reversed.png");
+}
+input[type="checkbox"]:checked ~ .filter-section_filter-content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 160px;
+  overflow: scroll;
+  border-radius: 8px;
+}
+.filter-section_filter-content label {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.filter-section_filter-content label:hover {
+  color: red;
+}
+/* ----------------------------------------------- Конец стилей для секции фильтры */
+/* Внизу немного стилей для навигации, слишком мало, чтобы давать им красивые комментарии */
 .main_navigation {
   margin-top: 60px;
   margin-bottom: 30px;
@@ -134,9 +273,11 @@
 .panel-section_section {
   width: 25px;
   height: 25px;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  color: black;
   cursor: pointer;
   margin-right: 10px;
 }
@@ -324,7 +465,10 @@
 .filledHeart {
   background-image: url("../../img/catalog/heartColored.svg");
 }
-
+.counterColored {
+  color: #e82431;
+}
+/* 
 .unfilledShare {
   background-image: url("../../img/catalog/shareEmpty.svg");
 }
@@ -335,4 +479,4 @@
 
 .filledShare {
   background-image: url("../../img/catalog/shareFilled.svg");
-}
+} */

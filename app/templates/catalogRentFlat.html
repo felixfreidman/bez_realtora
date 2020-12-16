@@ -118,8 +118,211 @@
     </div>
     <div class="main">
       <div class="main_filter-section">
-        <div class="filter-section_required-section"></div>
-        <div class="filter-section_additive-section"></div>
+        <form method="get" action="vk.com">
+          <div class="filter-section_required-section">
+            <fieldset class="filter_fieldset">
+              <legend>Тип Предложения</legend>
+              <div class="filter_section">
+                <input
+                  type="radio"
+                  name="typeOfOperation"
+                  value="rent"
+                  id="rentOperation"
+                  class="search-bar_inputs"
+                  checked
+                />
+                <label for="rentOperation">Снять</label>
+                <input
+                  type="radio"
+                  name="typeOfOperation"
+                  value="rent"
+                  class="search-bar_inputs"
+                  id="buyOperation"
+                />
+                <label for="buyOperation">Купить</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset">
+              <legend>Тип недвижимости</legend>
+
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="realEstateTypeLabel"
+              />
+              <label
+                class="filter-section_filter-button"
+                for="realEstateTypeLabel"
+                id="realEstateTypeField"
+              ></label>
+              <div class="filter-section_filter-content">
+                <input
+                  type="radio"
+                  name="realEstateType"
+                  id="flats"
+                  class="search-bar_inputs"
+                  value="Квартиры"
+                  checked
+                />
+                <label for="flats">Квартиры</label>
+                <input
+                  type="radio"
+                  name="realEstateType"
+                  id="rooms"
+                  class="search-bar_inputs"
+                  value="Комнаты"
+                />
+                <label for="rooms">Комнаты</label>
+                <input
+                  type="radio"
+                  name="realEstateType"
+                  id="houses"
+                  class="search-bar_inputs"
+                  value="Дома"
+                />
+                <label for="houses">Дома</label>
+                <input
+                  type="radio"
+                  name="realEstateType"
+                  id="cottages"
+                  class="search-bar_inputs"
+                  value="Коттеджи"
+                />
+                <label for="cottages">Коттеджи</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset">
+              <legend>Количество комнат</legend>
+              <div class="filter_section-room">
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  value="studio"
+                  id="studioRoom"
+                  class="search-bar_inputs"
+                />
+                <label for="studioRoom">Студия</label>
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  value="1room"
+                  id="oneRoom"
+                  class="search-bar_inputs"
+                  checked
+                />
+                <label for="oneRoom">1</label>
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  value="2room"
+                  id="twoRoom"
+                  class="search-bar_inputs"
+                />
+                <label for="twoRoom">2</label>
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  value="3room"
+                  id="threeRoom"
+                  class="search-bar_inputs"
+                />
+                <label for="threeRoom">3</label>
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  value="4more"
+                  id="fourMoreRoom"
+                  class="search-bar_inputs"
+                />
+                <label for="fourMoreRoom">4+</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset">
+              <legend>Станция метро</legend>
+
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="metroStationLabel"
+              />
+              <label
+                class="filter-section_filter-button"
+                for="metroStationLabel"
+                id="metroStationField"
+              ></label>
+              <div class="filter-section_filter-content">
+                <input
+                  type="radio"
+                  name="metroStationType"
+                  id="AlSad"
+                  class="search-bar_inputs"
+                  value="Александровский сад"
+                  checked
+                />
+                <label for="AlSad">Александровский сад</label>
+                <input
+                  type="radio"
+                  name="metroStationType"
+                  id="leninPrskt"
+                  class="search-bar_inputs"
+                  value="Ленинский проспект"
+                  checked
+                />
+                <label for="leninPrskt">Ленинский проспект</label>
+                <input
+                  type="radio"
+                  name="metroStationType"
+                  id="admiralteyskaya"
+                  class="search-bar_inputs"
+                  value="Адмиралтейская"
+                  checked
+                />
+                <label for="admiralteyskaya">Адмиралтейская</label>
+                <input
+                  type="radio"
+                  name="metroStationType"
+                  id="avtovo"
+                  class="search-bar_inputs"
+                  value="Автово"
+                  checked
+                />
+                <label for="avtovo">Автово</label>
+                <input
+                  type="radio"
+                  name="metroStationType"
+                  id="mayakov"
+                  class="search-bar_inputs"
+                  value="Маяковская"
+                  checked
+                />
+                <label for="mayakov">Маяковская</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset">
+              <legend>Арендная плата, ₽</legend>
+              <div class="filter_section">
+                <input
+                  type="text"
+                  name="priceAmountMin"
+                  value=""
+                  placeholder="15000"
+                  class="filter_priceRange"
+                  pattern="[0-9]+"
+                />
+                -
+                <input
+                  type="text"
+                  name="priceAmountMax"
+                  value=""
+                  placeholder="18000"
+                  class="filter_priceRange"
+                  pattern="[0-9]+"
+                />
+              </div>
+            </fieldset>
+          </div>
+          <div class="filter-section_additive-section"></div>
+        </form>
       </div>
 
       <div class="main_flats-section">
@@ -132,7 +335,9 @@
         <div class="main_header-block">
           <span class="red-line"></span>
           <div class="main_section-block">
-            <span class="main_section-header">Снять квартиру</span>
+            <span class="main_section-header"
+              >Снять однокомнатную квартиру в Москве</span
+            >
           </div>
         </div>
         <div class="flats-section_specialCards-section">
@@ -154,8 +359,8 @@
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
                 <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
                   <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
                 </div>
               </div>
               <div class="advert-card_objPhotos-section">

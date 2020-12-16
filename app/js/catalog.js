@@ -1,18 +1,35 @@
+let realEstateTypeField = document.getElementById("realEstateTypeField");
+let realEstateRadioArray = document.querySelectorAll("input[name=realEstateType]");
+let realEstateTypeLabel = document.getElementById("realEstateTypeLabel");
+let metroStationField = document.getElementById("metroStationField");
+let metroStationRadioArray = document.querySelectorAll("input[name=metroStationType]");
+let metroStationLabel = document.getElementById("metroStationLabel");
+let counterLikes = document.querySelector(".counter");
+let intCounter = parseInt(counterLikes.textContent);
 let moreButton = document.querySelector(".advertisments-section_more-button");
 let heartArray = document.querySelectorAll('.unfilledHeart');
 heartArray.forEach(element => {
     element.addEventListener("click", ()=> {
         element.classList.toggle("unfilledHeart");
         element.classList.toggle("filledHeart");
+        if(element.classList.contains('filledHeart')){
+        intCounter++;
+        counterLikes.textContent = intCounter;
+        counterLikes.classList.toggle('counterColored');
+        } else if(element.classList.contains('unfilledHeart')) {
+          intCounter--;
+          counterLikes.textContent = intCounter;
+          counterLikes.classList.toggle('counterColored');
+        }
     })
 });
-let shareArray = document.querySelectorAll('.unfilledShare');
-shareArray.forEach(element => {
-    element.addEventListener("click", ()=> {
-        element.classList.toggle("unfilledShare");
-        element.classList.toggle("filledShare");
-    })
-});
+// let shareArray = document.querySelectorAll('.unfilledShare');
+// shareArray.forEach(element => {
+//     element.addEventListener("click", ()=> {
+//         element.classList.toggle("unfilledShare");
+//         element.classList.toggle("filledShare");
+//     })
+// });
 
 moreButton.addEventListener("click", () => {
     let moreAdvertisments = `
@@ -1200,4 +1217,29 @@ moreButton.addEventListener("click", () => {
           newElem.innerHTML = moreAdvertisments;
     document.querySelector('.flats-section_advertisments-section').append(newElem);     
 
+});
+
+realEstateRadioArray.forEach((radio) => {
+  if (radio.checked) {
+    realEstateTypeField.innerHTML = `${radio.value}`;
+  }
+  radio.addEventListener("click", () => {
+    if (radio.checked) {
+      realEstateTypeField.innerHTML = `${radio.value}`;
+      realEstateTypeField.classList.toggle("reversed-arrow");
+      realEstateTypeLabel.checked = false;
+    }
+  });
+});
+metroStationRadioArray.forEach((radio) => {
+  if (radio.checked) {
+    metroStationField.innerHTML = `${radio.value}`;
+  }
+  radio.addEventListener("click", () => {
+    if (radio.checked) {
+      metroStationField.innerHTML = `${radio.value}`;
+      metroStationField.classList.toggle("reversed-arrow");
+      metroStationLabel.checked = false;
+    }
+  });
 });
