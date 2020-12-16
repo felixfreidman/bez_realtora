@@ -113,6 +113,7 @@ input[type="checkbox"]:checked + .filter-section_filter-content {
 }
 .filter-section_filter-content label {
   padding: 15px 20px;
+  cursor: pointer;
 }
 
 .filter-section_filter-content label:hover {
@@ -152,6 +153,7 @@ input[type="checkbox"]:checked + .filter-section_filter-content {
 
 .filter-section_search-button {
   -webkit-appearance: none;
+  cursor: pointer;
   width: 20%;
   padding: 0px;
   margin: 0px;
@@ -229,30 +231,7 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
   padding: 50px 100px 105px 100px;
   background-color: #fff;
 }
-.main_header-block {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 
-.red-line {
-  width: 50px;
-  height: 5px;
-  background-color: #e82431;
-  margin-right: 10px;
-  margin-top: 15px;
-}
-
-.main_section-header {
-  font-size: 30px;
-  color: #000;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.main_section-block {
-  display: flex;
-  flex-direction: column;
-}
 .stories-section_stories-block {
   width: 100%;
   margin-top: 35px;
@@ -323,7 +302,12 @@ input[type="checkbox"]:checked + #priceRangeDropdown {
 }
 
 /* ----------------------------------------------- Конец верстки секции историй */
-
+.main_applicationForm-section {
+  padding: 50px 100px 0px 100px;
+}
+.main_applicationFormBig-section {
+  padding: 50px 100px 0px 100px;
+}
 /* Начало верстки секции взаимодействия с квартирами-----------------------------------------------  */
 .main_flats-section {
   padding: 50px 100px 50px 100px;
@@ -445,6 +429,7 @@ input[type="radio"]:checked + .navigation:hover {
 }
 
 .flats-section_allAdvertisments-link {
+  cursor: pointer;
   margin-top: 30px;
   background-color: #e82431;
   padding: 15px 20px;
@@ -452,6 +437,10 @@ input[type="radio"]:checked + .navigation:hover {
   font-size: 20px;
   border-radius: 8px;
   align-self: center;
+}
+
+.flats-section_allAdvertisments-link:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .flats-section_allAdvertisments-link > a,
@@ -937,6 +926,9 @@ input[type="radio"]:checked + .navigation:hover {
   border-radius: 8px;
   -webkit-appearance: none;
 }
+.news-section_showAll-button:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
 
 .news-section_showAll-button:visited {
   color: white;
@@ -945,57 +937,6 @@ input[type="radio"]:checked + .navigation:hover {
 
 /* ----------------------------------------------- Конец верстки секции "Новости" */
 
-.main_prefooter-section {
-  padding: 50px 100px 50px 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 865px;
-  background-color: #f2f2f2;
-}
-
-.prefooter-section_city-section,
-.prefooter-section_subway-section,
-.prefooter-section_district-section {
-  width: 100%;
-  max-height: 33%;
-}
-
-.city-section_table,
-.district-section_table,
-.subway-section_table {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.city-section_table > section,
-.district-section_table > section,
-.subway-section_table > section {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.city-section_table > section > a,
-.city-section_table > section > a:visited,
-.district-section_table > section > a,
-.district-section_table > section > a:visited,
-.subway-section_table > section > a,
-.subway-section_table > section > a:visited {
-  font-size: 14px;
-  color: black;
-  text-decoration: none;
-  width: 25%;
-}
-
-.city-section_table > section > a:hover,
-.district-section_table > section > a:hover,
-.subway-section_table > section > a:hover {
-  color: #e82431;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -1003,7 +944,7 @@ input[type="radio"]:checked + .navigation:hover {
   padding: 26px 100px 17px 100px;
 }
 
-/* mobile styles for mobile layout */
+/* Начало стилей для мобильной верстки ----------------------------------------------- */
 
 .typeofOperation-search {
   display: none;
@@ -1199,7 +1140,7 @@ input[name="watchStoryCheckbox"]:checked + label {
 .field_content > a:hover {
   color: #e82431;
 }
-/* End of mobile styles for layout */
+/* ----------------------------------------------- Конец мобильной верстки */
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   .main_search-section {

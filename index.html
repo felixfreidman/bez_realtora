@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./app/css/common/header.css" />
     <link rel="stylesheet" href="./app/css/common/footer.css" />
+    <link rel="stylesheet" href="./app/css/common/preFooterNavigation.css" />
     <link rel="stylesheet" href="./app/css/common/applicationForm.css" />
     <link rel="stylesheet" href="./app/css/page-styles/index.css" />
 
@@ -26,7 +27,9 @@
         <div class="header-top_navigation">
           <div class="navigation_logo-section section">
             <div class="logo-section_image">
-              <img src="./app/img/tarif/header-logo_house.svg" alt=":(" />
+              <a href="./index.html">
+                <img src="./app/img/tarif/header-logo_house.svg" alt=":("
+              /></a>
             </div>
             <div class="logo-section_choseCity-section">
               <img
@@ -59,9 +62,11 @@
               </div>
             </div>
           </div>
-          <div class="navigation_rent-section section">АРЕНДА НЕДВИЖИМОСТИ</div>
+          <div class="navigation_rent-section section">
+            <a href="./pages/catalogRentFlat.html">АРЕНДА НЕДВИЖИМОСТИ</a>
+          </div>
           <div class="navigation_sell-section section">
-            ПРОДАЖА НЕДВИЖИМОСТИ
+            <a href="./pages/catalogSell.html"> ПРОДАЖА НЕДВИЖИМОСТИ</a>
           </div>
         </div>
         <div class="header-top_data-section">
@@ -135,7 +140,7 @@
           <div class="search-bar_typeof-operation"></div>
           <!--  Внизу вы увидите пример ужасной нехватки знаний
             Я правда сделал то, что смог, пожалуйста, не бейте меня - я старался -->
-          <form action="POST" class="filter-section_form">
+          <form action="./pages/catalogRent.html" class="filter-section_form">
             <!-- Тип недвижимости -->
             <label
               class="filter-section_filter-button"
@@ -436,12 +441,13 @@
               </div>
             </div>
             <!-- Кнопка начать поиск -->
-            <input
+            <button
               type="submit"
               id="searchButton"
               class="filter-section_search-button"
-              value="НАЧАТЬ ПОИСК"
-            />
+            >
+              НАЧАТЬ ПОИСК
+            </button>
           </form>
         </div>
         <form class="search-section_search-form-mobile" method="POST">
@@ -1064,7 +1070,7 @@
           </div>
         </div>
         <div class="flats-section_allAdvertisments-link">
-          <a href="#">Смотреть все объявления</a>
+          <a href="./pages/catalogRent.html">Смотреть все объявления</a>
         </div>
         <div class="flats-section_fastLinks-section">
           <div class="fastLinks-section_fast-card">
@@ -1075,11 +1081,29 @@
               <a href="#" class="navigation-container_link"
                 >На длительный срок</a
               >
-              <a href="#" class="navigation-container_link">Студии</a>
-              <a href="#" class="navigation-container_link">1-комнатные</a>
-              <a href="#" class="navigation-container_link">2-комнатные</a>
-              <a href="#" class="navigation-container_link">3-комнатные</a>
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Студии</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >1-комнатные</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >2-комнатные</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >3-комнатные</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
                 >Комнаты на длительный срок</a
               >
             </div>
@@ -1089,17 +1113,29 @@
               <span>Посуточная аренда</span>
             </div>
             <div class="fast-card_navigation-container">
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
                 >Квартиры посуточно</a
               >
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
                 >Комнаты посуточно</a
               >
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
                 >Коттеджи посуточно</a
               >
-              <a href="#" class="navigation-container_link">Дома посуточно</a>
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Дома посуточно</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
                 >Хостелы и гостиницы</a
               >
             </div>
@@ -1109,16 +1145,24 @@
               <span>Аренда загородной недвижимости</span>
             </div>
             <div class="fast-card_navigation-container">
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
                 >Снять дом на длительный срок</a
               >
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
                 >Снять дачу на длительный срок</a
               >
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
                 >Снять коттедж на длительный срок</a
               >
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
                 >Аренда земельных участков</a
               >
             </div>
@@ -1128,10 +1172,26 @@
               <span>Аренда коммерческой недвижимости</span>
             </div>
             <div class="fast-card_navigation-container">
-              <a href="#" class="navigation-container_link">Снять офис</a>
-              <a href="#" class="navigation-container_link">Снять помещение</a>
-              <a href="#" class="navigation-container_link">Снять склад</a>
-              <a href="#" class="navigation-container_link">Снять гараж</a>
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять офис</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять помещение</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять склад</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять гараж</a
+              >
             </div>
           </div>
         </div>
@@ -1166,6 +1226,7 @@
               name="agreeCheckbox"
               id="agreeCheckbox"
               class="applyInfo-section_personalAgree-checkbox"
+              checked
             />
             <label for="agreeCheckbox" class="personalAgree-label"
               >Я даю согласие на
@@ -1204,6 +1265,7 @@
                 name="agreeCheckbox"
                 id="agreeCheckbox"
                 class="applyInfo-section_personalAgree-checkbox"
+                checked
               />
               <label for="agreeCheckbox" class="personalAgree-label"
                 >Я даю согласие на
@@ -1558,7 +1620,7 @@
           </div>
         </div>
         <div class="flats-section_allAdvertisments-link">
-          <a href="#">Смотреть все объявления</a>
+          <a href="./pages/catalogSell.html">Смотреть все объявления</a>
         </div>
         <div class="flats-section_fastLinks-section">
           <div class="fastLinks-section_fast-card">
@@ -1566,12 +1628,36 @@
               <span>Купить квартиру</span>
             </div>
             <div class="fast-card_navigation-container">
-              <a href="#" class="navigation-container_link">Новостройки</a>
-              <a href="#" class="navigation-container_link">Вторичка</a>
-              <a href="#" class="navigation-container_link">Студии</a>
-              <a href="#" class="navigation-container_link">1-комнатные</a>
-              <a href="#" class="navigation-container_link">2-комнатные</a>
-              <a href="#" class="navigation-container_link">3-комнатные</a>
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >Новостройки</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >Вторичка</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >Студии</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >1-комнатные</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >2-комнатные</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >3-комнатные</a
+              >
             </div>
           </div>
           <div class="fastLinks-section_fast-card">
@@ -1579,10 +1665,24 @@
               <span>Загородная недвижимость</span>
             </div>
             <div class="fast-card_navigation-container">
-              <a href="#" class="navigation-container_link">Купить дом</a>
-              <a href="#" class="navigation-container_link">Купить дачу</a>
-              <a href="#" class="navigation-container_link">Купить коттедж</a>
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >Купить дом</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >Купить дачу</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >Купить коттедж</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
                 >Купить земельный участок</a
               >
             </div>
@@ -1592,9 +1692,21 @@
               <span>Коммерческая недвижимость</span>
             </div>
             <div class="fast-card_navigation-container">
-              <a href="#" class="navigation-container_link">Купить офис</a>
-              <a href="#" class="navigation-container_link">Купить помещение</a>
-              <a href="#" class="navigation-container_link">Купить склад</a>
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >Купить офис</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >Купить помещение</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >Купить склад</a
+              >
             </div>
           </div>
           <div class="fastLinks-section_fast-card">
@@ -1602,8 +1714,14 @@
               <span>Гаражи и машиноместа</span>
             </div>
             <div class="fast-card_navigation-container">
-              <a href="#" class="navigation-container_link">Купить гараж</a>
-              <a href="#" class="navigation-container_link"
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
+                >Купить гараж</a
+              >
+              <a
+                href="./pages/catalogSell.html"
+                class="navigation-container_link"
                 >Купить машиноместо</a
               >
             </div>
@@ -1643,6 +1761,7 @@
                     name="agreeCheckbox"
                     id="agreeCheckboxBig"
                     class="applyInfo-section_personalAgree-checkbox"
+                    checked
                   />
                   <label for="agreeCheckboxBig" class="personalAgree-label"
                     >Я даю согласие на
@@ -1684,6 +1803,7 @@
                 name="agreeCheckbox"
                 id="agreeCheckbox"
                 class="applyInfo-section_personalAgree-checkbox"
+                checked
               />
               <label for="agreeCheckbox" class="personalAgree-label"
                 >Я даю согласие на
@@ -2175,7 +2295,9 @@
             </a>
           </div>
         </div>
-        <a href="#" class="news-section_showAll-button">Читать все новости</a>
+        <a href="./pages/catalogNews.html" class="news-section_showAll-button"
+          >Читать все новости</a
+        >
         <!-- Конец секции Новости -->
       </div>
       <!-- Конец секции Новости -->

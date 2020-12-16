@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Безриелтора.ру - сайт объявлений от собственников недвижимости
+    </title>
+    <link rel="stylesheet" href="../css/common/header.css" />
+    <link rel="stylesheet" href="../css/common/footer.css" />
+    <link rel="stylesheet" href="../css/common/preFooterNavigation.css" />
+    <link rel="stylesheet" href="../css/common/applicationForm.css" />
+    <link rel="stylesheet" href="../css/page-styles/catalog.css" />
+  </head>
+  <body>
+    <div class="layer hide"></div>
+    <div class="header">
+      <div class="header_header-top">
+        <div class="header-top_navigation">
+          <div class="navigation_logo-section section">
+            <div class="logo-section_image">
+              <a href="../index.html">
+                <img src="../img/tarif/header-logo_house.svg" alt=":("
+              /></a>
+            </div>
+            <div class="logo-section_choseCity-section">
+              <img
+                src="../img/tarif/header-logo_label.svg"
+                alt=":("
+                class="logo-section_logo-label"
+              />
+              <div class="choseCity-select">
+                <select name="chosenCity" id="chosenCity">
+                  <option value="10" selected>Иркутск</option>
+                  <option value="1">Москва</option>
+                  <option value="2">Санкт-Петербург</option>
+                  <option value="3">Казань</option>
+                  <option value="4">Екатеринбург</option>
+                  <option value="5">Новосибирск</option>
+                  <option value="6">Самара</option>
+                  <option value="7">Нижний Новгород</option>
+                  <option value="8">Челябинск</option>
+                  <option value="9">Омск</option>
+                  <option value="11">Сочи</option>
+                  <option value="12">Улан-Удэ</option>
+                  <option value="13">Ростов-на-Дону</option>
+                  <option value="14">Воронеж</option>
+                  <option value="15">Волгоград</option>
+                  <option value="16">Томск</option>
+                  <option value="17">Пермь</option>
+                  <option value="18">Саратов</option>
+                </select>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="navigation_rent-section section">
+            <a href="./catalogRent.html">АРЕНДА НЕДВИЖИМОСТИ</a>
+          </div>
+          <div class="navigation_sell-section section">
+            <a href="./catalogSell.html"> ПРОДАЖА НЕДВИЖИМОСТИ</a>
+          </div>
+        </div>
+        <div class="header-top_data-section">
+          <form action="POST">
+            <button class="data-section_apply-button">
+              <img
+                src="../img/tarif/header_add-advertisment.svg"
+                alt=":("
+                class="apply-button_plus"
+              />
+              <span>Добавить объявление</span>
+            </button>
+          </form>
+          <div class="data-section_credentials-section">
+            <img
+              src="../img/tarif/header_login-image.svg"
+              class="credentials-section_image"
+            />
+            <div class="credentials-section_login-window">Вход/Регистрация</div>
+          </div>
+        </div>
+        <div class="header-top_burger-menu-mobile">
+          <img src="../img/tarif/header_burger.svg" alt=":(" id="burgerMenu" />
+        </div>
+        <div class="header-top_menu-mobile hide">
+          <div class="menu-mobile_main-section">
+            <form action="POST">
+              <button class="menu-mobile_apply-button">
+                <img
+                  src="../img/tarif/header_add-advertisment.svg"
+                  alt=":("
+                  class="apply-button_plus"
+                />
+                <span>Добавить объявление</span>
+              </button>
+            </form>
+            <form action="POST">
+              <button class="menu-mobile_login-button">
+                <img
+                  src="../img/tarif/login_image-red.svg"
+                  alt=":("
+                  class="apply-button_plus"
+                />
+                <span>Вход/Регистрация</span>
+              </button>
+            </form>
+            <a href="#" class="navigation_link">Аренда недвижимости</a>
+            <a href="#" class="navigation_link">Продажа недвижимости</a>
+          </div>
+          <div class="menu-mobile_sub-section">
+            <a href="" class="navigation_link">Новости</a>
+            <a href="" class="navigation_link">О нас</a>
+            <a href="" class="navigation_link">Тарифы</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main_filter-section">
+        <div class="filter-section_required-section"></div>
+        <div class="filter-section_additive-section"></div>
+      </div>
+      <div class="main_flats-section">
+        <div class="main_header-block">
+          <span class="red-line"></span>
+          <div class="main_section-block">
+            <span class="main_section-header">Снять квартиру</span>
+          </div>
+        </div>
+        <div class="flats-section_specialCards-section">
+          <div class="specialCards-section_card">
+            Квартиры в Москве до 30.000
+          </div>
+          <div class="specialCards-section_card">Дома для вечеринок</div>
+          <div class="specialCards-section_card">
+            Квартиры с авторским ремонтом
+          </div>
+          <div class="specialCards-section_card">Двухуровневые квартиры</div>
+        </div>
+        <div class="flats-section_advertisments-section">
+          <div class="advertisment-section_part">
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="main_applicationForm-section">
+            <div class="applicationForm">
+              <div class="applicationForm_boorkmark"></div>
+              <div class="applicationForm_advertismentInfo-section">
+                <span class="advertismentInfo-section_header"
+                  >Не нашли, что искали?</span
+                >
+                <span class="advertismentInfo-section_subheader"
+                  >Поможем найти квартиру от собственника по лучшей цене</span
+                >
+              </div>
+              <form
+                action="#"
+                method="post"
+                class="applicationForm_applyInfo-section"
+              >
+                <div class="applyInfo-section_requiredActions-section">
+                  <div class="requiredActions-section_telephone-input">
+                    <div class="telephone-input_preNumber">+7</div>
+                    <input type="text" class="telephone-input_number" />
+                  </div>
+                  <button class="requredActions-section_apply-button">
+                    Оставить заявку
+                  </button>
+                </div>
+                <input
+                  type="checkbox"
+                  name="agreeCheckbox"
+                  id="agreeCheckbox"
+                  class="applyInfo-section_personalAgree-checkbox"
+                  checked
+                />
+                <label for="agreeCheckbox" class="personalAgree-label"
+                  >Я даю согласие на
+                  <a href="#">Обработку персональных данных</a></label
+                >
+              </form>
+            </div>
+          </div>
+          <div class="advertisment-section_part">
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+            <div class="advertisments-section_advert-card">
+              <div class="advert-card_panel-info-section">
+                <div class="advert-card_info-section">
+                  <div class="info-section_avatar"></div>
+                  <span class="info-section_name">Александра Соколовская</span>
+                </div>
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledShare"></div>
+                  <div class="panel-section_section unfilledHeart"></div>
+                </div>
+              </div>
+              <div class="advert-card_objPhotos-section">
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+                <img
+                  src="../img/main/main_rentAdvertisment-card.jpg"
+                  alt=":("
+                />
+              </div>
+              <div class="advert-card_objInfo-section">
+                <div class="objInfo-section_price-tag">
+                  <span class="price-tag_price">155 000 ₽</span>
+                  <span class="price-tag_per-month">/в месяц</span>
+                </div>
+                <div class="objInfo-section_flat-parameters">
+                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                  -
+                  <span class="flat-parameters_flatArea-span">170 м²</span>
+                  -
+                  <span class="flat-parameters_flatAddress-span"
+                    >Франк-Каменецкого, 28/4</span
+                  >
+                </div>
+                <div class="objInfo-section_flat-description">
+                  Роскошная 4х комнатная квартира
+                </div>
+              </div>
+              <div class="advert-card_objAddress-section">
+                <img
+                  src="../img/main/main_map-checkmark.svg"
+                  class="objAddress-section_map-checkmark"
+                />
+                <span class="objAddress-section_address-span"
+                  >Правобережный</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="advertisments-section_more-button">Показать еще</div>
+        <div class="flats-section_fastLinks-section">
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover rentFlat">
+              <span>Снять квартиру</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a href="#" class="navigation-container_link"
+                >На длительный срок</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Студии</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >1-комнатные</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >2-комнатные</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >3-комнатные</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Комнаты на длительный срок</a
+              >
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover rentDay">
+              <span>Посуточная аренда</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Квартиры посуточно</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Комнаты посуточно</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Коттеджи посуточно</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Дома посуточно</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Хостелы и гостиницы</a
+              >
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover rentCountry">
+              <span>Аренда загородной недвижимости</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять дом на длительный срок</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять дачу на длительный срок</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять коттедж на длительный срок</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Аренда земельных участков</a
+              >
+            </div>
+          </div>
+          <div class="fastLinks-section_fast-card">
+            <div class="fast-card_image-cover rentCommercial">
+              <span>Аренда коммерческой недвижимости</span>
+            </div>
+            <div class="fast-card_navigation-container">
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять офис</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять помещение</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять склад</a
+              >
+              <a
+                href="./pages/catalogRent.html"
+                class="navigation-container_link"
+                >Снять гараж</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_applicationFormBig-section">
+        <div class="applicationFormBig">
+          <div class="applicationFormBig_bookmark"></div>
+          <div class="applicationFormBig_image"></div>
+          <div class="applicationFormBig_application-section">
+            <div class="applicationFormBig_advertisment-section">
+              <span class="advertismentInfoBig-section_header"
+                >Не нашли, что искали?</span
+              >
+              <span class="advertismentInfoBig-section_subheader"
+                >Поможем найти квартиру от собственника по лучшей цене</span
+              >
+            </div>
+            <div class="applicationFormBig_advertisment-section">
+              <span class="advertisment-section_text"
+                >Мы сразу перезвоним и приступим к поиску</span
+              >
+              <form action="#" method="POST" class="advertisment-section_form">
+                <div class="form_requiredActions-section">
+                  <div class="requiredActions-section_input">
+                    <div class="input_preInput">+7</div>
+                    <input type="text" class="input_number" />
+                  </div>
+                  <button class="requiredActions-section_button-big">
+                    Оставить заявку
+                  </button>
+                </div>
+                <div class="form_licenceAgreement-section">
+                  <input
+                    type="checkbox"
+                    name="agreeCheckbox"
+                    id="agreeCheckboxBig"
+                    class="applyInfo-section_personalAgree-checkbox"
+                    checked
+                  />
+                  <label for="agreeCheckboxBig" class="personalAgree-label"
+                    >Я даю согласие на
+                    <a href="#">Обработку персональных данных</a></label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_prefooter-section">
+        <div class="prefooter-section_city-section">
+          <div class="main_header-block">
+            <span class="red-line"></span>
+            <div class="main_section-block">
+              <span class="main_section-header"
+                >Аренда в крупнейших городах России</span
+              >
+            </div>
+          </div>
+          <div class="city-section_table">
+            <section>
+              <a href="#">Москва</a>
+              <a href="#">Екатеринбург</a>
+              <a href="#">Нижний Новгород</a>
+              <a href="#">Сочи</a>
+            </section>
+            <section>
+              <a href="#">Санкт-Петербург</a>
+              <a href="#">Новосибирск</a>
+              <a href="#">Челябинск</a>
+              <a href="#">Улан-Удэ</a>
+            </section>
+            <section>
+              <a href="#">Казань</a>
+              <a href="#">Самара</a>
+              <a href="#">Омск</a>
+              <a href="#">Томск</a>
+            </section>
+            <section>
+              <a href="#">Ростов-на-Дону</a>
+              <a href="#">Воронеж</a>
+              <a href="#">Волгоград</a>
+            </section>
+            <section>
+              <a href="#">Пермь</a>
+              <a href="#">Саратов</a>
+              <a href="#">Иркутск</a>
+            </section>
+          </div>
+        </div>
+        <div class="prefooter-section_district-section">
+          <div class="main_header-block">
+            <span class="red-line"></span>
+            <div class="main_section-block">
+              <span class="main_section-header">Квартиры в районе</span>
+            </div>
+          </div>
+          <div class="district-section_table">
+            <section>
+              <a href="#">130-й квартал</a>
+              <a href="#">5168-й километр ВСЖД</a>
+              <a href="#">Военный городок</a>
+              <a href="#">Горка</a>
+            </section>
+            <section>
+              <a href="#">Ершовский мкр</a>
+              <a href="#">Жилой комплекс German House</a>
+              <a href="#">Жилой комплекс Ангарские паруса</a>
+              <a href="#">Жилой комплекс Веста</a>
+            </section>
+            <section>
+              <a href="#">Жилой комплекс Виват</a>
+              <a href="#">Жилой комплекс Дебют</a>
+              <a href="#">Жилой комплекс Депутат</a>
+              <a href="#">Жилой комплекс Иркутский дворик-2</a>
+            </section>
+            <section>
+              <a href="#">Жилой комплекс Каскад</a>
+              <a href="#">Жилой комплекс Лазурный</a>
+              <a href="#">Жилой комплекс Нижняя Лисиха 1</a>
+              <a href="#">Жилой комплекс Нижняя Лисиха 2</a>
+            </section>
+            <section>
+              <a href="#">Жилой комплекс Нижняя Лисиха 3</a>
+              <a href="#">Жилой комплекс Новый город 1</a>
+              <a href="#">Жилой комплекс Новый город 1</a>
+              <a href="#" style="text-decoration: underline">Показать еще</a>
+            </section>
+          </div>
+        </div>
+        <div class="prefooter-section_subway-section">
+          <div class="main_header-block">
+            <span class="red-line"></span>
+            <div class="main_section-block">
+              <span class="main_section-header">Квартиры у метро</span>
+            </div>
+          </div>
+          <div class="subway-section_table">
+            <section>
+              <a href="#">Авиамоторная</a>
+              <a href="#">Автозаводская</a>
+              <a href="#">Автозаводская</a>
+              <a href="#">Академическая</a>
+            </section>
+            <section>
+              <a href="#">Александровский сад</a>
+              <a href="#">Алексеевская</a>
+              <a href="#">Алексеевская</a>
+              <a href="#">Алма-Атинская</a>
+            </section>
+            <section>
+              <a href="#">Алтуфьево</a>
+              <a href="#">Андроновка</a>
+              <a href="#">Аннино</a>
+              <a href="#">Арбатская Новгород</a>
+            </section>
+            <section>
+              <a href="#">Аэропорт</a>
+              <a href="#">Бабушкинская</a>
+              <a href="#">Багратионовская</a>
+              <a href="#">Балтийская</a>
+            </section>
+            <section>
+              <a href="#">Баррикадная</a>
+              <a href="#">Бауманская</a>
+              <a href="#">Беговая</a>
+              <a href="#" style="text-decoration: underline">Показать еще</a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_support-section">
+        <div class="support-section_logo-section">
+          <img src="../img/tarif/header-logo_house.svg" alt=":(" />
+          <img src="../img/tarif/header-logo_label.svg" alt=":(" />
+        </div>
+        <div class="support-section_navigation">
+          <a href="#" class="navigation_link">Контакты и поддержка</a>
+          <a href="#" class="navigation_link">Реклама на сайте</a>
+          <a href="#" class="navigation_link">Тарифы</a>
+          <a href="#" class="navigation_link">О проекте</a>
+        </div>
+      </div>
+      <div class="footer_eastate-section">
+        <a href="" class="navigation_link">Квартиры</a>
+        <a href="" class="navigation_link">Комнаты</a>
+        <a href="" class="navigation_link">Дома, коттеджи, дачи</a>
+        <a href="" class="navigation_link">Коммерческая недвижимость</a>
+        <a href="" class="navigation_link">Земельные участки</a>
+        <a href="" class="navigation_link">Гаражи</a>
+      </div>
+      <div class="footer_about-company">
+        <div class="about-company_company">
+          БезРиелтора - это сервис для поиска, аренды, покупки, сдачи, продажи
+          недвижимости без посредников в Москве, Санкт-Петербурге, Иркутске и
+          других городах России. На БезРиелтора.ру Вы можете снять или купить
+          жильё от собственника не выходя из дома. Все проверенные объявления от
+          хозяев и без комиссии на одном сайте.
+        </div>
+        <div class="about-company_company-mobile">
+          БезРиелтора - это сервис для поиска, аренды, покупки, сдачи, продажи
+          недвижимости без посредников.
+        </div>
+        <div class="about-company_law-info">
+          ООО Наш Дом<br />
+          ИНН 3812525600<br />
+          ОГРН 1183850036468<br />
+        </div>
+        <div class="about-company_social-section">
+          <div class="social-section_networks">
+            <a href="#" class="navigation_link"
+              ><img
+                src="../img/tarif/footer_instagram.svg"
+                alt=":("
+                class="networks_network-logo"
+            /></a>
+            <a href="#" class="navigation_link"
+              ><img
+                src="../img/tarif/footer_vk.svg"
+                alt=":("
+                class="networks_network-logo"
+            /></a>
+            <a href="#" class="navigation_link"
+              ><img
+                src="../img/tarif/footer_telegram.svg"
+                alt=":("
+                class="networks_network-logo"
+            /></a>
+          </div>
+          <div class="social-section_email">
+            E-mail:
+            <a href="mailto:hello@bezrealtora.ru" class="faq_link"
+              >hello@bezrealtora.ru</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer_licence-section">
+        <span class="licence-section_text"
+          >© «БезРиелтора» 2020 г. Все права защищены. Сайт не является
+          публичной офертой.
+          <a href="#" class="licence_link">Пользовательское соглашение</a>
+          <a href="#" class="licence_link">Политика конфиденциальности</a
+          >.</span
+        >
+        <span class="licence-section_text">Разработка – TOPSITE.STUDIO</span>
+      </div>
+    </div>
+    <script src="../js/catalog.js"></script>
+  </body>
+</html>

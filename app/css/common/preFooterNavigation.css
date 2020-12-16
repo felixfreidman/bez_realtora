@@ -1,0 +1,75 @@
+.main_header-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.red-line {
+  width: 50px;
+  height: 5px;
+  background-color: #e82431;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.main_section-header {
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.main_section-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_prefooter-section {
+  padding: 50px 100px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 865px;
+  background-color: #f2f2f2;
+}
+
+.prefooter-section_city-section,
+.prefooter-section_subway-section,
+.prefooter-section_district-section {
+  width: 100%;
+  max-height: 33%;
+}
+
+.city-section_table,
+.district-section_table,
+.subway-section_table {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.city-section_table > section,
+.district-section_table > section,
+.subway-section_table > section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.city-section_table > section > a,
+.city-section_table > section > a:visited,
+.district-section_table > section > a,
+.district-section_table > section > a:visited,
+.subway-section_table > section > a,
+.subway-section_table > section > a:visited {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  width: 25%;
+}
+
+.city-section_table > section > a:hover,
+.district-section_table > section > a:hover,
+.subway-section_table > section > a:hover {
+  color: #e82431;
+}
