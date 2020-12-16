@@ -1266,3 +1266,23 @@ metroStationRadioArray.forEach((radio) => {
     }
   });
 });
+
+window.onscroll = function () {
+  myFunction();
+};
+
+// Get the header
+var filterSection = document.querySelector(".main_filter-section");
+
+// Get the offset position of the navbar
+var sticky = filterSection.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    console.log("SHHHIT");
+    filterSection.classList.add("sticky");
+  } else {
+    filterSection.classList.remove("sticky");
+  }
+}

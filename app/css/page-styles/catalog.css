@@ -18,8 +18,23 @@
   background-color: #fff;
   padding: 60px 100px;
 }
+.filter-section_search-form {
+  position: relative;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+.sticky + .main_flats-section {
+  padding-top: 200px;
+}
 .filter-section_required-section {
   display: flex;
+}
+
+.filter-section_additive-section {
+  display: none;
 }
 .filter_fieldset {
   border: none;
@@ -44,7 +59,10 @@
   width: 100%;
   display: flex;
 }
-input[name="typeOfOperation"] + label {
+input[name="typeOfOperation"] + label,
+input[name="ageHouse"] + label,
+input[name="period"] + label,
+input[name="roomAmount"] + label {
   width: 50%;
   background-color: #f2f2f2;
   display: flex;
@@ -53,16 +71,24 @@ input[name="typeOfOperation"] + label {
   padding: 10px 0;
   cursor: pointer;
 }
+input[name="period"] + label {
+  width: 80%;
+  font-size: 14px;
+}
 input[name="roomAmount"] + label {
+  padding: 11px 10px;
   width: 20%;
-  background-color: #f2f2f2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 10px;
-  cursor: pointer;
   margin-right: 1px;
   font-size: 14px;
+}
+input[name="ageHouse"] + label {
+  font-size: 14px;
+}
+.period {
+  width: 25%;
+}
+.age {
+  width: 18%;
 }
 .filter_section input:first-child {
   margin-left: 0;
@@ -74,28 +100,27 @@ input[name="roomAmount"] + label {
   background-color: #f2f2f2;
   border-radius: 8px;
   padding: 10px 0px;
-  width: 80%;
+  width: 85%;
   text-align: center;
   font-size: 16px;
   margin-right: 8px;
   margin-left: 8px;
 }
-input[name="roomAmount"]:checked + label {
-  background-color: #1c2443;
-  color: #fff;
-}
-input[name="typeOfOperation"]:checked + label {
+input[name="roomAmount"]:checked + label,
+input[name="typeOfOperation"]:checked + label,
+input[name="period"]:checked + label,
+input[name="ageHouse"]:checked + label {
   background-color: #1c2443;
   color: #fff;
 }
 
-input[name="roomAmount"] + label:hover {
+input[name="roomAmount"] + label:hover,
+input[name="typeOfOperation"] + label:hover,
+input[name="period"] + label:hover,
+input[name="ageHouse"] + label:hover {
   color: #e82431;
 }
 
-input[name="typeOfOperation"] + label:hover {
-  color: #e82431;
-}
 label[for="studioRoom"] {
   padding: 15px 10px;
   border-radius: 8px 0 0 8px;
@@ -149,6 +174,75 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
 
 .filter-section_filter-content label:hover {
   color: red;
+}
+.filter-section_control-section {
+  margin-top: 51px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.filter-section_moreFilter-checkbox {
+  background-image: url("../../img/main/main_filter-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  width: 30%;
+  max-width: 175px;
+  padding-left: 12px;
+  cursor: pointer;
+  position: absolute;
+  /* bottom: 30px; */
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.control-section_search-section {
+  display: flex;
+  align-items: center;
+}
+
+.search-section_submit-button {
+  outline: none;
+  border: none;
+  background-color: #e82431;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 8px;
+  margin-left: 30px;
+}
+.search-bar_room-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #adb5bd;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.search-bar_room-checkbox:checked + label::before {
+  border-color: #1c2443;
+  background-color: #1c2443;
+  background-image: url("../../img/main/checkmark.svg");
+}
+
+.advert-amount {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#showMore:checked + label {
+  background-image: url("../../img/main/filter_arrow-reversed.png");
+}
+#showMore:checked ~ .filter-section_additive-section {
+  display: flex;
 }
 /* ----------------------------------------------- Конец стилей для секции фильтры */
 /* Внизу немного стилей для навигации, слишком мало, чтобы давать им красивые комментарии */

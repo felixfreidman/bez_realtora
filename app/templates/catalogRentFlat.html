@@ -118,7 +118,11 @@
     </div>
     <div class="main">
       <div class="main_filter-section">
-        <form method="get" action="vk.com">
+        <form
+          method="get"
+          action="https://vk.com"
+          class="filter-section_search-form"
+        >
           <div class="filter-section_required-section">
             <fieldset class="filter_fieldset">
               <legend>Тип Предложения</legend>
@@ -321,7 +325,133 @@
               </div>
             </fieldset>
           </div>
-          <div class="filter-section_additive-section"></div>
+          <input type="checkbox" id="showMore" class="search-bar_inputs" />
+          <label for="showMore" class="filter-section_moreFilter-checkbox"
+            >Больше фильтров</label
+          >
+          <div class="filter-section_additive-section">
+            <fieldset class="filter_fieldset">
+              <legend>Районы</legend>
+
+              <label class="filter-section_filter-button" for="districtLabel"
+                >Выберете районы</label
+              >
+              <input
+                type="checkbox"
+                class="search-bar_inputs search-bar_room-checkbox"
+                id="districtLabel"
+              />
+              <div class="filter-section_filter-content">
+                <input
+                  type="checkbox"
+                  name="district"
+                  id="lenin"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Ленинский"
+                  checked
+                />
+                <label for="lenin">Ленинский</label>
+                <input
+                  type="checkbox"
+                  name="district"
+                  id="october"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Октябрьский"
+                  checked
+                />
+                <label for="october">Октябрьский</label>
+                <input
+                  type="checkbox"
+                  name="district"
+                  id="rightBorder"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Правобережный"
+                  checked
+                />
+                <label for="rightBorder">Правобережный</label>
+                <input
+                  type="checkbox"
+                  name="district"
+                  id="sverdlov"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Свердловский"
+                  checked
+                />
+                <label for="sverdlov">Свердловский</label>
+                <input
+                  type="checkbox"
+                  name="district"
+                  id="anniversary"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Юбилейный"
+                  checked
+                />
+                <label for="anniversary">Юбилейный</label>
+                <input
+                  type="checkbox"
+                  name="district"
+                  id="admiral"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Адмиралтейский"
+                  checked
+                />
+                <label for="admiral">Адмиралтейский</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset period">
+              <legend>Срок аренды</legend>
+              <div class="filter_section">
+                <input
+                  type="radio"
+                  name="period"
+                  value="long"
+                  id="longRent"
+                  class="search-bar_inputs"
+                  checked
+                />
+                <label for="longRent">На длительный срок</label>
+                <input
+                  type="radio"
+                  name="period"
+                  value="daily"
+                  class="search-bar_inputs"
+                  id="dailyRent"
+                />
+                <label for="dailyRent">Посуточно</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset age">
+              <legend>Тип дома</legend>
+              <div class="filter_section">
+                <input
+                  type="radio"
+                  name="ageHouse"
+                  value="newHouse"
+                  id="newHouse"
+                  class="search-bar_inputs"
+                  checked
+                />
+                <label for="newHouse">Новостройка</label>
+                <input
+                  type="radio"
+                  name="ageHouse"
+                  value="oldHouse"
+                  class="search-bar_inputs"
+                  id="oldHouse"
+                />
+                <label for="oldHouse">Вторичка</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="filter-section_control-section">
+            <div class="control-section_search-section">
+              <span class="advert-amount">Найдено 356 объявлений</span>
+              <button type="submit" class="search-section_submit-button">
+                Показать
+              </button>
+            </div>
+          </div>
         </form>
       </div>
 
