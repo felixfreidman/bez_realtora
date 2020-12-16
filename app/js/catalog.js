@@ -1,39 +1,43 @@
 let realEstateTypeField = document.getElementById("realEstateTypeField");
-let realEstateRadioArray = document.querySelectorAll("input[name=realEstateType]");
+let realEstateRadioArray = document.querySelectorAll(
+  "input[name=realEstateType]"
+);
 let realEstateTypeLabel = document.getElementById("realEstateTypeLabel");
 let metroStationField = document.getElementById("metroStationField");
-let metroStationRadioArray = document.querySelectorAll("input[name=metroStationType]");
+let metroStationRadioArray = document.querySelectorAll(
+  "input[name=metroStationType]"
+);
 let metroStationLabel = document.getElementById("metroStationLabel");
-let counterLikes = document.querySelector(".counter");
-let intCounter = parseInt(counterLikes.textContent);
 let moreButton = document.querySelector(".advertisments-section_more-button");
-let heartArray = document.querySelectorAll('.unfilledHeart');
-heartArray.forEach(element => {
-    element.addEventListener("click", ()=> {
-        element.classList.toggle("unfilledHeart");
-        element.classList.toggle("filledHeart");
-        if(element.classList.contains('filledHeart')){
-        intCounter++;
-        counterLikes.textContent = intCounter;
-        counterLikes.classList.toggle('counterColored');
-        } else if(element.classList.contains('unfilledHeart')) {
-          intCounter--;
-          counterLikes.textContent = intCounter;
-          counterLikes.classList.toggle('counterColored');
-        }
-    })
+let heartArray = document.querySelectorAll(".unfilledHeart");
+let shareArray = document.querySelectorAll(".unfilledShare");
+heartArray.forEach((element) => {
+  element.addEventListener("click", () => {
+    element.classList.toggle("unfilledHeart");
+    element.classList.toggle("filledHeart");
+    let counterLikes = element.nextSibling.nextSibling;
+    let intCounter = parseInt(counterLikes.textContent);
+    if (element.classList.contains("filledHeart")) {
+      intCounter++;
+      counterLikes.textContent = intCounter;
+      counterLikes.classList.toggle("counterColored");
+    } else if (element.classList.contains("unfilledHeart")) {
+      intCounter--;
+      counterLikes.textContent = intCounter;
+      counterLikes.classList.toggle("counterColored");
+    }
+  });
 });
-// let shareArray = document.querySelectorAll('.unfilledShare');
-// shareArray.forEach(element => {
-//     element.addEventListener("click", ()=> {
-//         element.classList.toggle("unfilledShare");
-//         element.classList.toggle("filledShare");
-//     })
-// });
+
+shareArray.forEach((element) => {
+  element.addEventListener("click", () => {
+    element.classList.toggle("unfilledShare");
+    element.classList.toggle("filledShare");
+  });
+});
 
 moreButton.addEventListener("click", () => {
-    let moreAdvertisments = `
-    <div class="main_applicationForm-section">
+  let moreAdvertisments = `<div class="main_applicationForm-section">
             <div class="applicationForm">
               <div class="applicationForm_boorkmark"></div>
               <div class="applicationForm_advertismentInfo-section">
@@ -79,10 +83,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -105,6 +105,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -140,10 +145,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -166,6 +167,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -201,10 +207,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -227,6 +229,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -262,10 +269,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -288,6 +291,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -323,10 +331,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -349,6 +353,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -384,10 +393,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -410,6 +415,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -445,10 +455,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -471,6 +477,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -506,10 +517,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -532,6 +539,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -567,10 +579,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -593,6 +601,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -669,10 +682,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -695,6 +704,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -730,10 +744,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -756,6 +766,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -791,10 +806,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -817,6 +828,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -852,10 +868,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -878,6 +890,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -913,10 +930,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -939,6 +952,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -974,10 +992,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -1000,6 +1014,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -1035,10 +1054,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -1061,6 +1076,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -1096,10 +1116,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -1122,6 +1138,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -1157,10 +1178,6 @@ moreButton.addEventListener("click", () => {
                   <div class="info-section_avatar"></div>
                   <span class="info-section_name">Александра Соколовская</span>
                 </div>
-                <div class="advert-card_panel-section">
-                  <div class="panel-section_section unfilledShare"></div>
-                  <div class="panel-section_section unfilledHeart"></div>
-                </div>
               </div>
               <div class="advert-card_objPhotos-section">
                 <img
@@ -1183,6 +1200,11 @@ moreButton.addEventListener("click", () => {
                   src="../img/main/main_rentAdvertisment-card.jpg"
                   alt=":("
                 />
+              </div>
+              <div class="advert-card_panel-section">
+                <div class="panel-section_section unfilledHeart"></div>
+                <div class="panel-section_section counter">999</div>
+                <div class="panel-section_section unfilledShare"></div>
               </div>
               <div class="advert-card_objInfo-section">
                 <div class="objInfo-section_price-tag">
@@ -1213,10 +1235,11 @@ moreButton.addEventListener("click", () => {
               </div>
             </div>
           </div>`;
-          let newElem = document.createElement('div');
-          newElem.innerHTML = moreAdvertisments;
-    document.querySelector('.flats-section_advertisments-section').append(newElem);     
-
+  let newElem = document.createElement("div");
+  newElem.innerHTML = moreAdvertisments;
+  document
+    .querySelector(".flats-section_advertisments-section")
+    .append(newElem);
 });
 
 realEstateRadioArray.forEach((radio) => {
