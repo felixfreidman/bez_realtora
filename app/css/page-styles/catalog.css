@@ -11,9 +11,66 @@
 .main_applicationFormBig-section {
   padding-bottom: 30px;
 }
+.main_navigation {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.main_navigation > a {
+  text-decoration: none;
+  color: #000;
+}
+.main_navigation > a:hover {
+  color: #e82431;
+}
+.main_navigation > span:hover {
+  cursor: default;
+}
+/* Начало стилей для карточек быстрых переходов ----------------------------------------------- */
+.flats-section_specialCards-section {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+}
+.specialCards-section_card {
+  cursor: pointer;
+  width: 24%;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 160px;
+  max-height: 200px;
+  border-radius: 8px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 20px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+.specialCards-section_card:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+.flats-section_specialCards-section .specialCards-section_card:nth-child(1) {
+  background-image: url("../../img/catalog/cheapHousing.jpg");
+}
+.flats-section_specialCards-section .specialCards-section_card:nth-child(2) {
+  background-image: url("../../img/catalog/partyHouse.jpg");
+}
+.flats-section_specialCards-section .specialCards-section_card:nth-child(3) {
+  background-image: url("../../img/catalog/expensiveRepair.jpg");
+}
+.flats-section_specialCards-section .specialCards-section_card:nth-child(4) {
+  margin-right: 0;
+  background-image: url("../../img/catalog/levelingFlat.jpg");
+}
+/* ----------------------------------------------- Конец стилей для карточек быстрых переходов */
+
 /* Начало стилей секции с объявлениями ----------------------------------------------- */
 .main_flats-section {
-  padding: 100px 100px;
+  padding: 0px 100px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -51,11 +108,12 @@
   padding: 10px;
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
 }
 .advert-card_info-section {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 75%;
 }
 .info-section_name {
   font-size: 14px;
@@ -70,17 +128,17 @@
 }
 .advert-card_panel-section {
   display: flex;
-  width: fit-content;
-  height: fit-content;
+  align-items: center;
+  justify-content: center;
 }
 .panel-section_section {
-  width: 36px;
-  height: 36px;
+  width: 25px;
+  height: 25px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .advert-card_objPhotos-section {
   display: flex;
