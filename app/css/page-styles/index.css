@@ -1098,7 +1098,7 @@ input[name="watchStoryCheckbox"]:checked + label {
 }
 .navigation_field {
   position: relative;
-  width: 60%;
+  width: 80%;
   cursor: pointer;
 }
 .navigation_field:hover .field_content {
@@ -1108,7 +1108,7 @@ input[name="watchStoryCheckbox"]:checked + label {
   display: flex;
 }
 .field_name {
-  width: 40%;
+  width: 80%;
   padding: 5px 10px;
   background-color: #1c2443;
   border-radius: 8px;
