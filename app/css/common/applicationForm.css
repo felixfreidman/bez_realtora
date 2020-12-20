@@ -439,12 +439,15 @@ body {
   }
   .telephone-input_preNumber {
     font-size: 18px;
+    height: 35px;
   }
   .telephone-input_number {
     font-size: 18px;
+    height: 35px;
   }
   .requredActions-section_apply-button {
     font-size: 18px;
+    height: 35px;
   }
   .personalAgree-label {
     font-size: 12px;
@@ -476,15 +479,15 @@ body {
   }
   .telephone-input_preNumber {
     font-size: 13px;
-    height: 30px;
+    height: 35px;
   }
   .telephone-input_number {
     font-size: 13px;
-    height: 30px;
+    height: 35px;
   }
   .requredActions-section_apply-button {
     font-size: 13px;
-    height: 30px;
+    height: 35px;
   }
   .requiredActions-section_telephone-input {
     margin-bottom: 0;
