@@ -442,6 +442,347 @@
                 <label for="oldHouse">Вторичка</label>
               </div>
             </fieldset>
+            <fieldset class="filter_fieldset furniture">
+              <legend>Мебель</legend>
+              <div class="filter_section">
+                <input
+                  type="radio"
+                  name="furniture"
+                  value="withFurniture"
+                  id="withFurniture"
+                  class="search-bar_inputs"
+                  checked
+                />
+                <label for="withFurniture">С мебелью</label>
+                <input
+                  type="radio"
+                  name="furniture"
+                  value="noFurniture"
+                  class="search-bar_inputs"
+                  id="noFurniture"
+                />
+                <label for="noFurniture">Без мебели</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset area">
+              <legend>Площадь, м²</legend>
+              <div class="filter_section">
+                <input
+                  type="text"
+                  name="areaAmountMin"
+                  value=""
+                  placeholder="30"
+                  class="filter_areaRange"
+                  pattern="[0-9]+"
+                />
+                -
+                <input
+                  type="text"
+                  name="areaAmountMax"
+                  value=""
+                  placeholder="80"
+                  class="filter_areaRange"
+                  pattern="[0-9]+"
+                />
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset repairQ">
+              <legend>Качество ремонта</legend>
+
+              <label class="filter-section_filter-button" for="repairLabel"
+                >Выберете тип ремонта</label
+              >
+              <input
+                type="checkbox"
+                class="search-bar_inputs search-bar_room-checkbox"
+                id="repairLabel"
+              />
+              <div class="filter-section_filter-content">
+                <input
+                  type="checkbox"
+                  name="repairQ"
+                  id="oldRepair"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Бабушкин"
+                  checked
+                />
+                <label for="oldRepair">Бабушкин</label>
+                <input
+                  type="checkbox"
+                  name="repairQ"
+                  id="euroReapir"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Евро"
+                  checked
+                />
+                <label for="euroReapir">Евро</label>
+                <input
+                  type="checkbox"
+                  name="repairQ"
+                  id="withoutRepair"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Без ремонта"
+                  checked
+                />
+                <label for="withoutRepair">Без ремонта</label>
+                <input
+                  type="checkbox"
+                  name="repairQ"
+                  id="cosmeticRepair"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Косметический"
+                  checked
+                />
+                <label for="cosmeticRepair">Косметический</label>
+                <input
+                  type="checkbox"
+                  name="repairQ"
+                  id="designRepair"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Дизайнерский"
+                  checked
+                />
+                <label for="designRepair">Дизайнерский</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset comfort">
+              <legend>Комфорт</legend>
+
+              <label class="filter-section_filter-button" for="comfortLabel"
+                >Удобства</label
+              >
+              <input
+                type="checkbox"
+                class="search-bar_inputs search-bar_room-checkbox"
+                id="comfortLabel"
+              />
+              <div class="filter-section_filter-content">
+                <input
+                  type="checkbox"
+                  name="comfort"
+                  id="conditioner"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Кондиционер"
+                />
+                <label for="conditioner">Кондиционер</label>
+                <input
+                  type="checkbox"
+                  name="comfort"
+                  id="fireplace"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Камин"
+                />
+                <label for="fireplace">Камин</label>
+                <input
+                  type="checkbox"
+                  name="comfort"
+                  id="balcony"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Балкон/Лоджия"
+                />
+                <label for="balcony">Балкон/Лоджия</label>
+                <input
+                  type="checkbox"
+                  name="comfort"
+                  id="parkingLot"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Парковочное место"
+                />
+                <label for="parkingLot">Парковочное место</label>
+                <input
+                  type="checkbox"
+                  name="comfort"
+                  id="elevator"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Лифт"
+                />
+                <label for="elevator">Лифт</label>
+                <input
+                  type="checkbox"
+                  name="comfort"
+                  id="security"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Охрана/Консьерж"
+                />
+                <label for="security">Охрана/Консьерж</label>
+                <input
+                  type="checkbox"
+                  name="comfort"
+                  id="disableHelp"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Пандус"
+                />
+                <label for="disableHelp">Пандус</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset media">
+              <legend>Мультимедиа</legend>
+
+              <label class="filter-section_filter-button" for="mediaLabel"
+                >Развлечения</label
+              >
+              <input
+                type="checkbox"
+                class="search-bar_inputs search-bar_room-checkbox"
+                id="mediaLabel"
+              />
+              <div class="filter-section_filter-content">
+                <input
+                  type="checkbox"
+                  name="media"
+                  id="internet"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="WI-FI"
+                />
+                <label for="internet">WI-FI</label>
+                <input
+                  type="checkbox"
+                  name="media"
+                  id="tvSet"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Телевизор"
+                />
+                <label for="tvSet">Телевизор</label>
+                <input
+                  type="checkbox"
+                  name="media"
+                  id="tvAppliance"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Кабельное / цифровое ТВ"
+                />
+                <label for="tvAppliance">Кабельное / цифровое ТВ</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset appliance">
+              <legend>Бытовая техника</legend>
+
+              <label class="filter-section_filter-button" for="applianceLabel"
+                >Бытовая техника</label
+              >
+              <input
+                type="checkbox"
+                class="search-bar_inputs search-bar_room-checkbox"
+                id="applianceLabel"
+              />
+              <div class="filter-section_filter-content">
+                <input
+                  type="checkbox"
+                  name="appliance"
+                  id="cookingOven"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Плита"
+                />
+                <label for="cookingOven">Плита</label>
+                <input
+                  type="checkbox"
+                  name="appliance"
+                  id="microwave"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Микроволновка"
+                />
+                <label for="microwave">Микроволновка</label>
+                <input
+                  type="checkbox"
+                  name="appliance"
+                  id="fridge"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Холодильник"
+                />
+                <label for="fridge">Холодильник</label>
+                <input
+                  type="checkbox"
+                  name="appliance"
+                  id="laundry"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Стиральная машина"
+                />
+                <label for="laundry">Стиральная машина</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset addons">
+              <legend>Дополнительно</legend>
+
+              <label class="filter-section_filter-button" for="addonsLabel"
+                >Дополнительные условия</label
+              >
+              <input
+                type="checkbox"
+                class="search-bar_inputs search-bar_room-checkbox"
+                id="addonsLabel"
+              />
+              <div class="filter-section_filter-content">
+                <input
+                  type="checkbox"
+                  name="addons"
+                  id="petsAllowed"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Можно с питомцами"
+                />
+                <label for="petsAllowed">Можно с питомцами</label>
+                <input
+                  type="checkbox"
+                  name="addons"
+                  id="childrenAllowed"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Можно с детьми"
+                />
+                <label for="childrenAllowed">Можно с детьми</label>
+                <input
+                  type="checkbox"
+                  name="addons"
+                  id="smokingAllowed"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Можно курить"
+                />
+                <label for="smokingAllowed">Можно курить</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter_fieldset stairs">
+              <legend>Этаж</legend>
+
+              <label class="filter-section_filter-button" for="stairsLabel"
+                >Этаж</label
+              >
+              <input
+                type="checkbox"
+                class="search-bar_inputs search-bar_room-checkbox"
+                id="stairsLabel"
+              />
+              <div class="filter-section_filter-content">
+                <input
+                  type="checkbox"
+                  name="stairs"
+                  id="notFirstStair"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Не первый"
+                />
+                <label for="notFirstStair">Не первый</label>
+                <input
+                  type="checkbox"
+                  name="stairs"
+                  id="notLastStair"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Не последний"
+                />
+                <label for="notLastStair">Не последний</label>
+                <input
+                  type="checkbox"
+                  name="stairs"
+                  id="lastStair"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Последний"
+                />
+                <label for="lastStair">Последний</label>
+                <input
+                  type="checkbox"
+                  name="stairs"
+                  id="firstStair"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Первый"
+                />
+                <label for="firstStair">Первый</label>
+              </div>
+            </fieldset>
           </div>
 
           <div class="filter-section_control-section">
@@ -482,68 +823,6 @@
         </div>
         <div class="flats-section_advertisments-section">
           <div class="advertisment-section_part">
-            <div class="advertisments-section_advert-card">
-              <div class="advert-card_panel-info-section">
-                <div class="advert-card_info-section">
-                  <div class="info-section_avatar"></div>
-                  <span class="info-section_name">Александра Соколовская</span>
-                </div>
-              </div>
-              <div class="advert-card_objPhotos-section">
-                <img
-                  src="../img/main/main_rentAdvertisment-card.jpg"
-                  alt=":("
-                />
-                <img
-                  src="../img/main/main_rentAdvertisment-card.jpg"
-                  alt=":("
-                />
-                <img
-                  src="../img/main/main_rentAdvertisment-card.jpg"
-                  alt=":("
-                />
-                <img
-                  src="../img/main/main_rentAdvertisment-card.jpg"
-                  alt=":("
-                />
-                <img
-                  src="../img/main/main_rentAdvertisment-card.jpg"
-                  alt=":("
-                />
-              </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
-                </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
-                  >
-                </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
-              </div>
-            </div>
             <div class="advertisments-section_advert-card">
               <div class="advert-card_panel-info-section">
                 <div class="advert-card_info-section">
@@ -1577,68 +1856,6 @@
                 >
               </div>
             </div>
-            <div class="advertisments-section_advert-card">
-              <div class="advert-card_panel-info-section">
-                <div class="advert-card_info-section">
-                  <div class="info-section_avatar"></div>
-                  <span class="info-section_name">Александра Соколовская</span>
-                </div>
-              </div>
-              <div class="advert-card_objPhotos-section">
-                <img
-                  src="../img/main/main_rentAdvertisment-card.jpg"
-                  alt=":("
-                />
-                <img
-                  src="../img/main/main_rentAdvertisment-card.jpg"
-                  alt=":("
-                />
-                <img
-                  src="../img/main/main_rentAdvertisment-card.jpg"
-                  alt=":("
-                />
-                <img
-                  src="../img/main/main_rentAdvertisment-card.jpg"
-                  alt=":("
-                />
-                <img
-                  src="../img/main/main_rentAdvertisment-card.jpg"
-                  alt=":("
-                />
-              </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
-                </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
-                  >
-                </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
-              </div>
-            </div>
           </div>
         </div>
         <div class="advertisments-section_more-button">Показать еще</div>
@@ -2013,6 +2230,7 @@
         <span class="licence-section_text">Разработка – TOPSITE.STUDIO</span>
       </div>
     </div>
+
     <script src="../js/catalog.js"></script>
   </body>
 </html>
