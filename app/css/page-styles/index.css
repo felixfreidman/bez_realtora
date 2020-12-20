@@ -357,13 +357,11 @@ input[type="radio"]:checked + .navigation:hover {
 .advertisments-section_avdert-card {
   background-color: #fff;
   width: 24%;
-  height: 300px;
+  height: 350px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-radius: 8px;
-  padding-bottom: 20px;
 }
 .advertisments-section_avdert-card:hover,
 .advertisments-section_avdert-card:active {
@@ -372,19 +370,27 @@ input[type="radio"]:checked + .navigation:hover {
 
 .avdert-card_card-image {
   width: 100%;
-  height: 60%;
+  height: 70%;
   background-image: url("../../img/main/main_rentAdvertisment-card.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 8px 8px 0px 0px;
 }
+.advert-card_section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
 .avdert-card_card-info {
-  height: 20%;
-  padding: 0px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 10px;
+}
+.avdert-card_card-info > div {
+  margin-bottom: 8px;
 }
 .card-info_price-tag {
   display: flex;
@@ -412,7 +418,6 @@ input[type="radio"]:checked + .navigation:hover {
 .avdert-card_card-address {
   height: fit-content;
   width: 100%;
-  padding: 0px 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1585,9 +1590,10 @@ input[name="watchStoryCheckbox"]:checked + label {
     background-color: #f2f2f2;
   }
 }
+
 @media (min-width: 414px) and (max-width: 599px) {
   .main_search-section {
-    padding: 100px 20px;
+    padding: 30px 20px;
   }
   .search-section_search-bar {
     display: none;
@@ -1610,6 +1616,14 @@ input[name="watchStoryCheckbox"]:checked + label {
   }
   .perk-description {
     font-size: 10px;
+  }
+  .perk-logo {
+    width: 100px;
+    height: 75px;
+  }
+
+  .typeofOperation-label :hover {
+    color: white;
   }
 
   .red-line {
@@ -1645,7 +1659,7 @@ input[name="watchStoryCheckbox"]:checked + label {
     display: flex;
   }
   .main_flats-section {
-    padding: 50px 25px;
+    padding: 50px 0px;
   }
   .flats-section_navigation {
     display: none;
@@ -1663,15 +1677,22 @@ input[name="watchStoryCheckbox"]:checked + label {
   }
 
   .advertisments-section_avdert-card {
+    display: flex;
+    flex-direction: row;
     background-color: #fff;
     width: 100%;
+    height: 150px;
+  }
+  .advert-card_section {
+    padding: 10px;
   }
 
   .avdert-card_card-image {
-    width: 100%;
-    height: 60%;
+    width: 80%;
+    height: 100%;
     background-size: cover;
     background-position: center;
+    border-radius: 0px;
   }
   .flats-section_fastLinks-section {
     display: none;
@@ -1755,7 +1776,7 @@ input[name="watchStoryCheckbox"]:checked + label {
 
 @media (min-width: 320px) and (max-width: 413px) {
   .main_search-section {
-    padding: 100px 20px;
+    padding: 30px 20px;
   }
 
   .search-form_submit-button {
@@ -1771,13 +1792,17 @@ input[name="watchStoryCheckbox"]:checked + label {
   .search-section_perks {
     flex-wrap: wrap;
   }
+  .perk-logo {
+    width: 100px;
+    height: 75px;
+  }
   .perks_description {
     width: 50%;
     justify-content: center;
     margin-bottom: 10px;
   }
   .perk-description {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .red-line {
@@ -1813,7 +1838,7 @@ input[name="watchStoryCheckbox"]:checked + label {
     display: flex;
   }
   .main_flats-section {
-    padding: 50px 25px;
+    padding: 50px 0px;
   }
   .flats-section_navigation {
     display: none;
@@ -1835,11 +1860,23 @@ input[name="watchStoryCheckbox"]:checked + label {
     width: 100%;
   }
 
-  .avdert-card_card-image {
+  .advertisments-section_avdert-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
     width: 100%;
-    height: 60%;
+    height: 150px;
+  }
+  .advert-card_section {
+    padding: 10px;
+  }
+
+  .avdert-card_card-image {
+    width: 80%;
+    height: 100%;
     background-size: cover;
     background-position: center;
+    border-radius: 0px;
   }
   .flats-section_fastLinks-section {
     display: none;

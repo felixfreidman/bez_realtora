@@ -355,6 +355,7 @@ select {
   .header_header-top {
     justify-content: space-between;
     padding: 0px;
+    padding-right: 20px;
   }
   .navigation_rent-section,
   .navigation_sell-section {
