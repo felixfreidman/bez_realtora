@@ -10,7 +10,6 @@ let metroStationRadioArray = document.querySelectorAll(
 let metroStationLabel = document.getElementById("metroStationLabel");
 let moreButton = document.querySelector(".advertisments-section_more-button");
 let heartArray = document.querySelectorAll(".unfilledHeart");
-let shareArray = document.querySelectorAll(".unfilledShare");
 heartArray.forEach((element) => {
   element.addEventListener("click", () => {
     element.classList.toggle("unfilledHeart");
@@ -26,13 +25,6 @@ heartArray.forEach((element) => {
       counterLikes.textContent = intCounter;
       counterLikes.classList.toggle("counterColored");
     }
-  });
-});
-
-shareArray.forEach((element) => {
-  element.addEventListener("click", () => {
-    element.classList.toggle("unfilledShare");
-    element.classList.toggle("filledShare");
   });
 });
 

@@ -617,7 +617,3 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
 .unfilledShare {
   background-image: url("../../img/catalog/shareEmpty.svg");
 }
-
-.filledShare {
-  background-image: url("../../img/catalog/shareFilled.svg");
-}
