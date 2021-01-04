@@ -332,15 +332,15 @@
           <div class="filter-section_additive-section">
             <fieldset class="filter_fieldset">
               <legend>Районы</legend>
-
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="districtLabel"
+              />
               <label class="filter-section_filter-button" for="districtLabel"
                 >Выберете районы</label
               >
-              <input
-                type="checkbox"
-                class="search-bar_inputs search-bar_room-checkbox"
-                id="districtLabel"
-              />
+
               <div class="filter-section_filter-content">
                 <input
                   type="checkbox"
@@ -488,15 +488,15 @@
             </fieldset>
             <fieldset class="filter_fieldset repairQ">
               <legend>Качество ремонта</legend>
-
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="repairLabel"
+              />
               <label class="filter-section_filter-button" for="repairLabel"
                 >Выберете тип ремонта</label
               >
-              <input
-                type="checkbox"
-                class="search-bar_inputs search-bar_room-checkbox"
-                id="repairLabel"
-              />
+
               <div class="filter-section_filter-content">
                 <input
                   type="checkbox"
@@ -547,15 +547,15 @@
             </fieldset>
             <fieldset class="filter_fieldset comfort">
               <legend>Комфорт</legend>
-
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="comfortLabel"
+              />
               <label class="filter-section_filter-button" for="comfortLabel"
                 >Удобства</label
               >
-              <input
-                type="checkbox"
-                class="search-bar_inputs search-bar_room-checkbox"
-                id="comfortLabel"
-              />
+
               <div class="filter-section_filter-content">
                 <input
                   type="checkbox"
@@ -617,15 +617,15 @@
             </fieldset>
             <fieldset class="filter_fieldset media">
               <legend>Мультимедиа</legend>
-
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="mediaLabel"
+              />
               <label class="filter-section_filter-button" for="mediaLabel"
                 >Развлечения</label
               >
-              <input
-                type="checkbox"
-                class="search-bar_inputs search-bar_room-checkbox"
-                id="mediaLabel"
-              />
+
               <div class="filter-section_filter-content">
                 <input
                   type="checkbox"
@@ -655,15 +655,15 @@
             </fieldset>
             <fieldset class="filter_fieldset appliance">
               <legend>Бытовая техника</legend>
-
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="applianceLabel"
+              />
               <label class="filter-section_filter-button" for="applianceLabel"
                 >Бытовая техника</label
               >
-              <input
-                type="checkbox"
-                class="search-bar_inputs search-bar_room-checkbox"
-                id="applianceLabel"
-              />
+
               <div class="filter-section_filter-content">
                 <input
                   type="checkbox"
@@ -701,15 +701,15 @@
             </fieldset>
             <fieldset class="filter_fieldset addons">
               <legend>Дополнительно</legend>
-
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="addonsLabel"
+              />
               <label class="filter-section_filter-button" for="addonsLabel"
                 >Дополнительные условия</label
               >
-              <input
-                type="checkbox"
-                class="search-bar_inputs search-bar_room-checkbox"
-                id="addonsLabel"
-              />
+
               <div class="filter-section_filter-content">
                 <input
                   type="checkbox"
@@ -739,15 +739,15 @@
             </fieldset>
             <fieldset class="filter_fieldset stairs">
               <legend>Этаж</legend>
-
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="stairsLabel"
+              />
               <label class="filter-section_filter-button" for="stairsLabel"
                 >Этаж</label
               >
-              <input
-                type="checkbox"
-                class="search-bar_inputs search-bar_room-checkbox"
-                id="stairsLabel"
-              />
+
               <div class="filter-section_filter-content">
                 <input
                   type="checkbox"
@@ -790,6 +790,9 @@
               <span class="advert-amount">Найдено 356 объявлений</span>
               <button type="submit" class="search-section_submit-button">
                 Показать
+              </button>
+              <button type="submit" class="search-section_submit-button-map">
+                Показать на карте
               </button>
             </div>
           </div>
@@ -1858,7 +1861,15 @@
             </div>
           </div>
         </div>
-        <div class="advertisments-section_more-button">Показать еще</div>
+        <div class="advertisments-section_pages-section">
+          <a href="" class="pages-section_page-link current-page">1</a>
+          <a href="" class="pages-section_page-link">2</a>
+          <a href="" class="pages-section_page-link">3</a>
+          <a href="" class="pages-section_page-link">4</a>
+          <a href="" class="pages-section_page-link">5</a>
+          <a href="" class="pages-section_page-link next-page"></a>
+          <a href="" class="pages-section_page-link end-page"></a>
+        </div>
         <div class="flats-section_fastLinks-section">
           <div class="fastLinks-section_fast-card">
             <div class="fast-card_image-cover rentFlat">
