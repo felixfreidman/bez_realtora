@@ -668,3 +668,6 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
 .unfilledShare {
   background-image: url("../../img/catalog/shareEmpty.svg");
 }
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+}
