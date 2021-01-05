@@ -669,5 +669,63 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   background-image: url("../../img/catalog/shareEmpty.svg");
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .filter-section_required-section {
+    flex-wrap: wrap;
+  }
+  .filter_fieldset {
+    width: 29%;
+  }
+  .filter_fieldset > legend {
+    font-size: 16px;
+  }
+
+  input[name="typeOfOperation"] + label,
+  input[name="ageHouse"] + label,
+  input[name="period"] + label,
+  input[name="roomAmount"] + label,
+  input[name="furniture"] + label {
+    font-size: 13px;
+  }
+  .sticky {
+    position: static;
+    width: 92%;
+  }
+
+  .sticky + .main_flats-section {
+    padding-top: 50px;
+  }
+  .specialCards-section_card {
+    font-size: 12px;
+  }
+  .main_flats-section {
+    padding: 0px 50px;
+  }
+  .advertisment-section_part {
+    justify-content: space-between;
+  }
+  .advertisments-section_advert-card {
+    width: 47%;
+    margin-right: 0px;
+  }
+  .main_prefooter-section {
+    height: 600px;
+    padding: 50px;
+  }
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 11px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
+  .footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
