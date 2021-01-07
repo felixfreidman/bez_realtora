@@ -670,6 +670,7 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   bottom: 100px;
   right: 50px;
   cursor: pointer;
+  display: none;
 }
 .main_closefilter-label {
   background-image: url("../../img/catalog/closeFilterIcon.svg");
@@ -1215,16 +1216,18 @@ input[id="allowanceTypeSmoking"]:checked + label {
     padding-top: 50px;
   }
   .flats-section_specialCards-section {
+    overflow-x: auto;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
     margin-bottom: 80px;
   }
   .specialCards-section_card {
     font-size: 15px;
-    width: 45%;
-    margin-right: 0;
+    flex-basis: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 10px;
     margin-bottom: 10px;
   }
   .main_section-header {
@@ -1248,13 +1251,16 @@ input[id="allowanceTypeSmoking"]:checked + label {
   }
   .flats-section_fastLinks-section {
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: scroll;
     height: auto;
   }
   .fastLinks-section_fast-card {
     width: 49%;
     margin-bottom: 10px;
-    margin-right: 0;
+    margin-right: 10px;
+    flex-basis: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .navigation-container_link {
@@ -1304,7 +1310,7 @@ input[id="allowanceTypeSmoking"]:checked + label {
   }
 }
 
-@media (min-width: 600px) and (max-width: 719px) {
+@media screen and (min-width: 600px) and (max-width: 719px) {
   .main_filter-section {
     display: none;
   }
@@ -1316,17 +1322,56 @@ input[id="allowanceTypeSmoking"]:checked + label {
   .sticky + .main_flats-section {
     padding-top: 0px;
   }
-  .flats-section_specialCards-section {
+  .filter-section_search-form {
     display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    height: max-content;
+  }
+  .filter-section_required-section {
     flex-wrap: wrap;
-    justify-content: space-around;
+  }
+  .filter_fieldset {
+    width: 44%;
+  }
+  .filter_fieldset > legend {
+    font-size: 16px;
+  }
+  .filter-section_control-section {
+    margin-bottom: 50px;
+  }
+  input[name="typeOfOperation"] + label,
+  input[name="ageHouse"] + label,
+  input[name="period"] + label,
+  input[name="roomAmount"] + label,
+  input[name="furniture"] + label {
+    font-size: 13px;
+  }
+  .search-section_submit-button-map,
+  .search-section_submit-button {
+    font-size: 14px;
+  }
+  .sticky {
+    position: static;
+    width: 88%;
+  }
+
+  .sticky + .main_flats-section {
+    padding-top: 50px;
+  }
+  .flats-section_specialCards-section {
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
     align-items: center;
     margin-bottom: 80px;
   }
   .specialCards-section_card {
     font-size: 15px;
-    width: 45%;
-    margin-right: 0;
+    flex-basis: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 10px;
     margin-bottom: 10px;
   }
   .main_section-header {
@@ -1350,13 +1395,16 @@ input[id="allowanceTypeSmoking"]:checked + label {
   }
   .flats-section_fastLinks-section {
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: scroll;
     height: auto;
   }
   .fastLinks-section_fast-card {
     width: 49%;
     margin-bottom: 10px;
-    margin-right: 0;
+    margin-right: 10px;
+    flex-basis: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .navigation-container_link {
@@ -1369,7 +1417,7 @@ input[id="allowanceTypeSmoking"]:checked + label {
   .district-section_table > section > a:visited,
   .subway-section_table > section > a,
   .subway-section_table > section > a:visited {
-    font-size: 11px;
+    font-size: 9px;
     color: black;
     text-decoration: none;
     width: 25%;
@@ -1403,6 +1451,177 @@ input[id="allowanceTypeSmoking"]:checked + label {
   .footer {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .main_showfilter-label,
+  .main_closefilter-label {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 599px) {
+  .main_filter-section {
+    display: none;
+  }
+  .sticky {
+    position: static;
+    width: 0%;
+  }
+
+  .sticky + .main_flats-section {
+    padding-top: 0px;
+  }
+  .filter-section_search-form {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    height: max-content;
+  }
+  .filter-section_required-section {
+    flex-wrap: wrap;
+  }
+  .filter_fieldset {
+    width: 44%;
+  }
+  .filter_fieldset > legend {
+    font-size: 16px;
+  }
+  .filter-section_control-section {
+    margin-bottom: 50px;
+  }
+  input[name="typeOfOperation"] + label,
+  input[name="ageHouse"] + label,
+  input[name="period"] + label,
+  input[name="roomAmount"] + label,
+  input[name="furniture"] + label {
+    font-size: 13px;
+  }
+  .search-section_submit-button-map,
+  .search-section_submit-button {
+    font-size: 14px;
+  }
+  .sticky {
+    position: static;
+    width: 88%;
+  }
+
+  .sticky + .main_flats-section {
+    padding-top: 50px;
+  }
+  .flats-section_specialCards-section {
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .specialCards-section_card {
+    font-size: 15px;
+    flex-basis: 90%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .main_header-block {
+    align-items: center;
+  }
+  .red-line {
+    height: 3px;
+    width: 40px;
+    margin-top: -5px;
+  }
+  .main_section-header {
+    font-size: 16px;
+  }
+  .main_flats-section {
+    padding: 10px;
+  }
+  .advertisment-section_part {
+    flex-direction: column;
+    justify-content: center;
+    width: 98%;
+    margin-top: 0;
+  }
+  .advertisments-section_advert-card {
+    width: 98%;
+    margin-right: 0px;
+  }
+  .main_prefooter-section {
+    height: auto;
+    padding: 50px;
+  }
+  .flats-section_fastLinks-section {
+    display: flex;
+    overflow-x: scroll;
+    height: auto;
+  }
+  .fastLinks-section_fast-card {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-basis: 98%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .navigation-container_link {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
+  .main_prefooter-section {
+    height: auto;
+    padding: 20px 10px;
+  }
+  .subway-section_table,
+  .city-section_table,
+  .district-section_table {
+    margin-top: 5px;
+    flex-direction: column;
+  }
+  .subway-section_table > section,
+  .city-section_table > section,
+  .district-section_table > section {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 0px;
+  }
+  .subway-section_table > section > a,
+  .city-section_table > section > a,
+  .district-section_table > section > a {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .district-section_table > section:nth-child(2),
+  .district-section_table > section:nth-child(3),
+  .district-section_table > section:nth-child(4),
+  .subway-section_table > section:nth-child(2),
+  .subway-section_table > section:nth-child(3),
+  .subway-section_table > section:nth-child(4) {
+    display: none;
+  }
+
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main_showfilter-label,
+  .main_closefilter-label {
+    display: block;
+    width: 50px;
+    height: 50px;
   }
 }
 

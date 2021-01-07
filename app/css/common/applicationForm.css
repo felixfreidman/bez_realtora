@@ -446,7 +446,7 @@ body {
     height: 35px;
   }
   .requredActions-section_apply-button {
-    font-size: 18px;
+    font-size: 14px;
     height: 35px;
   }
   .personalAgree-label {
@@ -495,5 +495,6 @@ body {
   .personalAgree-label {
     margin-top: 0;
     font-size: 9px;
+    cursor: pointer;
   }
 }
