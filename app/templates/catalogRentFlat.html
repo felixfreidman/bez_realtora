@@ -117,6 +117,12 @@
       </div>
     </div>
     <div class="main">
+      <input
+        type="checkbox"
+        name="showFilterButton"
+        id="showFilterButton"
+        class="main_showfilter-checkbox"
+      />
       <div class="main_filter-section">
         <form
           method="get"
@@ -139,7 +145,7 @@
                 <input
                   type="radio"
                   name="typeOfOperation"
-                  value="rent"
+                  value="buy"
                   class="search-bar_inputs"
                   id="buyOperation"
                 />
@@ -798,7 +804,478 @@
           </div>
         </form>
       </div>
+      <div class="main_filter-section-mobile">
+        <form action="GET" class="filter-section-mobile_mobile-form">
+          <fieldset class="mobile-form_fieldset">
+            <legend>Тип предложения</legend>
+            <input
+              type="radio"
+              name="typeOfOperation"
+              value="rent"
+              id="rentOperationMobile"
+              class="search-bar_inputs"
+              checked
+            />
+            <label for="rentOperationMobile" id="mobileLabelOperation">
+              <span>Снять</span></label
+            >
+            <input
+              type="radio"
+              name="typeOfOperation"
+              value="buy"
+              class="search-bar_inputs"
+              id="buyOperationMobile"
+            />
+            <label for="buyOperationMobile" id="mobileLabelOperation"
+              ><span>Купить</span></label
+            >
+          </fieldset>
+          <fieldset class="mobile-form_fieldset">
+            <legend>Тип недвижимости</legend>
+            <section class="mobile-form_typeOfOperation-section">
+              <input
+                type="radio"
+                name="realEstateType"
+                id="realEstateTypeFlats"
+                class="search-bar_inputs"
+                value="Квартиры"
+                checked
+              />
+              <label for="realEstateTypeFlats" id="mobileLabelChoice">
+                <span>Квартира</span>
+              </label>
+              <input
+                type="radio"
+                name="realEstateType"
+                id="realEstateTypeHouses"
+                class="search-bar_inputs"
+                value="Дома"
+              />
+              <label for="realEstateTypeHouses" id="mobileLabelChoice">
+                <span>Дом</span>
+              </label>
+              <input
+                type="radio"
+                name="realEstateType"
+                id="realEstateTypeRooms"
+                class="search-bar_inputs"
+                value="Комнаты"
+              />
+              <label for="realEstateTypeRooms" id="mobileLabelChoice">
+                <span>Комната</span>
+              </label>
+              <input
+                type="radio"
+                name="realEstateType"
+                id="realEstateTypeCottage"
+                class="search-bar_inputs"
+                value="Коттеджи"
+              />
+              <label for="realEstateTypeCottage" id="mobileLabelChoice">
+                <span>Коттедж</span>
+              </label>
+              <input
+                type="radio"
+                name="realEstateType"
+                id="realEstateTypeCountry"
+                class="search-bar_inputs"
+                value="Дачи"
+              />
+              <label for="realEstateTypeCountry" id="mobileLabelChoice">
+                <span>Дача</span>
+              </label>
+              <input
+                type="radio"
+                name="realEstateType"
+                id="realEstateTypeCommercial"
+                class="search-bar_inputs"
+                value="КоммерческаяНедвижимость"
+              />
+              <label for="realEstateTypeCommercial" id="mobileLabelChoice">
+                <span>Коммерческая <br />недвижимость</span>
+              </label>
+              <input
+                type="radio"
+                name="realEstateType"
+                id="realEstateTypeGarages"
+                class="search-bar_inputs"
+                value="Гаражи"
+              />
+              <label for="realEstateTypeGarages" id="mobileLabelChoice">
+                <span>Гараж</span>
+              </label>
+              <input
+                type="radio"
+                name="realEstateType"
+                id="realEstateTypeLand"
+                class="search-bar_inputs"
+                value="ЗемельныеУчастки"
+              />
+              <label for="realEstateTypeLand" id="mobileLabelChoice">
+                <span>Земельный<br />участок</span>
+              </label>
+            </section>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset">
+            <legend>Количество комнат</legend>
+            <div class="filter_section-room">
+              <input
+                type="checkbox"
+                name="roomAmount"
+                value="studio"
+                id="mobileStudioRoom"
+                class="search-bar_inputs"
+              />
+              <label for="mobileStudioRoom">Студия</label>
+              <input
+                type="checkbox"
+                name="roomAmount"
+                value="1room"
+                id="mobileoneRoom"
+                class="search-bar_inputs"
+                checked
+              />
+              <label for="mobileoneRoom">1</label>
+              <input
+                type="checkbox"
+                name="roomAmount"
+                value="2room"
+                id="mobiletwoRoom"
+                class="search-bar_inputs"
+              />
+              <label for="mobiletwoRoom">2</label>
+              <input
+                type="checkbox"
+                name="roomAmount"
+                value="3room"
+                id="mobilethreeRoom"
+                class="search-bar_inputs"
+              />
+              <label for="mobilethreeRoom">3</label>
+              <input
+                type="checkbox"
+                name="roomAmount"
+                value="4more"
+                id="mobilefourMoreRoom"
+                class="search-bar_inputs"
+              />
+              <label for="mobilefourMoreRoom">4+</label>
+            </div>
+          </fieldset>
 
+          <fieldset class="mobile-form_fieldset">
+            <legend>Станция метро</legend>
+
+            <input
+              type="checkbox"
+              class="search-bar_inputs"
+              id="metroStationLabelMobile"
+            />
+            <label
+              class="filter-section_filter-button mobile-button"
+              for="metroStationLabelMobile"
+              id="metroStationFieldMobile"
+            ></label>
+            <div class="filter-section_filter-content mobile-content">
+              <input
+                type="radio"
+                name="metroStationTypeMobile"
+                id="AlSadMobile"
+                class="search-bar_inputs"
+                value="Александровский сад"
+                checked
+              />
+              <label for="AlSadMobile">Александровский сад</label>
+              <input
+                type="radio"
+                name="metroStationTypeMobile"
+                id="leninPrsktMobile"
+                class="search-bar_inputs"
+                value="Ленинский проспект"
+                checked
+              />
+              <label for="leninPrsktMobile">Ленинский проспект</label>
+              <input
+                type="radio"
+                name="metroStationTypeMobile"
+                id="admiralteyskayaMobile"
+                class="search-bar_inputs"
+                value="Адмиралтейская"
+                checked
+              />
+              <label for="admiralteyskayaMobile">Адмиралтейская</label>
+              <input
+                type="radio"
+                name="metroStationTypeMobile"
+                id="avtovoMobile"
+                class="search-bar_inputs"
+                value="Автово"
+                checked
+              />
+              <label for="avtovoMobile">Автово</label>
+              <input
+                type="radio"
+                name="metroStationTypeMobile"
+                id="mayakovMobile"
+                class="search-bar_inputs"
+                value="Маяковская"
+                checked
+              />
+              <label for="mayakovMobile">Маяковская</label>
+            </div>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset">
+            <legend>Арендная плата</legend>
+            <section class="mobile-form_input-section">
+              <input
+                type="text"
+                name="minPrice"
+                id="minPriceMobile"
+                value=""
+                placeholder="15000"
+                class="mobile-form_price-input"
+              />
+              -
+              <input
+                type="text"
+                name="maxPrice"
+                id="maxPriceMobile"
+                value=""
+                placeholder="18000"
+                class="mobile-form_price-input"
+              />
+            </section>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset">
+            <legend>Районы</legend>
+            <input
+              type="checkbox"
+              class="search-bar_inputs"
+              id="districtLabelMobile"
+            />
+            <label
+              class="filter-section_filter-button mobile-button"
+              for="districtLabelMobile"
+              >Выберете районы</label
+            >
+
+            <div class="filter-section_filter-content mobile-content">
+              <input
+                type="checkbox"
+                name="district"
+                id="leninMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Ленинский"
+                checked
+              />
+              <label for="leninMobile">Ленинский</label>
+              <input
+                type="checkbox"
+                name="district"
+                id="octoberMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Октябрьский"
+                checked
+              />
+              <label for="octoberMobile">Октябрьский</label>
+              <input
+                type="checkbox"
+                name="district"
+                id="rightBorderMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Правобережный"
+                checked
+              />
+              <label for="rightBorderMobile">Правобережный</label>
+              <input
+                type="checkbox"
+                name="district"
+                id="sverdlovMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Свердловский"
+                checked
+              />
+              <label for="sverdlovMobile">Свердловский</label>
+              <input
+                type="checkbox"
+                name="district"
+                id="anniversaryMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Юбилейный"
+                checked
+              />
+              <label for="anniversaryMobile">Юбилейный</label>
+              <input
+                type="checkbox"
+                name="district"
+                id="admiralMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Адмиралтейский"
+                checked
+              />
+              <label for="admiralMobile">Адмиралтейский</label>
+            </div>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset period-mobile">
+            <legend>Срок аренды</legend>
+            <div class="filter_section">
+              <input
+                type="radio"
+                name="period"
+                value="long"
+                id="longRentMobile"
+                class="search-bar_inputs"
+                checked
+              />
+              <label for="longRentMobile" class="noHover"
+                >На длительный срок</label
+              >
+              <input
+                type="radio"
+                name="period"
+                value="daily"
+                class="search-bar_inputs"
+                id="dailyRentMobile"
+              />
+              <label for="dailyRentMobile" class="noHover">Посуточно</label>
+            </div>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset age-mobile">
+            <legend>Тип дома</legend>
+            <div class="filter_section">
+              <input
+                type="radio"
+                name="ageHouse"
+                value="newHouse"
+                id="newHouseMobile"
+                class="search-bar_inputs"
+                checked
+              />
+              <label for="newHouseMobile">Новостройка</label>
+              <input
+                type="radio"
+                name="ageHouse"
+                value="oldHouse"
+                class="search-bar_inputs"
+                id="oldHouseMobile"
+              />
+              <label for="oldHouseMobile">Вторичка</label>
+            </div>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset furniture-mobile">
+            <legend>Мебель</legend>
+            <div class="filter_section">
+              <input
+                type="radio"
+                name="furniture"
+                value="withFurniture"
+                id="withFurnitureMobile"
+                class="search-bar_inputs"
+                checked
+              />
+              <label for="withFurnitureMobile">С мебелью</label>
+              <input
+                type="radio"
+                name="furniture"
+                value="noFurniture"
+                class="search-bar_inputs"
+                id="noFurnitureMobile"
+              />
+              <label for="noFurnitureMobile">Без мебели</label>
+            </div>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset area-mobile">
+            <legend>Площадь, м²</legend>
+            <div class="filter_section">
+              <input
+                type="text"
+                name="areaAmountMin"
+                value=""
+                placeholder="30"
+                class="filter_areaRange"
+                pattern="[0-9]+"
+              />
+              -
+              <input
+                type="text"
+                name="areaAmountMax"
+                value=""
+                placeholder="80"
+                class="filter_areaRange"
+                pattern="[0-9]+"
+              />
+            </div>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset repairQ-mobile">
+            <legend>Качество ремонта</legend>
+            <input
+              type="checkbox"
+              class="search-bar_inputs"
+              id="repairLabelMobile"
+            />
+            <label
+              class="filter-section_filter-button mobile-button"
+              for="repairLabelMobile"
+              >Выберете тип ремонта</label
+            >
+
+            <div class="filter-section_filter-content mobile-content">
+              <input
+                type="checkbox"
+                name="repairQ"
+                id="oldRepairMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Бабушкин"
+                checked
+              />
+              <label for="oldRepairMobile">Бабушкин</label>
+              <input
+                type="checkbox"
+                name="repairQ"
+                id="euroReapirMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Евро"
+                checked
+              />
+              <label for="euroReapirMobile">Евро</label>
+              <input
+                type="checkbox"
+                name="repairQ"
+                id="withoutRepairMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Без ремонта"
+                checked
+              />
+              <label for="withoutRepairMobile">Без ремонта</label>
+              <input
+                type="checkbox"
+                name="repairQ"
+                id="cosmeticRepairMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Косметический"
+                checked
+              />
+              <label for="cosmeticRepairMobile">Косметический</label>
+              <input
+                type="checkbox"
+                name="repairQ"
+                id="designRepairMobile"
+                class="search-bar_inputs search-bar_room-checkbox"
+                value="Дизайнерский"
+                checked
+              />
+              <label for="designRepairMobile">Дизайнерский</label>
+            </div>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset"></fieldset>
+          <fieldset class="mobile-form_fieldset"></fieldset>
+          <fieldset class="mobile-form_fieldset"></fieldset>
+          <fieldset class="mobile-form_fieldset"></fieldset>
+        </form>
+        <label for="showFilterButton" class="main_closefilter-label"></label>
+      </div>
+
+      <label for="showFilterButton" class="main_showfilter-label"></label>
       <div class="main_flats-section">
         <div class="main_navigation">
           <a href="">МОСКВА &gt;</a>

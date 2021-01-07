@@ -153,14 +153,6 @@ input[name="furniture"]:checked + label {
   color: #fff;
 }
 
-input[name="roomAmount"] + label:hover,
-input[name="typeOfOperation"] + label:hover,
-input[name="period"] + label:hover,
-input[name="ageHouse"] + label:hover,
-input[name="furniture"] + label:hover {
-  color: #e82431;
-}
-
 label[for="studioRoom"] {
   padding: 15px 10px;
   border-radius: 8px 0 0 8px;
@@ -214,10 +206,19 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   font-size: 14px;
   cursor: pointer;
 }
-
-.filter-section_filter-content label:hover {
-  color: red;
+@media (min-width: 720px) {
+  .filter-section_filter-content label:hover {
+    color: red;
+  }
+  input[name="roomAmount"] + label:hover,
+  input[name="typeOfOperation"] + label:hover,
+  input[name="period"] + label:hover,
+  input[name="ageHouse"] + label:hover,
+  input[name="furniture"] + label:hover {
+    color: #e82431;
+  }
 }
+
 .filter-section_control-section {
   margin-top: 10px;
   display: flex;
@@ -325,7 +326,7 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   color: #e82431;
 }
 .main_navigation > span:hover {
-  cursor: default;
+  cursor: pointer;
 }
 /* Начало стилей для карточек быстрых переходов ----------------------------------------------- */
 .flats-section_specialCards-section {
@@ -669,6 +670,261 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   background-image: url("../../img/catalog/shareEmpty.svg");
 }
 
+/* mobile styles */
+
+.filter-section-mobile_mobile-form {
+  display: flex;
+  flex-direction: column;
+}
+.main_showfilter-label,
+.main_closefilter-label {
+  width: 40px;
+  height: 40px;
+  background-image: url("../../img/catalog/filterIcon.svg");
+  background-color: #e82431;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  cursor: pointer;
+}
+.main_closefilter-label {
+  background-image: url("../../img/catalog/closeFilterIcon.svg");
+}
+.main_showfilter-label:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.main_filter-section-mobile {
+  position: fixed;
+  top: 0;
+  width: 98%;
+  height: 100%;
+  max-height: 1000px;
+  overflow-y: scroll;
+  z-index: 1000000000;
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+.main_showfilter-checkbox {
+  display: none;
+}
+.main_showfilter-checkbox:checked ~ .main_filter-section-mobile {
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.mobile-form_fieldset {
+  display: flex;
+  border: none;
+  outline: none;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.mobile-form_fieldset > legend {
+  font-size: 12px;
+  color: #808080;
+  margin-bottom: 5px;
+}
+
+.mobile-form_typeOfOperation-section {
+  position: relative;
+  width: 98%;
+  height: 120px;
+  display: flex;
+  overflow: scroll;
+  padding-bottom: 20px;
+}
+
+.mobile-form_typeOfOperation-section > label > span {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#mobileLabelOperation {
+  height: 105px;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#mobileLabelChoice {
+  display: inline-flex;
+  height: 120px;
+  flex-basis: 120px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 8px;
+  margin-right: 5px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+label[for="rentOperationMobile"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/rentBoard.svg");
+  margin-right: 10px;
+  background-color: #fff !important;
+}
+label[for="rentOperationMobile"]:hover {
+  color: #1c2443 !important;
+}
+input[id="rentOperationMobile"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/rentboard.png") !important;
+}
+input[id="rentOperationMobile"]:checked + label:hover {
+  color: white !important;
+}
+label[for="buyOperationMobile"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/sellboard.svg");
+  background-color: #fff !important;
+}
+label[for="buyOperationMobile"]:hover {
+  color: #1c2443 !important;
+}
+input[id="buyOperationMobile"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/sellBoard.svg");
+}
+input[id="buyOperationMobile"]:checked + label:hover {
+  color: white !important;
+}
+label[for="realEstateTypeFlats"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Type=Apartament.svg");
+}
+
+input[id="realEstateTypeFlats"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Type=Apartament.svg");
+  color: white;
+}
+
+label[for="realEstateTypeHouses"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Type=House.svg");
+}
+
+input[id="realEstateTypeHouses"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Type=House.svg");
+  color: white;
+}
+
+label[for="realEstateTypeRooms"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Type=Room.svg");
+}
+
+input[id="realEstateTypeRooms"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Type=Room.svg");
+  color: white;
+}
+label[for="realEstateTypeCottage"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Type=Cottege.svg");
+}
+
+input[id="realEstateTypeCottage"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Type=Cottege.svg");
+  color: white;
+}
+label[for="realEstateTypeCountry"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Type=Dacha.svg");
+}
+
+input[id="realEstateTypeCountry"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Type=Dacha.svg");
+  color: white;
+}
+label[for="realEstateTypeCommercial"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Type=Shop.svg");
+}
+
+input[id="realEstateTypeCommercial"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Type=Shop.svg");
+  color: white;
+}
+label[for="realEstateTypeGarages"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Type=Garage.svg");
+}
+
+input[id="realEstateTypeGarages"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Type=Garage.svg");
+  color: white;
+}
+label[for="realEstateTypeLand"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Type=Land.svg");
+}
+
+input[name="roomAmount"] + label {
+  font-weight: bold;
+  background-color: #fff;
+}
+
+label[for="mobileStudioRoom"] {
+  border-radius: 8px 0px 0px 8px;
+}
+
+label[for="mobilefourMoreRoom"] {
+  border-radius: 0px 8px 8px 0px;
+}
+
+input[id="realEstateTypeLand"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Type=Land.svg");
+  color: white;
+}
+
+.mobile-button {
+  background-color: #fff;
+  padding: 10px 10px;
+}
+
+.mobile-content {
+  margin-top: 50px !important;
+  width: 50% !important;
+}
+
+.mobile-content > label {
+  background-color: #fff;
+}
+
+.mobile-form_price-input {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  width: 45%;
+}
+
+.mobile-form_input-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 @media (min-width: 1024px) and (max-width: 1400px) {
   .filter-section_required-section {
     flex-wrap: wrap;
@@ -822,6 +1078,108 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   .subway-section_table > section > a,
   .subway-section_table > section > a:visited {
     font-size: 9px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
+  .main_prefooter-section {
+    height: auto;
+    padding: 20px 10px;
+  }
+  .subway-section_table,
+  .city-section_table,
+  .district-section_table {
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .subway-section_table > section,
+  .city-section_table > section,
+  .district-section_table > section {
+    flex-direction: column;
+    width: 33%;
+    align-items: flex-start;
+  }
+  .subway-section_table > section > a,
+  .city-section_table > section > a,
+  .district-section_table > section > a {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 719px) {
+  .main_filter-section {
+    display: none;
+  }
+  .sticky {
+    position: static;
+    width: 0%;
+  }
+
+  .sticky + .main_flats-section {
+    padding-top: 0px;
+  }
+  .flats-section_specialCards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .specialCards-section_card {
+    font-size: 15px;
+    width: 45%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .main_section-header {
+    font-size: 25px;
+  }
+  .main_flats-section {
+    padding: 10px;
+  }
+  .advertisment-section_part {
+    justify-content: space-between;
+    width: 98%;
+    margin-top: 0;
+  }
+  .advertisments-section_advert-card {
+    width: 47%;
+    margin-right: 0px;
+  }
+  .main_prefooter-section {
+    height: auto;
+    padding: 50px;
+  }
+  .flats-section_fastLinks-section {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .fastLinks-section_fast-card {
+    width: 49%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .navigation-container_link {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 11px;
     color: black;
     text-decoration: none;
     width: 25%;
