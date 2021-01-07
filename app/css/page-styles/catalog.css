@@ -861,9 +861,14 @@ label[for="realEstateTypeLand"] {
   background-image: url("../../img/catalog/filter-mobile-dark/Type=Land.svg");
 }
 
-input[name="roomAmount"] + label {
+.mobile-amount {
   font-weight: bold;
-  background-color: #fff;
+  background-color: #fff !important;
+}
+
+input[name="roomAmount"]:checked + .mobile-amount {
+  font-weight: bold;
+  background-color: #1c2443 !important;
 }
 
 label[for="mobileStudioRoom"] {
@@ -1183,7 +1188,7 @@ input[id="allowanceTypeSmoking"]:checked + label {
   }
 }
 
-@media (min-width: 720px) and (max-width: 1023px) {
+@media (min-width: 720px) and (max-width: 1000px) {
   .filter-section_search-form {
     display: flex;
     flex-direction: column;
