@@ -656,6 +656,9 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
 .filter-section-mobile_mobile-form {
   display: flex;
   flex-direction: column;
+  flex-basis: 2000px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 .main_showfilter-label,
 .main_closefilter-label {
@@ -692,6 +695,9 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   padding: 10px;
 }
 .main_showfilter-checkbox {
+  display: none;
+}
+.main_showfilter-checkbox:checked ~ div {
   display: none;
 }
 .main_showfilter-checkbox:checked ~ .main_filter-section-mobile {
