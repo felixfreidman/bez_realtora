@@ -656,7 +656,7 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
 .filter-section-mobile_mobile-form {
   display: flex;
   flex-direction: column;
-  flex-basis: 2000px;
+  flex-basis: 1500px;
   flex-shrink: 0;
   flex-grow: 0;
 }
