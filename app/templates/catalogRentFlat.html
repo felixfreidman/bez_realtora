@@ -1127,9 +1127,7 @@
                 class="search-bar_inputs"
                 checked
               />
-              <label for="longRentMobile" class="noHover"
-                >На длительный срок</label
-              >
+              <label for="longRentMobile">На длительный срок</label>
               <input
                 type="radio"
                 name="period"
@@ -1137,7 +1135,7 @@
                 class="search-bar_inputs"
                 id="dailyRentMobile"
               />
-              <label for="dailyRentMobile" class="noHover">Посуточно</label>
+              <label for="dailyRentMobile">Посуточно</label>
             </div>
           </fieldset>
           <fieldset class="mobile-form_fieldset age-mobile">
@@ -1186,7 +1184,7 @@
           </fieldset>
           <fieldset class="mobile-form_fieldset area-mobile">
             <legend>Площадь, м²</legend>
-            <div class="filter_section">
+            <div class="filter_section mobile-section">
               <input
                 type="text"
                 name="areaAmountMin"
@@ -1267,10 +1265,240 @@
               <label for="designRepairMobile">Дизайнерский</label>
             </div>
           </fieldset>
-          <fieldset class="mobile-form_fieldset"></fieldset>
-          <fieldset class="mobile-form_fieldset"></fieldset>
-          <fieldset class="mobile-form_fieldset"></fieldset>
-          <fieldset class="mobile-form_fieldset"></fieldset>
+          <fieldset class="mobile-form_fieldset">
+            <legend>Комфорт</legend>
+            <section class="mobile-form_typeOfOperation-section">
+              <input
+                type="checkbox"
+                name="comfortType"
+                id="comfortTypeCold"
+                class="search-bar_inputs"
+                value="Кондиционер"
+              />
+              <label for="comfortTypeCold" id="mobileLabelChoice">
+                <span>Кондиционер</span>
+              </label>
+              <input
+                type="checkbox"
+                name="comfortType"
+                id="comfortTypeFire"
+                class="search-bar_inputs"
+                value="Камин"
+              />
+              <label for="comfortTypeFire" id="mobileLabelChoice">
+                <span>Камин</span>
+              </label>
+              <input
+                type="checkbox"
+                name="comfortType"
+                id="comfortTypeBalcon"
+                class="search-bar_inputs"
+                value="Балкон"
+              />
+              <label for="comfortTypeBalcon" id="mobileLabelChoice">
+                <span>Балкон/<br />Лоджия</span>
+              </label>
+              <input
+                type="checkbox"
+                name="comfortType"
+                id="comfortTypeParking"
+                class="search-bar_inputs"
+                value="ПарковочноеМесто"
+              />
+              <label for="comfortTypeParking" id="mobileLabelChoice">
+                <span>Парковочное<br />Место</span>
+              </label>
+              <input
+                type="checkbox"
+                name="comfortType"
+                id="comfortTypeElevator"
+                class="search-bar_inputs"
+                value="Лифт"
+              />
+              <label for="comfortTypeElevator" id="mobileLabelChoice">
+                <span>Лифт</span>
+              </label>
+              <input
+                type="checkbox"
+                name="comfortType"
+                id="comfortTypeSecurity"
+                class="search-bar_inputs"
+                value="Охрана"
+              />
+              <label for="comfortTypeSecurity" id="mobileLabelChoice">
+                <span>Охрана/<br />Консьерж</span>
+              </label>
+              <input
+                type="checkbox"
+                name="comfortType"
+                id="comfortTypeDisable"
+                class="search-bar_inputs"
+                value="Пандус"
+              />
+              <label for="comfortTypeDisable" id="mobileLabelChoice">
+                <span>Пандус</span>
+              </label>
+            </section>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset">
+            <legend>Бытовая техника</legend>
+            <section class="mobile-form_typeOfOperation-section">
+              <input
+                type="checkbox"
+                name="applienceType"
+                id="applienceTypeOven"
+                class="search-bar_inputs"
+                value="Плита"
+              />
+              <label for="applienceTypeOven" id="mobileLabelChoice">
+                <span>Плита</span>
+              </label>
+              <input
+                type="checkbox"
+                name="applienceType"
+                id="applienceTypeMicro"
+                class="search-bar_inputs"
+                value="Микроволновка"
+              />
+              <label for="applienceTypeMicro" id="mobileLabelChoice">
+                <span>Микроволновка</span>
+              </label>
+              <input
+                type="checkbox"
+                name="applienceType"
+                id="applienceTypeFridge"
+                class="search-bar_inputs"
+                value="Холодильник"
+              />
+              <label for="applienceTypeFridge" id="mobileLabelChoice">
+                <span>Холодильник</span>
+              </label>
+              <input
+                type="checkbox"
+                name="applienceType"
+                id="applienceTypeLaundry"
+                class="search-bar_inputs"
+                value="СтиральнаяМашина"
+              />
+              <label for="applienceTypeLaundry" id="mobileLabelChoice">
+                <span
+                  >Стиральная<br />
+                  машина</span
+                >
+              </label>
+            </section>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset hide">
+            <legend>Удобства</legend>
+            <section class="mobile-form_typeOfOperation-section">
+              <input
+                type="checkbox"
+                name="countryType"
+                id="countryTypeSewer"
+                class="search-bar_inputs"
+                value="Канализация"
+                checked
+              />
+              <label for="countryTypeSewer" id="mobileLabelChoice">
+                <span>Канализация</span>
+              </label>
+              <input
+                type="checkbox"
+                name="countryType"
+                id="countryTypeElectro"
+                class="search-bar_inputs"
+                value="Электросеть"
+              />
+              <label for="countryTypeElectro" id="mobileLabelChoice">
+                <span>Электросеть</span>
+              </label>
+              <input
+                type="checkbox"
+                name="countryType"
+                id="countryTypeGas"
+                class="search-bar_inputs"
+                value="Газ"
+              />
+              <label for="countryTypeGas" id="mobileLabelChoice">
+                <span>Газ</span>
+              </label>
+              <input
+                type="checkbox"
+                name="countryType"
+                id="countryTypeKitchen"
+                class="search-bar_inputs"
+                value="Кухня"
+              />
+              <label for="countryTypeKitchen" id="mobileLabelChoice">
+                <span>Кухня</span>
+              </label>
+              <input
+                type="checkbox"
+                name="countryType"
+                id="countryTypeHeating"
+                class="search-bar_inputs"
+                value="Отопление"
+              />
+              <label for="countryTypeHeating" id="mobileLabelChoice">
+                <span>Отопление</span>
+              </label>
+              <input
+                type="checkbox"
+                name="countryType"
+                id="countryTypeWater"
+                class="search-bar_inputs"
+                value="Водопровод"
+              />
+              <label for="countryTypeWater" id="mobileLabelChoice">
+                <span>Водопровод</span>
+              </label>
+              <input
+                type="checkbox"
+                name="countryType"
+                id="countryTypeSauna"
+                class="search-bar_inputs"
+                value="Сауна"
+              />
+              <label for="countryTypeSauna" id="mobileLabelChoice">
+                <span>Сауна</span>
+              </label>
+            </section>
+          </fieldset>
+          <fieldset class="mobile-form_fieldset">
+            <legend>Дополнительно</legend>
+            <section class="mobile-form_typeOfOperation-section">
+              <input
+                type="checkbox"
+                name="allowanceType"
+                id="allowanceTypePets"
+                class="search-bar_inputs"
+                value="Питомцы"
+              />
+              <label for="allowanceTypePets" id="mobileLabelChoice">
+                <span>Можно<br />с питомцами</span>
+              </label>
+              <input
+                type="checkbox"
+                name="allowanceType"
+                id="allowanceTypeChildren"
+                class="search-bar_inputs"
+                value="Дети"
+              />
+              <label for="allowanceTypeChildren" id="mobileLabelChoice">
+                <span>Можно<br />с детьми</span>
+              </label>
+              <input
+                type="checkbox"
+                name="allowanceType"
+                id="allowanceTypeSmoking"
+                class="search-bar_inputs"
+                value="Курение"
+              />
+              <label for="allowanceTypeSmoking" id="mobileLabelChoice">
+                <span>Можно<br />курить</span>
+              </label>
+            </section>
+          </fieldset>
         </form>
         <label for="showFilterButton" class="main_closefilter-label"></label>
       </div>

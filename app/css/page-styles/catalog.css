@@ -651,25 +651,6 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   background-repeat: no-repeat;
 }
 
-/* JS стили */
-
-.hide {
-  display: none;
-}
-.unfilledHeart {
-  background-image: url("../../img/catalog/hearthUsuial.svg");
-}
-.filledHeart {
-  background-image: url("../../img/catalog/heartColored.svg");
-}
-.counterColored {
-  color: #e82431;
-}
-
-.unfilledShare {
-  background-image: url("../../img/catalog/shareEmpty.svg");
-}
-
 /* mobile styles */
 
 .filter-section-mobile_mobile-form {
@@ -701,7 +682,7 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   top: 0;
   width: 98%;
   height: 100%;
-  max-height: 1000px;
+  max-height: 2000px;
   overflow-y: scroll;
   z-index: 1000000000;
   background-color: #fff;
@@ -892,6 +873,200 @@ input[id="realEstateTypeLand"]:checked + label {
   color: white;
 }
 
+label[for="comfortTypeCold"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Comfort=Сonditioner.svg");
+}
+
+input[id="comfortTypeCold"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Comfort=Сonditioner.svg");
+  color: white;
+}
+label[for="comfortTypeFire"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Comfort=Fireplace.svg");
+}
+
+input[id="comfortTypeFire"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Comfort=Fireplace.svg");
+  color: white;
+}
+label[for="comfortTypeBalcon"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Comfort=Balcony.svg");
+}
+
+input[id="comfortTypeBalcon"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Comfort=Balcony.svg");
+  color: white;
+}
+label[for="comfortTypeParking"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Comfort=Parking.svg");
+}
+
+input[id="comfortTypeParking"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Comfort=Parking.svg");
+  color: white;
+}
+label[for="comfortTypeElevator"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Comfort=Lift.svg");
+}
+
+input[id="comfortTypeElevator"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Comfort=Lift.svg");
+  color: white;
+}
+label[for="comfortTypeSecurity"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Comfort=HouseSecurity.svg");
+}
+
+input[id="comfortTypeSecurity"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Comfort=HouseSecurity.svg");
+  color: white;
+}
+label[for="comfortTypeDisable"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Comfort=Ramp.svg");
+}
+
+input[id="comfortTypeDisable"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Comfort=Ramp.svg");
+  color: white;
+}
+label[for="applienceTypeOven"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Appliances=Stove.svg");
+}
+
+input[id="applienceTypeOven"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Appliances=Stove.svg");
+  color: white;
+}
+label[for="applienceTypeMicro"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Appliances=Microwave.svg");
+}
+
+input[id="applienceTypeMicro"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Appliances=Microwave.svg");
+  color: white;
+}
+label[for="applienceTypeFridge"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Appliances=Refrigerator.svg");
+}
+
+input[id="applienceTypeFridge"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Appliances=Refrigerator.svg");
+  color: white;
+}
+label[for="applienceTypeLaundry"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Appliances=Washer.svg");
+}
+
+input[id="applienceTypeLaundry"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Appliances=Washer.svg");
+  color: white;
+}
+
+label[for="countryTypeSewer"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Сonveniences=Canalisation.svg");
+}
+
+input[id="countryTypeSewer"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Сonveniences=Canalisation.svg");
+  color: white;
+}
+label[for="countryTypeElectro"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Сonveniences=Electricity.svg");
+}
+
+input[id="countryTypeElectro"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Сonveniences=Electricity.svg");
+  color: white;
+}
+label[for="countryTypeGas"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Сonveniences=Gas.svg");
+}
+
+input[id="countryTypeGas"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Сonveniences=Gas.svg");
+  color: white;
+}
+label[for="countryTypeKitchen"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Сonveniences=Kitchen.svg");
+}
+
+input[id="countryTypeKitchen"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Сonveniences=Kitchen.svg");
+  color: white;
+}
+label[for="countryTypeHeating"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Сonveniences=Heating.svg");
+}
+
+input[id="countryTypeHeating"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Сonveniences=Heating.svg");
+  color: white;
+}
+label[for="countryTypeWater"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Сonveniences=Water.svg");
+}
+
+input[id="countryTypeWater"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Сonveniences=Water.svg");
+  color: white;
+}
+label[for="countryTypeSauna"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Сonveniences=Sauna.svg");
+}
+
+input[id="countryTypeSauna"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Сonveniences=Sauna.svg");
+  color: white;
+}
+
+label[for="allowanceTypePets"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Additionally=Pets.svg");
+}
+
+input[id="allowanceTypePets"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Additionally=Pets.svg");
+  color: white;
+}
+
+label[for="allowanceTypeChildren"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Additionally=Child.svg");
+}
+
+input[id="allowanceTypeChildren"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Additionally=Child.svg");
+  color: white;
+}
+
+label[for="allowanceTypeSmoking"] {
+  background-image: url("../../img/catalog/filter-mobile-dark/Additionally=Smoking.svg");
+}
+
+input[id="allowanceTypeSmoking"]:checked + label {
+  background-color: #1c2443 !important;
+  background-image: url("../../img/catalog/filter-mobile/Additionally=Smoking.svg");
+  color: white;
+}
+
 .mobile-button {
   background-color: #fff;
   padding: 10px 10px;
@@ -924,7 +1099,22 @@ input[id="realEstateTypeLand"]:checked + label {
   justify-content: space-between;
   width: 100%;
 }
+.period-mobile > div > label,
+.age-mobile > div > label,
+.furniture-mobile > div > label,
+.area-mobile > div > label,
+.repairQ-mobile > div > label,
+.area-mobile > div > input {
+  background-color: #fff;
+}
 
+.mobile-section {
+  width: 100%;
+}
+
+.area-mobile > div > input {
+  width: 50%;
+}
 @media (min-width: 1024px) and (max-width: 1400px) {
   .filter-section_required-section {
     flex-wrap: wrap;
@@ -1214,4 +1404,23 @@ input[id="realEstateTypeLand"]:checked + label {
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+
+/* JS стили */
+
+.hide {
+  display: none;
+}
+.unfilledHeart {
+  background-image: url("../../img/catalog/hearthUsuial.svg");
+}
+.filledHeart {
+  background-image: url("../../img/catalog/heartColored.svg");
+}
+.counterColored {
+  color: #e82431;
+}
+
+.unfilledShare {
+  background-image: url("../../img/catalog/shareEmpty.svg");
 }
