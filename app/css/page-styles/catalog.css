@@ -413,6 +413,10 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   display: flex;
   flex-wrap: nowrap;
 }
+.advert-card_infoCard-section {
+  display: flex;
+  flex-direction: column;
+}
 .advert-card_info-section {
   display: flex;
   align-items: center;
@@ -761,6 +765,10 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.layout-mobile_label {
+  display: none;
 }
 
 label[for="rentOperationMobile"] {
@@ -1188,7 +1196,7 @@ input[id="allowanceTypeSmoking"]:checked + label {
   }
 }
 
-@media (min-width: 720px) and (max-width: 1000px) {
+@media (min-width: 720px) and (max-width: 1023px) {
   .filter-section_search-form {
     display: flex;
     flex-direction: column;
@@ -1470,6 +1478,9 @@ input[id="allowanceTypeSmoking"]:checked + label {
 }
 
 @media screen and (min-width: 414px) and (max-width: 599px) {
+  .main {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
   .main_filter-section {
     display: none;
   }
@@ -1545,16 +1556,20 @@ input[id="allowanceTypeSmoking"]:checked + label {
     font-size: 16px;
   }
   .main_flats-section {
-    padding: 10px;
+    padding: 0px;
+  }
+  .flats-section_advertisments-section {
+    width: 100%;
+    align-items: center;
   }
   .advertisment-section_part {
     flex-direction: column;
-    justify-content: center;
-    width: 98%;
+    align-items: center;
+    width: 100%;
     margin-top: 0;
   }
   .advertisments-section_advert-card {
-    width: 98%;
+    width: 100%;
     margin-right: 0px;
   }
   .main_prefooter-section {
@@ -1633,6 +1648,76 @@ input[id="allowanceTypeSmoking"]:checked + label {
     display: block;
     width: 50px;
     height: 50px;
+  }
+  input[name="layoutMobile"]:checked + label {
+    background-color: #e82431;
+    color: white;
+  }
+  .layout-mobile_label {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 33.3%;
+    background-color: #fff;
+    position: absolute;
+    padding: 10px 0px 10px 0px;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+  }
+
+  .list-mobile {
+    background-image: url("../../img/catalog/listLayout.svg");
+  }
+  .photo-mobile {
+    left: 33.3%;
+    background-image: url("../../img/catalog/photoLayout.svg");
+  }
+
+  .map-mobile {
+    left: 66.6%;
+    background-image: url("../../img/catalog/mapLayout.svg");
+  }
+
+  input[name="layoutMobile"]:checked + label[for="listLayoutMobile"] {
+    background-image: url("../../img/catalog/listLayoutWhite.svg");
+  }
+  input[name="layoutMobile"]:checked + label[for="photoLayoutMobile"] {
+    background-image: url("../../img/catalog/photoLayoutWhite.svg");
+  }
+  input[name="layoutMobile"]:checked + label[for="mapLayoutMobile"] {
+    background-image: url("../../img/catalog/mapLayoutWhite.svg");
+  }
+
+  input[id="listLayoutMobile"]:checked
+    ~ .flats-section_advertisments-section
+    > .advertisment-section_part
+    > .advertisments-section_advert-card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  input[id="listLayoutMobile"]:checked
+    ~ .flats-section_advertisments-section
+    > .advertisment-section_part
+    > .advertisments-section_advert-card
+    > .advert-card_panel-info-section {
+    display: none;
+  }
+  input[id="listLayoutMobile"]:checked
+    ~ .flats-section_advertisments-section
+    > .advertisment-section_part
+    > .advertisments-section_advert-card
+    > .advert-card_infoCard-section
+    > .advert-card_panel-section {
+    display: none;
+  }
+  input[id="listLayoutMobile"]:checked
+    ~ .flats-section_advertisments-section
+    > .advertisment-section_part
+    > .advertisments-section_advert-card
+    > .advert-card_objPhotos-section {
+    max-height: 150px;
+    width: 50%;
   }
 }
 

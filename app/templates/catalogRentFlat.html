@@ -924,9 +924,9 @@
                 name="roomAmount"
                 value="studio"
                 id="mobileStudioRoom"
-                class="search-bar_inputs "
+                class="search-bar_inputs"
               />
-              <label for="mobileStudioRoom" class = "mobile-amount">Студия</label>
+              <label for="mobileStudioRoom" class="mobile-amount">Студия</label>
               <input
                 type="checkbox"
                 name="roomAmount"
@@ -935,7 +935,7 @@
                 class="search-bar_inputs"
                 checked
               />
-              <label for="mobileoneRoom" class = "mobile-amount">1</label>
+              <label for="mobileoneRoom" class="mobile-amount">1</label>
               <input
                 type="checkbox"
                 name="roomAmount"
@@ -943,7 +943,7 @@
                 id="mobiletwoRoom"
                 class="search-bar_inputs"
               />
-              <label for="mobiletwoRoom" class = "mobile-amount">2</label>
+              <label for="mobiletwoRoom" class="mobile-amount">2</label>
               <input
                 type="checkbox"
                 name="roomAmount"
@@ -951,7 +951,7 @@
                 id="mobilethreeRoom"
                 class="search-bar_inputs"
               />
-              <label for="mobilethreeRoom" class = "mobile-amount">3</label>
+              <label for="mobilethreeRoom" class="mobile-amount">3</label>
               <input
                 type="checkbox"
                 name="roomAmount"
@@ -959,7 +959,7 @@
                 id="mobilefourMoreRoom"
                 class="search-bar_inputs"
               />
-              <label for="mobilefourMoreRoom" class = "mobile-amount">4+</label>
+              <label for="mobilefourMoreRoom" class="mobile-amount">4+</label>
             </div>
           </fieldset>
 
@@ -1505,6 +1505,34 @@
 
       <label for="showFilterButton" class="main_showfilter-label"></label>
       <div class="main_flats-section">
+        <input
+          type="radio"
+          name="layoutMobile"
+          id="listLayoutMobile"
+          class="search-bar_inputs"
+        />
+        <label for="listLayoutMobile" class="layout-mobile_label list-mobile">
+          Список</label
+        >
+        <input
+          type="radio"
+          name="layoutMobile"
+          id="photoLayoutMobile"
+          class="search-bar_inputs"
+          checked
+        />
+        <label for="photoLayoutMobile" class="layout-mobile_label photo-mobile"
+          >Фото</label
+        >
+        <input
+          type="radio"
+          name="layoutMobile"
+          id="mapLayoutMobile"
+          class="search-bar_inputs"
+        />
+        <label for="mapLayoutMobile" class="layout-mobile_label map-mobile"
+          >На карте</label
+        >
         <div class="main_navigation">
           <a href="">МОСКВА &gt;</a>
           <span>АРЕНДА &gt;</span>
@@ -1560,37 +1588,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -1622,37 +1652,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -1684,37 +1716,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -1746,37 +1780,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -1808,37 +1844,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -1870,37 +1908,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -1932,37 +1972,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -1994,37 +2036,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
           </div>
@@ -2139,37 +2183,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -2201,37 +2247,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -2263,37 +2311,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -2325,37 +2375,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -2387,37 +2439,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -2449,37 +2503,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -2511,37 +2567,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
             <div class="advertisments-section_advert-card">
@@ -2573,37 +2631,39 @@
                   alt=":("
                 />
               </div>
-              <div class="advert-card_panel-section">
-                <div class="panel-section_section unfilledHeart"></div>
-                <div class="panel-section_section counter">999</div>
-                <div class="panel-section_section unfilledShare"></div>
-              </div>
-              <div class="advert-card_objInfo-section">
-                <div class="objInfo-section_price-tag">
-                  <span class="price-tag_price">155 000 ₽</span>
-                  <span class="price-tag_per-month">/в месяц</span>
+              <div class="advert-card_infoCard-section">
+                <div class="advert-card_panel-section">
+                  <div class="panel-section_section unfilledHeart"></div>
+                  <div class="panel-section_section counter">999</div>
+                  <div class="panel-section_section unfilledShare"></div>
                 </div>
-                <div class="objInfo-section_flat-parameters">
-                  <span class="flat-parameters_roomAmount-span">4-комн.</span>
-                  -
-                  <span class="flat-parameters_flatArea-span">170 м²</span>
-                  -
-                  <span class="flat-parameters_flatAddress-span"
-                    >Франк-Каменецкого, 28/4</span
+                <div class="advert-card_objInfo-section">
+                  <div class="objInfo-section_price-tag">
+                    <span class="price-tag_price">155 000 ₽</span>
+                    <span class="price-tag_per-month">/в месяц</span>
+                  </div>
+                  <div class="objInfo-section_flat-parameters">
+                    <span class="flat-parameters_roomAmount-span">4-комн.</span>
+                    -
+                    <span class="flat-parameters_flatArea-span">170 м²</span>
+                    -
+                    <span class="flat-parameters_flatAddress-span"
+                      >Франк-Каменецкого, 28/4</span
+                    >
+                  </div>
+                  <div class="objInfo-section_flat-description">
+                    Роскошная 4х комнатная квартира
+                  </div>
+                </div>
+                <div class="advert-card_objAddress-section">
+                  <img
+                    src="../img/main/main_map-checkmark.svg"
+                    class="objAddress-section_map-checkmark"
+                  />
+                  <span class="objAddress-section_address-span"
+                    >Правобережный</span
                   >
                 </div>
-                <div class="objInfo-section_flat-description">
-                  Роскошная 4х комнатная квартира
-                </div>
-              </div>
-              <div class="advert-card_objAddress-section">
-                <img
-                  src="../img/main/main_map-checkmark.svg"
-                  class="objAddress-section_map-checkmark"
-                />
-                <span class="objAddress-section_address-span"
-                  >Правобережный</span
-                >
               </div>
             </div>
           </div>
