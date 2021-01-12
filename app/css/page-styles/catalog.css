@@ -1809,11 +1809,11 @@ input[id="allowanceTypeSmoking"]:checked + label {
   .advertisment-section_part {
     flex-direction: column;
     justify-content: center;
-    width: 98%;
+    width: 100%;
     margin-top: 0;
   }
   .advertisments-section_advert-card {
-    width: 98%;
+    width: 100%;
     margin-right: 0px;
   }
   .main_prefooter-section {
