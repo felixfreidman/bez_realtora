@@ -1893,6 +1893,76 @@ input[id="allowanceTypeSmoking"]:checked + label {
     width: 50px;
     height: 50px;
   }
+  input[name="layoutMobile"]:checked + label {
+    background-color: #e82431;
+    color: white;
+  }
+  .layout-mobile_label {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 33.3%;
+    background-color: #fff;
+    position: absolute;
+    padding: 10px 0px 10px 0px;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+  }
+
+  .list-mobile {
+    background-image: url("../../img/catalog/listLayout.svg");
+  }
+  .photo-mobile {
+    left: 33.3%;
+    background-image: url("../../img/catalog/photoLayout.svg");
+  }
+
+  .map-mobile {
+    left: 66.6%;
+    background-image: url("../../img/catalog/mapLayout.svg");
+  }
+
+  input[name="layoutMobile"]:checked + label[for="listLayoutMobile"] {
+    background-image: url("../../img/catalog/listLayoutWhite.svg");
+  }
+  input[name="layoutMobile"]:checked + label[for="photoLayoutMobile"] {
+    background-image: url("../../img/catalog/photoLayoutWhite.svg");
+  }
+  input[name="layoutMobile"]:checked + label[for="mapLayoutMobile"] {
+    background-image: url("../../img/catalog/mapLayoutWhite.svg");
+  }
+
+  input[id="listLayoutMobile"]:checked
+    ~ .flats-section_advertisments-section
+    > .advertisment-section_part
+    > .advertisments-section_advert-card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  input[id="listLayoutMobile"]:checked
+    ~ .flats-section_advertisments-section
+    > .advertisment-section_part
+    > .advertisments-section_advert-card
+    > .advert-card_panel-info-section {
+    display: none;
+  }
+  input[id="listLayoutMobile"]:checked
+    ~ .flats-section_advertisments-section
+    > .advertisment-section_part
+    > .advertisments-section_advert-card
+    > .advert-card_infoCard-section
+    > .advert-card_panel-section {
+    display: none;
+  }
+  input[id="listLayoutMobile"]:checked
+    ~ .flats-section_advertisments-section
+    > .advertisment-section_part
+    > .advertisments-section_advert-card
+    > .advert-card_objPhotos-section {
+    max-height: 150px;
+    width: 50%;
+  }
 }
 
 /* JS стили */
