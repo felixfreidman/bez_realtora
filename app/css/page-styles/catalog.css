@@ -1159,7 +1159,6 @@ input[id="allowanceTypeSmoking"]:checked + label {
   height: 46px;
   outline: none;
   border: none;
-  border-radius: 8px;
   color: white;
   font-size: 14px;
   position: fixed;
