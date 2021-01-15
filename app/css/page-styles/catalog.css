@@ -665,8 +665,6 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   flex-basis: 1700px;
   flex-shrink: 0;
   flex-grow: 0;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .main_closefilter-label {
