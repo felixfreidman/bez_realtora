@@ -39,9 +39,45 @@ body {
 .filter-section_form {
   position: relative;
   display: flex;
+  flex-direction: column;
 }
-.filter-section_form label {
+.filter-section_search-section > label {
   margin-right: 2px;
+}
+
+.filter-section_search-section {
+  display: flex;
+}
+
+.filter-section_typeOfOperation-section {
+  display: flex;
+  width: 20%;
+}
+.filter-section_typeOfOperation-section > label {
+  background-color: rgba(28, 36, 67, 0.3);
+  width: 50%;
+  height: 51px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-section_typeOfOperation-section > label {
+  border-radius: 0px 8px 0px 0px;
+}
+.filter-section_typeOfOperation-section > label:first-of-type {
+  border-radius: 8px 0px 0px 0px;
+}
+
+.filter-section_typeOfOperation-section > label:hover {
+  color: #e82431;
+}
+
+input[name="typeOfOperation"]:checked + label {
+  border-bottom: 3px solid #e82431;
+  background-color: rgba(28, 36, 67, 0.6);
 }
 
 .filter-section_filter-button {

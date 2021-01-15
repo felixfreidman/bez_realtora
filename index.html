@@ -152,314 +152,346 @@
           <div class="search-bar_typeof-operation"></div>
           <!--  Внизу вы увидите пример ужасной нехватки знаний
             Я правда сделал то, что смог, пожалуйста, не бейте меня - я старался -->
+
           <form action="./pages/catalogRent.html" class="filter-section_form">
-            <!-- Тип недвижимости -->
-            <label
-              class="filter-section_filter-button"
-              for="realEstateTypeLabel"
-              id="realEstateTypeField"
-            ></label>
-            <input
-              type="checkbox"
-              class="search-bar_inputs"
-              id="realEstateTypeLabel"
-            />
-            <div class="filter-section_filter-content" id="realEstateDropdown">
+            <div class="filter-section_typeOfOperation-section">
               <input
                 type="radio"
-                name="realEstateType"
-                id="flats"
+                name="typeOfOperation"
+                id="rentOperation"
                 class="search-bar_inputs"
-                value="Квартиры"
                 checked
               />
-              <label for="flats">Квартиры</label>
+              <label for="rentOperation">Снять</label>
               <input
                 type="radio"
-                name="realEstateType"
-                id="rooms"
+                name="typeOfOperation"
+                id="sellOperation"
                 class="search-bar_inputs"
-                value="Комнаты"
               />
-              <label for="rooms">Комнаты</label>
-              <input
-                type="radio"
-                name="realEstateType"
-                id="houses"
-                class="search-bar_inputs"
-                value="Дома"
-              />
-              <label for="houses">Дома</label>
-              <input
-                type="radio"
-                name="realEstateType"
-                id="cottages"
-                class="search-bar_inputs"
-                value="Коттеджи"
-              />
-              <label for="cottages">Коттеджи</label>
+              <label for="sellOperation">Купить</label>
             </div>
-            <!-- Сколько комнат -->
-            <label
-              class="filter-section_filter-button"
-              for="roomAmountLabel"
-              id="roomAmountField"
-              >Количество комнат</label
-            >
-            <input
-              type="checkbox"
-              class="search-bar_inputs search-bar_room-checkbox"
-              id="roomAmountLabel"
-            />
-            <div class="filter-section_filter-content" id="roomAmountDropdown">
+            <div class="filter-section_search-section">
+              <!-- Тип недвижимости -->
+              <label
+                class="filter-section_filter-button"
+                for="realEstateTypeLabel"
+                id="realEstateTypeField"
+              ></label>
               <input
                 type="checkbox"
-                name="roomAmount"
-                id="studio"
-                class="search-bar_inputs search-bar_room-checkbox"
-                value="Студии"
-                checked
-              />
-              <label for="studio">Студии</label>
-              <input
-                type="checkbox"
-                name="roomAmount"
-                id="1room"
-                class="search-bar_inputs search-bar_room-checkbox"
-                value="1-комнатные"
-              />
-              <label for="1room">1-комнатные</label>
-              <input
-                type="checkbox"
-                name="roomAmount"
-                id="2room"
-                class="search-bar_inputs search-bar_room-checkbox"
-                value="2-комнатные"
-              />
-              <label for="2room">2-комнатные</label>
-              <input
-                type="checkbox"
-                name="roomAmount"
-                id="3room"
-                class="search-bar_inputs search-bar_room-checkbox"
-                value="3-комнатные"
-              />
-              <label for="3room">3-комнатные</label>
-              <input
-                type="checkbox"
-                name="roomAmount"
-                id="4room"
-                class="search-bar_inputs search-bar_room-checkbox"
-                value="4-комнатные"
-              />
-              <label for="4room">4-комнатные</label>
-              <input
-                type="checkbox"
-                name="roomAmount"
-                id="5moreRoom"
-                class="search-bar_inputs search-bar_room-checkbox"
-                value="5-комнатные и более"
-              />
-              <label for="5moreRoom">5-комнатные и более</label>
-            </div>
-            <!-- Выбранный город -->
-            <label
-              class="filter-section_filter-button"
-              for="chosenCityLabel"
-              id="chosenCityField"
-            ></label>
-            <input
-              type="checkbox"
-              class="search-bar_inputs"
-              id="chosenCityLabel"
-            />
-            <div class="filter-section_filter-content" id="chosenCityDropdown">
-              <input
-                type="radio"
-                name="chosenCity"
-                id="irkutsk"
                 class="search-bar_inputs"
-                value="Иркутск"
-                checked
+                id="realEstateTypeLabel"
               />
-              <label for="irkutsk">Иркутск</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="moscow"
-                class="search-bar_inputs"
-                value="Москва"
-              />
-              <label for="moscow">Москва</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="saintPetersburg"
-                class="search-bar_inputs"
-                value="Санкт-Петербург"
-              />
-              <label for="saintPetersburg">Санкт-Петербург</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="kazan"
-                class="search-bar_inputs"
-                value="Казань"
-              />
-              <label for="kazan">Казань</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="ekaterinburg"
-                class="search-bar_inputs"
-                value="Екатеринбург"
-              />
-              <label for="ekaterinburg">Екатеринбург</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="novosibirsk"
-                class="search-bar_inputs"
-                value="Новосибирск"
-              />
-              <label for="novosibirsk">Новосибирск</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="samara"
-                class="search-bar_inputs"
-                value="Самара"
-              />
-              <label for="samara">Самара</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="nizhniyNovgorod"
-                class="search-bar_inputs"
-                value="Нижний Новгород"
-              />
-              <label for="nizhniyNovgorod">Нижний Новгород</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="chelyabinsk"
-                class="search-bar_inputs"
-                value="Челябинск"
-              />
-              <label for="chelyabinsk">Челябинск</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="omsk"
-                class="search-bar_inputs"
-                value="Омск"
-              />
-              <label for="omsk">Омск</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="sochi"
-                class="search-bar_inputs"
-                value="Сочи"
-              />
-              <label for="sochi">Сочи</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="ulan-ude"
-                class="search-bar_inputs"
-                value="Улан-Удэ"
-              />
-              <label for="ulan-ude">Улан-Удэ</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="rostov-na-donu"
-                class="search-bar_inputs"
-                value="Ростов-на-Дону"
-              />
-              <label for="rostov-na-donu">Ростов-на-Дону</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="voronezh"
-                class="search-bar_inputs"
-                value="Воронеж"
-              />
-              <label for="voronezh">Воронеж</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="volgograd"
-                class="search-bar_inputs"
-                value="Волгоград"
-              />
-              <label for="volgograd">Волгоград</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="tomsk"
-                class="search-bar_inputs"
-                value="Томск"
-              />
-              <label for="tomsk">Томск</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="perm"
-                class="search-bar_inputs"
-                value="Пермь"
-              />
-              <label for="perm">Пермь</label>
-              <input
-                type="radio"
-                name="chosenCity"
-                id="saratov"
-                class="search-bar_inputs"
-                value="Саратов"
-              />
-              <label for="saratov">Саратов</label>
-            </div>
-            <!-- Ценовой диапозон -->
-            <label
-              class="filter-section_filter-button"
-              for="priceRangeLabel"
-              id="priceRangeField"
-            >
-              <input type="text" id="amount" readonly
-            /></label>
-            <input
-              type="checkbox"
-              class="search-bar_inputs"
-              id="priceRangeLabel"
-            />
-            <div class="filter-section_filter-content" id="priceRangeDropdown">
-              <div class="filter-content_values-section">
+              <div
+                class="filter-section_filter-content"
+                id="realEstateDropdown"
+              >
                 <input
-                  type="text"
-                  id="min-value"
-                  class="text-inputs"
-                  pattern="[0-9]+"
-                /><span>—</span>
-                <input
-                  type="text"
-                  id="max-value"
-                  class="text-inputs"
-                  pattern="[0-9]+"
+                  type="radio"
+                  name="realEstateType"
+                  id="flats"
+                  class="search-bar_inputs"
+                  value="Квартиры"
+                  checked
                 />
+                <label for="flats">Квартиры</label>
+                <input
+                  type="radio"
+                  name="realEstateType"
+                  id="rooms"
+                  class="search-bar_inputs"
+                  value="Комнаты"
+                />
+                <label for="rooms">Комнаты</label>
+                <input
+                  type="radio"
+                  name="realEstateType"
+                  id="houses"
+                  class="search-bar_inputs"
+                  value="Дома"
+                />
+                <label for="houses">Дома</label>
+                <input
+                  type="radio"
+                  name="realEstateType"
+                  id="cottages"
+                  class="search-bar_inputs"
+                  value="Коттеджи"
+                />
+                <label for="cottages">Коттеджи</label>
               </div>
-              <div class="filter-content_range-section">
-                <div id="slider-range"></div>
+              <!-- Сколько комнат -->
+              <label
+                class="filter-section_filter-button"
+                for="roomAmountLabel"
+                id="roomAmountField"
+                >Количество комнат</label
+              >
+              <input
+                type="checkbox"
+                class="search-bar_inputs search-bar_room-checkbox"
+                id="roomAmountLabel"
+              />
+              <div
+                class="filter-section_filter-content"
+                id="roomAmountDropdown"
+              >
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  id="studio"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="Студии"
+                  checked
+                />
+                <label for="studio">Студии</label>
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  id="1room"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="1-комнатные"
+                />
+                <label for="1room">1-комнатные</label>
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  id="2room"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="2-комнатные"
+                />
+                <label for="2room">2-комнатные</label>
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  id="3room"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="3-комнатные"
+                />
+                <label for="3room">3-комнатные</label>
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  id="4room"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="4-комнатные"
+                />
+                <label for="4room">4-комнатные</label>
+                <input
+                  type="checkbox"
+                  name="roomAmount"
+                  id="5moreRoom"
+                  class="search-bar_inputs search-bar_room-checkbox"
+                  value="5-комнатные и более"
+                />
+                <label for="5moreRoom">5-комнатные и более</label>
               </div>
+              <!-- Выбранный город -->
+              <label
+                class="filter-section_filter-button"
+                for="chosenCityLabel"
+                id="chosenCityField"
+              ></label>
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="chosenCityLabel"
+              />
+              <div
+                class="filter-section_filter-content"
+                id="chosenCityDropdown"
+              >
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="irkutsk"
+                  class="search-bar_inputs"
+                  value="Иркутск"
+                  checked
+                />
+                <label for="irkutsk">Иркутск</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="moscow"
+                  class="search-bar_inputs"
+                  value="Москва"
+                />
+                <label for="moscow">Москва</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="saintPetersburg"
+                  class="search-bar_inputs"
+                  value="Санкт-Петербург"
+                />
+                <label for="saintPetersburg">Санкт-Петербург</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="kazan"
+                  class="search-bar_inputs"
+                  value="Казань"
+                />
+                <label for="kazan">Казань</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="ekaterinburg"
+                  class="search-bar_inputs"
+                  value="Екатеринбург"
+                />
+                <label for="ekaterinburg">Екатеринбург</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="novosibirsk"
+                  class="search-bar_inputs"
+                  value="Новосибирск"
+                />
+                <label for="novosibirsk">Новосибирск</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="samara"
+                  class="search-bar_inputs"
+                  value="Самара"
+                />
+                <label for="samara">Самара</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="nizhniyNovgorod"
+                  class="search-bar_inputs"
+                  value="Нижний Новгород"
+                />
+                <label for="nizhniyNovgorod">Нижний Новгород</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="chelyabinsk"
+                  class="search-bar_inputs"
+                  value="Челябинск"
+                />
+                <label for="chelyabinsk">Челябинск</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="omsk"
+                  class="search-bar_inputs"
+                  value="Омск"
+                />
+                <label for="omsk">Омск</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="sochi"
+                  class="search-bar_inputs"
+                  value="Сочи"
+                />
+                <label for="sochi">Сочи</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="ulan-ude"
+                  class="search-bar_inputs"
+                  value="Улан-Удэ"
+                />
+                <label for="ulan-ude">Улан-Удэ</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="rostov-na-donu"
+                  class="search-bar_inputs"
+                  value="Ростов-на-Дону"
+                />
+                <label for="rostov-na-donu">Ростов-на-Дону</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="voronezh"
+                  class="search-bar_inputs"
+                  value="Воронеж"
+                />
+                <label for="voronezh">Воронеж</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="volgograd"
+                  class="search-bar_inputs"
+                  value="Волгоград"
+                />
+                <label for="volgograd">Волгоград</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="tomsk"
+                  class="search-bar_inputs"
+                  value="Томск"
+                />
+                <label for="tomsk">Томск</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="perm"
+                  class="search-bar_inputs"
+                  value="Пермь"
+                />
+                <label for="perm">Пермь</label>
+                <input
+                  type="radio"
+                  name="chosenCity"
+                  id="saratov"
+                  class="search-bar_inputs"
+                  value="Саратов"
+                />
+                <label for="saratov">Саратов</label>
+              </div>
+              <!-- Ценовой диапозон -->
+              <label
+                class="filter-section_filter-button"
+                for="priceRangeLabel"
+                id="priceRangeField"
+              >
+                <input type="text" id="amount" readonly
+              /></label>
+              <input
+                type="checkbox"
+                class="search-bar_inputs"
+                id="priceRangeLabel"
+              />
+              <div
+                class="filter-section_filter-content"
+                id="priceRangeDropdown"
+              >
+                <div class="filter-content_values-section">
+                  <input
+                    type="text"
+                    id="min-value"
+                    class="text-inputs"
+                    pattern="[0-9]+"
+                  /><span>—</span>
+                  <input
+                    type="text"
+                    id="max-value"
+                    class="text-inputs"
+                    pattern="[0-9]+"
+                  />
+                </div>
+                <div class="filter-content_range-section">
+                  <div id="slider-range"></div>
+                </div>
+              </div>
+              <!-- Кнопка начать поиск -->
+              <button
+                type="submit"
+                id="searchButton"
+                class="filter-section_search-button"
+              >
+                НАЧАТЬ ПОИСК
+              </button>
             </div>
-            <!-- Кнопка начать поиск -->
-            <button
-              type="submit"
-              id="searchButton"
-              class="filter-section_search-button"
-            >
-              НАЧАТЬ ПОИСК
-            </button>
           </form>
         </div>
         <form class="search-section_search-form-mobile" method="POST">
