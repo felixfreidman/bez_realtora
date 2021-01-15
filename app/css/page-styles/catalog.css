@@ -693,7 +693,7 @@ input[type="checkbox"]:checked ~ .filter-section_filter-content {
   bottom: 0px;
   position: fixed;
   color: white;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
