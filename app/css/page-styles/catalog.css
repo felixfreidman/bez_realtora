@@ -1997,6 +1997,10 @@ input[id="allowanceTypeSmoking"]:checked + label {
     max-height: 150px;
     width: 50%;
   }
+
+  .main_showfilter-label {
+    background-position: 35% 50%;
+  }
 }
 
 /* JS стили */
