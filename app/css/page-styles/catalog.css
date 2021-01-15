@@ -1164,6 +1164,8 @@ input[id="allowanceTypeSmoking"]:checked + label {
   border-radius: 8px;
   color: white;
   font-size: 14px;
+  position: fixed;
+  bottom: 0;
 }
 @media (min-width: 1024px) and (max-width: 1400px) {
   .filter-section_required-section {
