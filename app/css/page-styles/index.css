@@ -2188,14 +2188,14 @@ input[name="watchStoryCheckbox"]:checked + label {
 }
 
 .rent-section_subsection {
-  width: 300%;
-  background-color: #f2f2f2;
+  width: 100%;
+  background-color: #fff;
   color: black;
   position: absolute;
-  top: 38px;
+  top: 70px;
+  left: 0;
   display: none;
   justify-content: space-around;
-  border-radius: 8px;
 }
 .rent-section_subsection > label {
   padding: 10px 5px;
@@ -2206,7 +2206,7 @@ input[name="watchStoryCheckbox"]:checked + label {
   color: #e82431;
 }
 .section {
-  position: relative;
+  position: static;
 }
 
 .section:hover > .rent-section_subsection {
