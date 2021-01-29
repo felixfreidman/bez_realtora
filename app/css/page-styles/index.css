@@ -1300,6 +1300,7 @@ input[name="watchStoryCheckbox"]:checked + label {
     -webkit-appearance: none;
   }
   .main_prefooter-section {
+    height: 600px;
     padding: 50px;
   }
   .city-section_table > section > a,
@@ -1308,7 +1309,7 @@ input[name="watchStoryCheckbox"]:checked + label {
   .district-section_table > section > a:visited,
   .subway-section_table > section > a,
   .subway-section_table > section > a:visited {
-    font-size: 13px;
+    font-size: 11px;
     color: black;
     text-decoration: none;
     width: 25%;
@@ -1380,7 +1381,17 @@ input[name="watchStoryCheckbox"]:checked + label {
     background-position: center;
   }
   .flats-section_fastLinks-section {
-    display: none;
+    display: flex;
+    overflow-x: scroll;
+    height: auto;
+  }
+  .fastLinks-section_fast-card {
+    width: 49%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-basis: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .main_workDescribe-section {
@@ -1447,8 +1458,41 @@ input[name="watchStoryCheckbox"]:checked + label {
   .main_news-section {
     display: none;
   }
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 9px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
   .main_prefooter-section {
-    display: none;
+    height: auto;
+    padding: 20px 10px;
+  }
+  .subway-section_table,
+  .city-section_table,
+  .district-section_table {
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .subway-section_table > section,
+  .city-section_table > section,
+  .district-section_table > section {
+    flex-direction: column;
+    width: 33%;
+    align-items: flex-start;
+  }
+  .subway-section_table > section > a,
+  .city-section_table > section > a,
+  .district-section_table > section > a {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .footer {
@@ -1548,7 +1592,17 @@ input[name="watchStoryCheckbox"]:checked + label {
     background-position: center;
   }
   .flats-section_fastLinks-section {
-    display: none;
+    display: flex;
+    overflow-x: scroll;
+    height: auto;
+  }
+  .fastLinks-section_fast-card {
+    width: 49%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-basis: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .main_workDescribe-section {
@@ -1615,8 +1669,41 @@ input[name="watchStoryCheckbox"]:checked + label {
   .main_news-section {
     display: none;
   }
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 9px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
   .main_prefooter-section {
-    display: none;
+    height: auto;
+    padding: 20px 10px;
+  }
+  .subway-section_table,
+  .city-section_table,
+  .district-section_table {
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .subway-section_table > section,
+  .city-section_table > section,
+  .district-section_table > section {
+    flex-direction: column;
+    width: 33%;
+    align-items: flex-start;
+  }
+  .subway-section_table > section > a,
+  .city-section_table > section > a,
+  .district-section_table > section > a {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .footer {
@@ -1731,7 +1818,16 @@ input[name="watchStoryCheckbox"]:checked + label {
     border-radius: 0px;
   }
   .flats-section_fastLinks-section {
-    display: none;
+    display: flex;
+    overflow-x: scroll;
+    height: auto;
+  }
+  .fastLinks-section_fast-card {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-basis: 98%;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .main_workDescribe-section {
@@ -1798,7 +1894,49 @@ input[name="watchStoryCheckbox"]:checked + label {
   .main_news-section {
     display: none;
   }
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
   .main_prefooter-section {
+    height: auto;
+    padding: 20px 10px;
+  }
+  .subway-section_table,
+  .city-section_table,
+  .district-section_table {
+    margin-top: 5px;
+    flex-direction: column;
+  }
+  .subway-section_table > section,
+  .city-section_table > section,
+  .district-section_table > section {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 0px;
+  }
+  .subway-section_table > section > a,
+  .city-section_table > section > a,
+  .district-section_table > section > a {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .district-section_table > section:nth-child(2),
+  .district-section_table > section:nth-child(3),
+  .district-section_table > section:nth-child(4),
+  .subway-section_table > section:nth-child(2),
+  .subway-section_table > section:nth-child(3),
+  .subway-section_table > section:nth-child(4) {
     display: none;
   }
 
@@ -1915,7 +2053,16 @@ input[name="watchStoryCheckbox"]:checked + label {
     border-radius: 0px;
   }
   .flats-section_fastLinks-section {
-    display: none;
+    display: flex;
+    overflow-x: scroll;
+    height: auto;
+  }
+  .fastLinks-section_fast-card {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-basis: 98%;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .flats-section_allAdvertisments-link {
@@ -1986,7 +2133,49 @@ input[name="watchStoryCheckbox"]:checked + label {
   .main_news-section {
     display: none;
   }
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
   .main_prefooter-section {
+    height: auto;
+    padding: 20px 10px;
+  }
+  .subway-section_table,
+  .city-section_table,
+  .district-section_table {
+    margin-top: 5px;
+    flex-direction: column;
+  }
+  .subway-section_table > section,
+  .city-section_table > section,
+  .district-section_table > section {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 0px;
+  }
+  .subway-section_table > section > a,
+  .city-section_table > section > a,
+  .district-section_table > section > a {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .district-section_table > section:nth-child(2),
+  .district-section_table > section:nth-child(3),
+  .district-section_table > section:nth-child(4),
+  .subway-section_table > section:nth-child(2),
+  .subway-section_table > section:nth-child(3),
+  .subway-section_table > section:nth-child(4) {
     display: none;
   }
 
@@ -1996,4 +2185,37 @@ input[name="watchStoryCheckbox"]:checked + label {
     padding: 36px 20px 17px 20px;
     background-color: #f2f2f2;
   }
+}
+
+.rent-section_subsection {
+  width: 300%;
+  background-color: #f2f2f2;
+  color: black;
+  position: absolute;
+  top: 38px;
+  display: none;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+.rent-section_subsection > label {
+  padding: 10px 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.rent-section_subsection > label:hover {
+  color: #e82431;
+}
+.section {
+  position: relative;
+}
+
+.section:hover > .rent-section_subsection {
+  display: flex;
+}
+
+input[name="navigationSubsection"]:checked + label {
+  border-bottom: #e82431 2px solid;
+}
+input[name="navigationSubsectionSell"]:checked + label {
+  border-bottom: #e82431 2px solid;
 }
