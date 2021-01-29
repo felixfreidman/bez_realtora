@@ -1,15 +1,19 @@
 let realEstateTypeField = document.getElementById("realEstateTypeField");
-let realEstateRadioArray = document.querySelectorAll("input[name=realEstateType]");
+let realEstateRadioArray = document.querySelectorAll(
+  "input[name=realEstateType]"
+);
 let realEstateTypeLabel = document.getElementById("realEstateTypeLabel");
 let roomAmountField = document.getElementById("roomAmountField");
-let roomAmountCheckboxArray = document.querySelectorAll("input[name=roomAmount]");
+let roomAmountCheckboxArray = document.querySelectorAll(
+  "input[name=roomAmount]"
+);
 let roomAmountLabel = document.getElementById("roomAmountLabel");
 let chosenCityField = document.getElementById("chosenCityField");
 let chosenCityRadioArray = document.querySelectorAll("input[name=chosenCity]");
 let chosenCityLabel = document.getElementById("chosenCityLabel");
 let priceRangeField = document.getElementById("priceRangeField");
 
-// Сначала значение label становится отмеченным по умолчанию, затем на каждое радио мы ждем, что если 
+// Сначала значение label становится отмеченным по умолчанию, затем на каждое радио мы ждем, что если
 // оно отмеченно, то значение label становится как у отмеченного радио
 
 realEstateRadioArray.forEach((radio) => {
@@ -35,7 +39,6 @@ chosenCityRadioArray.forEach((radio) => {
     chosenCityField.classList.toggle("reversed-arrow");
   });
 });
-
 
 realEstateTypeField.addEventListener("click", () => {
   realEstateTypeField.classList.toggle("reversed-arrow");
@@ -96,15 +99,33 @@ $("#max-value").on("input", function () {
   }
 });
 
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper(".swiper-container", {
   // Optional parameters
-  direction: 'horizontal',
+  direction: "horizontal",
   loop: true,
-
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
+});
+
+let heartArray = document.querySelectorAll(".unfilledHeart");
+heartArray.forEach((element) => {
+  element.addEventListener("click", () => {
+    element.classList.toggle("unfilledHeart");
+    element.classList.toggle("filledHeart");
+    let counterLikes = element.nextSibling.nextSibling;
+    let intCounter = parseInt(counterLikes.textContent);
+    if (element.classList.contains("filledHeart")) {
+      intCounter++;
+      counterLikes.textContent = intCounter;
+      counterLikes.classList.toggle("counterColored");
+    } else if (element.classList.contains("unfilledHeart")) {
+      intCounter--;
+      counterLikes.textContent = intCounter;
+      counterLikes.classList.toggle("counterColored");
+    }
+  });
 });
