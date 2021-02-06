@@ -73,3 +73,195 @@
 .subway-section_table > section > a:hover {
   color: #e82431;
 }
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .main_prefooter-section {
+    height: 600px;
+    padding: 50px;
+  }
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 11px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 9px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
+  .main_prefooter-section {
+    height: auto;
+    padding: 20px 10px;
+  }
+  .subway-section_table,
+  .city-section_table,
+  .district-section_table {
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .subway-section_table > section,
+  .city-section_table > section,
+  .district-section_table > section {
+    flex-direction: column;
+    width: 33%;
+    align-items: flex-start;
+  }
+  .subway-section_table > section > a,
+  .city-section_table > section > a,
+  .district-section_table > section > a {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 719px) {
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 9px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
+  .main_prefooter-section {
+    height: auto;
+    padding: 20px 10px;
+  }
+  .subway-section_table,
+  .city-section_table,
+  .district-section_table {
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .subway-section_table > section,
+  .city-section_table > section,
+  .district-section_table > section {
+    flex-direction: column;
+    width: 33%;
+    align-items: flex-start;
+  }
+  .subway-section_table > section > a,
+  .city-section_table > section > a,
+  .district-section_table > section > a {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 599px) {
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
+  .main_prefooter-section {
+    height: auto;
+    padding: 20px 10px;
+  }
+  .subway-section_table,
+  .city-section_table,
+  .district-section_table {
+    margin-top: 5px;
+    flex-direction: column;
+  }
+  .subway-section_table > section,
+  .city-section_table > section,
+  .district-section_table > section {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 0px;
+  }
+  .subway-section_table > section > a,
+  .city-section_table > section > a,
+  .district-section_table > section > a {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .district-section_table > section:nth-child(2),
+  .district-section_table > section:nth-child(3),
+  .district-section_table > section:nth-child(4),
+  .subway-section_table > section:nth-child(2),
+  .subway-section_table > section:nth-child(3),
+  .subway-section_table > section:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+  .city-section_table > section > a,
+  .city-section_table > section > a:visited,
+  .district-section_table > section > a,
+  .district-section_table > section > a:visited,
+  .subway-section_table > section > a,
+  .subway-section_table > section > a:visited {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+  }
+
+  .main_prefooter-section {
+    height: auto;
+    padding: 20px 10px;
+  }
+  .subway-section_table,
+  .city-section_table,
+  .district-section_table {
+    margin-top: 5px;
+    flex-direction: column;
+  }
+  .subway-section_table > section,
+  .city-section_table > section,
+  .district-section_table > section {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 0px;
+  }
+  .subway-section_table > section > a,
+  .city-section_table > section > a,
+  .district-section_table > section > a {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .district-section_table > section:nth-child(2),
+  .district-section_table > section:nth-child(3),
+  .district-section_table > section:nth-child(4),
+  .subway-section_table > section:nth-child(2),
+  .subway-section_table > section:nth-child(3),
+  .subway-section_table > section:nth-child(4) {
+    display: none;
+  }
+}
