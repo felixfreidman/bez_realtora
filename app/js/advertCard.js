@@ -23,7 +23,7 @@ likeArray.forEach((Element) => {
   });
 });
 
-let heartArray = document.querySelectorAll(".unfilledHeart");
+let heartArray = document.querySelectorAll(".heart");
 heartArray.forEach((element) => {
   element.addEventListener("click", () => {
     element.classList.toggle("unfilledHeart");

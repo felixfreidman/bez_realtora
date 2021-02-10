@@ -2020,3 +2020,11 @@ input[id="allowanceTypeSmoking"]:checked + label {
 .unfilledShare {
   background-image: url("../../img/catalog/shareEmpty.svg");
 }
+
+.advertismentLink,
+.advertismentLink:hover,
+.advertismentLink:active,
+.advertismentLink:visited {
+  color: black;
+  text-decoration: none;
+}
