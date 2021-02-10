@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("../../fonts/Roboto-Thin.ttf");
+}
 body {
   cursor: default;
 }
@@ -497,7 +502,8 @@ sup {
   color: white;
   border-radius: 8px;
   padding: 15px 10px;
-  font-size: 10px;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .advert-content_map-section {
@@ -541,6 +547,7 @@ sup {
   width: 80%;
   background-size: 7%;
   background-position: 10% 50%;
+  font-weight: 300;
 }
 
 /* Вторая строка в объявлении */
@@ -583,6 +590,87 @@ sup {
 
 .main_review-section {
   padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_header-block {
+  align-self: flex-start;
+}
+.review-cards {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+.review-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-right: 20px;
+  padding: 20px;
+  height: fit-content;
+  height: -moz-fit-content;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.reviewer-info > img {
+  margin-right: 10px;
+}
+
+.reviewer-info > span {
+  font-size: 18px;
+}
+.review-date {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.review-content {
+  font-size: 14px;
+}
+
+.review-add {
+  background-color: #e82431;
+  color: white;
+  padding: 15px 20px;
+  width: 20%;
+  border-radius: 8px;
+  font-size: 18px;
+  background-image: url("../../img/advert/addReview.svg");
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-size: 8%;
+  font-weight: 300;
+  border: none;
+  outline: none;
+}
+
+/* Секция Похожие */
+
+.main_similar-section {
+  padding: 100px 100px 50px 100px;
+  background-color: #fff;
+}
+
+.similar-section-body {
+  display: flex;
+  margin-top: 40px;
+}
+.similar-section-body > .advertisments-section_advert-card {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+}
+
+.objInfo-section_flat-description {
+  font-weight: 400;
+  font-size: 15px;
 }
 /* 
 

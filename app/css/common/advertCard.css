@@ -1,0 +1,164 @@
+.advertisments-section_advert-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  max-height: 450px;
+  width: 23%;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.advertisments-section_advert-card:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.advert-card_panel-info-section {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.advert-card_infoCard-section {
+  display: flex;
+  flex-direction: column;
+}
+.advert-card_info-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.info-section_name {
+  font-size: 14px;
+}
+.info-section_avatar {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  background-image: url("../../img/main/avatar-example.png");
+  background-size: cover;
+}
+.advert-card_panel-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  height: 30px;
+  padding: 10px 0px 5px 10px;
+}
+.panel-section_section {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.counter {
+  font-size: 15px;
+}
+.advert-card_objPhotos-section {
+  display: flex;
+  width: 100%;
+  max-height: 237px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.advert-card_objPhotos-section > img {
+  border-right: 3px solid white;
+  width: 100%;
+}
+
+.advert-card_objPhotos-section img:last-child {
+  border-right: none;
+}
+.advert-card_objInfo-section {
+  height: auto;
+  padding: 5px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.advert-card_objInfo-section > div {
+  margin-bottom: 7px;
+}
+.objInfo-sectiono_price-tag {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.price-tag_price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.price-tag_per-month {
+  color: #808080;
+  font-size: 15px;
+}
+
+.objInfo-section_flat-parameters {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.objInfo-section_flat-description {
+  font-weight: 300;
+  font-size: 16px;
+}
+.advert-card_objAddress-section {
+  height: fit-content;
+  width: 100%;
+  padding: 0px 10px 10px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.objAddress-section_map-checkmark {
+  width: 10px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.objAddress-section_address-span {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .advertisments-section_advert-card {
+    width: 47%;
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  .advertisments-section_advert-card {
+    width: 47%;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 719px) {
+  .advertisments-section_advert-card {
+    width: 47%;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 599px) {
+  .advertisments-section_advert-card {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 413px) {
+  .advertisments-section_advert-card {
+    width: 100%;
+    margin-right: 0px;
+  }
+}

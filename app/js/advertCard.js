@@ -22,3 +22,22 @@ likeArray.forEach((Element) => {
     button.classList.toggle("usualColor");
   });
 });
+
+let heartArray = document.querySelectorAll(".unfilledHeart");
+heartArray.forEach((element) => {
+  element.addEventListener("click", () => {
+    element.classList.toggle("unfilledHeart");
+    element.classList.toggle("filledHeart");
+    let counterLikes = element.nextSibling.nextSibling;
+    let intCounter = parseInt(counterLikes.textContent);
+    if (element.classList.contains("filledHeart")) {
+      intCounter++;
+      counterLikes.textContent = intCounter;
+      counterLikes.classList.toggle("counterColored");
+    } else if (element.classList.contains("unfilledHeart")) {
+      intCounter--;
+      counterLikes.textContent = intCounter;
+      counterLikes.classList.toggle("counterColored");
+    }
+  });
+});
