@@ -657,20 +657,48 @@ sup {
 .main_similar-section {
   padding: 100px 100px 50px 100px;
   background-color: #fff;
+  position: relative;
 }
 
 .similar-section-body {
   display: flex;
   margin-top: 40px;
 }
-.similar-section-body > .advertisments-section_advert-card {
-  border-radius: 8px;
-  border: 1px solid #d9d9d9;
-}
 
 .objInfo-section_flat-description {
   font-weight: 400;
   font-size: 15px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #1c2443;
+}
+.swiper-button-prev:hover,
+.swiper-button-prev:active,
+.swiper-button-next:hover,
+.swiper-button-bext:active {
+  color: #e82431;
+}
+.swiper-button-prev {
+  left: 87%;
+  top: 120px;
+  transform: scale(0.5);
+  outline: none;
+}
+.swiper-button-next {
+  right: 120px;
+  top: 120px;
+  transform: scale(0.5);
+  outline: none;
+}
+
+.swiper-slide {
+  display: flex;
+}
+.swiper-slide > .advertisments-section_advert-card {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
 }
 /* 
 

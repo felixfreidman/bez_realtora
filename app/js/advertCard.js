@@ -41,3 +41,26 @@ heartArray.forEach((element) => {
     }
   });
 });
+
+var mySwiper = new Swiper("#advertCont", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: "#prevAdvert",
+    prevEl: "#nextAdvert",
+  },
+});
+var mySwiper2 = new Swiper("#reviewCont", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: "#prevReview",
+    prevEl: "#nextReview",
+  },
+});
