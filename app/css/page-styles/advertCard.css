@@ -1597,7 +1597,8 @@ sup {
   .label-renter-mobile {
     display: flex;
     position: fixed;
-    bottom: -32%;
+    bottom: -40%;
+    width: 100%;
   }
   .checkboxRenter:checked + .label-renter-mobile {
     bottom: 0px;
