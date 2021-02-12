@@ -64,3 +64,13 @@ var mySwiper2 = new Swiper("#reviewCont", {
     prevEl: "#nextReview",
   },
 });
+
+const MAIN_LAYER = document.querySelector(".layer");
+const CONTACT_CARD = document.querySelector(".label-renter-mobile");
+CONTACT_CARD.addEventListener("click", () => {
+  MAIN_LAYER.classList.toggle("hide");
+});
+
+MAIN_LAYER.addEventListener("click", () => {
+  MAIN_LAYER.classList.toggle("hide");
+});

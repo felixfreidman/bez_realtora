@@ -444,6 +444,9 @@ sup {
   font-size: 16px;
   color: white;
 }
+.checkboxRenter {
+  display: none;
+}
 .advert-content_renter-card {
   padding: 20px;
   border: 1px solid #d9d9d9;
@@ -735,6 +738,53 @@ sup {
 
 .images-section_content-mobile {
   display: none;
+}
+
+.renter-card-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 40;
+  border-radius: 8px;
+}
+.renter-card_renter-info-mobile {
+  display: flex;
+  align-items: center;
+}
+
+.renterPhoto-mobile {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.renter-card_panel-buttons-mobile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+}
+.renter-button-mobile {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #e82431;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #e82431;
+  font-size: 16px;
+}
+
+.call-button-mobile {
+  background-color: #e82431;
+  color: white;
+}
+
+.label-renter-mobile {
+  display: none;
+  z-index: 100000;
 }
 
 @media (min-width: 1201px) and (max-width: 1400px) {
@@ -1239,6 +1289,15 @@ sup {
   .advert-content_renter-card {
     display: none;
   }
+
+  .label-renter-mobile {
+    display: flex;
+    position: fixed;
+    bottom: -32%;
+  }
+  .checkboxRenter:checked + .label-renter-mobile {
+    bottom: 0px;
+  }
   .estateInfoIcon {
     width: 80%;
   }
@@ -1530,6 +1589,9 @@ sup {
   }
   .advert-content_renter-card {
     display: none;
+  }
+  .label-renter-mobile {
+    display: flex;
   }
   .estateInfoIcon {
     width: 80%;
