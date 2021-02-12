@@ -1593,6 +1593,15 @@ sup {
   .label-renter-mobile {
     display: flex;
   }
+
+  .label-renter-mobile {
+    display: flex;
+    position: fixed;
+    bottom: -32%;
+  }
+  .checkboxRenter:checked + .label-renter-mobile {
+    bottom: 0px;
+  }
   .estateInfoIcon {
     width: 80%;
   }
